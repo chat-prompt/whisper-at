@@ -51,7 +51,7 @@ def load_audioset_classes(audioset_csv):
     
     return class_map, index_to_mid
 
-def process_annotations(annotations_df, class_mapping, audioset_classes, verified_only=False, include_all_audioset=True):
+def process_annotations(annotations_df, class_mapping, audioset_classes, verified_only=False):
     """
     Process annotations to create a mapping from audio files to their labels
     Modified to include all AudioSet classes
@@ -289,8 +289,10 @@ def main():
     # Process the annotations
     print("Processing annotations...")
     audio_to_labels, audio_to_split = process_annotations(
-        annotations_df, class_mapping, audioset_classes, 
-        args.verified_only, args.include_all_audioset
+        annotations_df,
+        class_mapping,
+        audioset_classes, 
+        args.verified_only
     )
     
     # Create extended class list
