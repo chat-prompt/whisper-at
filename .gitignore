@@ -9,3 +9,7 @@ thumbs.db
 .idea
 old/*
 *.pptx
+src/whisper_at_train/exp/*
+src/whisper_at_train/exp_old/*
+*.pth
+.vscode/*

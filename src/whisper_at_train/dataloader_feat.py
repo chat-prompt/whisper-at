@@ -106,7 +106,7 @@ class AudiosetDataset(Dataset):
             return np.zeros((6, 25, 512)) # should only work for whisper-base model, which has missing file problem
 
     def _wav2fbank(self, filename, filename2=None, mix_lambda=-1):
-        if 'feat_as' in self.tar_path or 'feat_esc_pool' in self.tar_path:
+        if 'feat_as' in self.tar_path or 'feat_esc_pool' in self.tar_path or 'sonyc' in self.tar_path:
             fmt = '.npz'
         else:
             fmt = '.npy'

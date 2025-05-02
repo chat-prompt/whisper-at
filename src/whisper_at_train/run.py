@@ -14,6 +14,7 @@ import pickle
 import sys
 import time
 import torch
+import torch.nn as nn
 from torch.utils.data import WeightedRandomSampler
 basepath = os.path.dirname(os.path.dirname(sys.path[0]))
 sys.path.append(basepath)
@@ -66,6 +67,7 @@ parser.add_argument("--weight_file", type=str, default=None, help="path to weigh
 parser.add_argument("--ftmode", type=str, default='last', help="pretrained model path")
 parser.add_argument("--pretrain_epoch", type=int, default=0, help="number of pretrained epochs")
 parser.add_argument("--head_lr", type=float, default=1.0, help="learning rate ratio between mlp/base")
+parser.add_argument("--pretrained_model", type=str, default=None, help="path to pretrained model")
 args = parser.parse_args()
 
 if args.dataset == 'esc':
@@ -84,9 +86,15 @@ elif args.dataset == 'as-bal' or args.dataset == 'as-full':
         train_tar_path = '/data/sls/scratch/yuangong/whisper-a/feat_as_full/whisper_' + args.model_size
         eval_tar_path = '/data/sls/scratch/yuangong/whisper-a/feat_as_eval/whisper_' + args.model_size
     shuffle = True
+elif args.dataset == 'sonyc':
+    train_tar_path = '/home/taemyung_heo/workspace/dataset/sonyc-ust/features/train'
+    val_tar_path = '/home/taemyung_heo/workspace/dataset/sonyc-ust/features/val'
+    eval_tar_path = '/home/taemyung_heo/workspace/dataset/sonyc-ust/features/test'
+    shuffle = True
 
 audio_conf = {'freqm': args.freqm, 'timem': args.timem, 'mixup': args.mixup, 'dataset': args.dataset, 'label_smooth': args.label_smooth, 'tar_path': train_tar_path}
-val_audio_conf = {'freqm': 0, 'timem': 0, 'mixup': 0, 'dataset': args.dataset, 'tar_path': eval_tar_path}
+val_audio_conf = {'freqm': 0, 'timem': 0, 'mixup': 0, 'dataset': args.dataset, 'tar_path': val_tar_path}
+eval_audio_conf = {'freqm': 0, 'timem': 0, 'mixup': 0, 'dataset': args.dataset, 'tar_path': eval_tar_path}
 
 if args.bal == 'bal':
     print('balanced sampler is being used')
@@ -111,7 +119,7 @@ val_loader = torch.utils.data.DataLoader(
 
 if args.data_eval != None:
     eval_loader = torch.utils.data.DataLoader(
-        dataloader.AudiosetDataset(args.data_eval, label_csv=args.label_csv, audio_conf=val_audio_conf),
+        dataloader.AudiosetDataset(args.data_eval, label_csv=args.label_csv, audio_conf=eval_audio_conf),
         batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers, pin_memory=True)
 
 def get_feat_shape(path, args):
@@ -129,6 +137,56 @@ if 'whisper-high' in args.model:
 else:
     raise ValueError('model not supported')
 
+print(audio_model)
+
+if args.pretrained_model is not None and os.path.exists(args.pretrained_model):
+    print(f"Loading pretrained model from {args.pretrained_model}")
+    pretrained_dict = torch.load(args.pretrained_model, map_location=device)
+    model_dict = audio_model.state_dict()
+    
+    # 마지막 분류 레이어 이름 확인 (TL-TR 모델의 경우)
+    classifier_layer_names = ['module.mlp_layer.1.weight', 'module.mlp_layer.1.bias']
+    
+    # 1. 사이즈가 일치하는 레이어만 로드
+    pretrained_dict = {k: v for k, v in pretrained_dict.items() 
+                      if k in model_dict and v.size() == model_dict[k].size()}
+    
+    # 2. 마지막 분류 레이어는 특별 처리 (크기가 다름)
+    for layer_name in classifier_layer_names:
+        if layer_name in pretrained_dict and layer_name in model_dict:
+            if 'weight' in layer_name:
+                # 기존 가중치로 초기화 (527개 클래스까지)
+                old_weight = pretrained_dict[layer_name]
+                new_weight = model_dict[layer_name]
+                
+                if old_weight.size(0) < new_weight.size(0):
+                    # 기존 가중치 복사
+                    new_weight[:old_weight.size(0), :] = old_weight
+                    
+                    # 새 클래스의 가중치는 평균과 표준편차를 기반으로 초기화
+                    mean = old_weight.mean().item()
+                    std = old_weight.std().item()
+                    nn.init.normal_(new_weight[old_weight.size(0):, :], mean=mean, std=std)
+                    
+                    # 업데이트된 가중치 저장
+                    model_dict[layer_name] = new_weight
+            
+            elif 'bias' in layer_name:
+                # 바이어스도 비슷하게 처리
+                old_bias = pretrained_dict[layer_name]
+                new_bias = model_dict[layer_name]
+                
+                if old_bias.size(0) < new_bias.size(0):
+                    new_bias[:old_bias.size(0)] = old_bias
+                    mean = old_bias.mean().item()
+                    std = old_bias.std().item()
+                    nn.init.normal_(new_bias[old_bias.size(0):], mean=mean, std=std)
+                    model_dict[layer_name] = new_bias
+    
+    # 필터링된 사전으로 모델 가중치 업데이트
+    audio_model.load_state_dict(model_dict)
+    print("Successfully loaded pretrained weights")
+
 # use data parallel
 if not isinstance(audio_model, torch.nn.DataParallel):
     audio_model = torch.nn.DataParallel(audio_model)
@@ -144,7 +202,7 @@ with open("%s/args.pkl" % args.exp_dir, "wb") as f:
 code_path = args.exp_dir + '/src/'
 if os.path.exists(code_path) == False:
     os.mkdir(code_path)
-copy_path = '/data/sls/scratch/yuangong/whisper-a/src/'
+copy_path = '/home/taemyung_heo/workspace/github/whisper-at/src/'
 os.system('cp ' + copy_path + '/*.sh ' + code_path)
 os.system('cp ' + copy_path + '/*.py ' + code_path)
 
@@ -176,5 +234,12 @@ if args.wa == True:
     audio_model.eval()
     stats, _ = validate(audio_model, val_loader, args)
     wa_res = np.mean([stat['AP'] for stat in stats])
-    print('mAP of model with weights averaged from checkpoint {:d}-{:d} is {:.4f}'.format(args.wa_start, args.wa_end, wa_res))
-    np.savetxt(args.exp_dir + '/wa_res.csv', [args.wa_start, args.wa_end, wa_res], delimiter=',')
+    wa_res_sonyc = np.mean([stat['AP'] for stat in stats[527:]])
+    print('val mAP of model with weights averaged from checkpoint {:d}-{:d} is {:.4f}, SONYC mAP: {:.4f}'.format(args.wa_start, args.wa_end, wa_res, wa_res_sonyc))
+    np.savetxt(args.exp_dir + '/wa_res.csv', [args.wa_start, args.wa_end, wa_res, wa_res_sonyc], delimiter=',')
+
+    stats, _ = validate(audio_model, eval_loader, args)
+    wa_res = np.mean([stat['AP'] for stat in stats])
+    wa_res_sonyc = np.mean([stat['AP'] for stat in stats[527:]])
+    print('test mAP of model with weights averaged from checkpoint {:d}-{:d} is {:.4f}, SONYC mAP: {:.4f}'.format(args.wa_start, args.wa_end, wa_res, wa_res_sonyc))
+    np.savetxt(args.exp_dir + '/wa_res_test.csv', [args.wa_start, args.wa_end, wa_res, wa_res_sonyc], delimiter=',')
