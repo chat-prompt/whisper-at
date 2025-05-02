@@ -53,14 +53,20 @@ def train(audio_model, train_loader, test_loader, args):
     optimizer = torch.optim.Adam(trainables, args.lr, weight_decay=5e-7, betas=(0.95, 0.999))
 
     if args.lr_adapt == True:
-        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=args.lr_patience, verbose=True)
+        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=args.lr_patience)
         print('Override to use adaptive learning rate scheduler.')
     else:
         scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, list(range(args.lrscheduler_start, 1000, args.lrscheduler_step)),gamma=args.lrscheduler_decay)
         print('The learning rate scheduler starts at {:d} epoch with decay rate of {:.3f} every {:d} epoches'.format(args.lrscheduler_start, args.lrscheduler_decay, args.lrscheduler_step))
     main_metrics = args.metrics
     if args.loss == 'BCE':
-        loss_fn = nn.BCEWithLogitsLoss()
+        if hasattr(args, 'n_class') and args.n_class > 527:
+            # SONYC 클래스에 더 높은 가중치 부여
+            pos_weight = torch.ones(args.n_class, device=device)
+            pos_weight[527:args.n_class] = 3.0  # SONYC 클래스 가중치 증가
+            loss_fn = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
+        else:
+            loss_fn = nn.BCEWithLogitsLoss()
     elif args.loss == 'CE':
         loss_fn = nn.CrossEntropyLoss()
     args.loss_fn = loss_fn
@@ -232,4 +238,30 @@ def validate(audio_model, val_loader, args):
         target = torch.cat(A_targets)
         loss = np.mean(A_loss)
         stats = calculate_stats(audio_output, target)
-    return stats, loss
+
+        # SONYC 클래스에 대한 별도 성능 평가 추가
+        if hasattr(args, 'n_class') and args.n_class > 527:
+            all_mAP = np.mean([stat['AP'] for stat in stats])
+            sonyc_mAP = np.mean([stat['AP'] for stat in stats[527:args.n_class]])
+            original_mAP = np.mean([stat['AP'] for stat in stats[:527]])
+            
+            print(f"All classes mAP: {all_mAP:.6f}")
+            print(f"Original AudioSet classes mAP: {original_mAP:.6f}")
+            print(f"SONYC classes mAP: {sonyc_mAP:.6f}")
+            
+            # SONYC 클래스별 성능 저장
+            sonyc_stats = {}
+            for i in range(527, args.n_class):
+                sonyc_stats[i] = {
+                    'AP': stats[i]['AP']
+                }
+                print(f"Class {i} (SONYC): AP = {stats[i]['AP']:.6f}")
+            
+            # 각 stats dict에 SONYC 통계 추가
+            for stat in stats:
+                stat['sonyc_stats'] = sonyc_stats
+                stat['sonyc_mAP'] = sonyc_mAP
+                stat['all_mAP'] = all_mAP
+                stat['original_mAP'] = original_mAP
+            
+            return stats, loss
