@@ -139,6 +139,8 @@ def load_model(
         path to download the model files; by default, it uses "~/.cache/whisper"
     in_memory: bool
         whether to preload the model weights into host memory
+    at_low_compute: bool
+        whether to use low-compute AT model (if available)
 
     Returns
     -------
@@ -152,45 +154,123 @@ def load_model(
         default = os.path.join(os.path.expanduser("~"), ".cache")
         download_root = os.path.join(os.getenv("XDG_CACHE_HOME", default), "whisper")
 
-    # if use low-dim proj, only applied for large, medium, and small model
-    if at_low_compute == True:
-        at_mdl_name = name + '_low'
-    else:
-        at_mdl_name = name
+    # Determine the correct AT model name based on at_low_compute flag
+    at_mdl_name = name
+    if at_low_compute:
+        # Check if a low-compute version exists for the given model name
+        low_compute_name = name + '_low'
+        if low_compute_name in _MODELS_AT:
+            at_mdl_name = low_compute_name
+        else:
+            # If low-compute version doesn't exist, issue a warning or fall back
+            warnings.warn(f"Low-compute version for model '{name}' not found. Using standard AT model.")
+            # Optionally, you could raise an error here if low-compute is strictly required.
 
     if name in _MODELS:
+        # Ensure the AT model name exists in _MODELS_AT before downloading
+        if at_mdl_name not in _MODELS_AT:
+             raise RuntimeError(f"AT model '{at_mdl_name}' corresponding to '{name}' not found in _MODELS_AT.")
+
         checkpoint_file = _download(_MODELS[name], download_root, in_memory)
-        checkpoint_file_at = _download(_MODELS_AT[at_mdl_name], download_root, in_memory)
+        checkpoint_file_at = _download(_MODELS_AT[at_mdl_name], download_root, in_memory) # Use determined at_mdl_name
+
+        # Ensure the alignment heads key exists
+        if name not in _ALIGNMENT_HEADS:
+            raise RuntimeError(f"Alignment heads for model '{name}' not found.")
         alignment_heads = _ALIGNMENT_HEADS[name]
+
     elif os.path.isfile(name):
+        # When loading from a local file, we don't have separate AT model or alignment heads info easily
+        # You might need a mechanism to load these separately or handle this case differently
         checkpoint_file = open(name, "rb").read() if in_memory else name
-        alignment_heads = None
+        # For local files, how do you get checkpoint_file_at and alignment_heads?
+        # This part needs clarification based on how local models are structured.
+        # Assuming for now that local files might not use the separate AT model structure
+        # or require specific handling. Let's raise an error or warning for clarity.
+        warnings.warn("Loading from a local file. Separate AT model loading and alignment heads might not be handled correctly.")
+        checkpoint_file_at = None # No separate AT file specified for local model path
+        alignment_heads = None    # No alignment heads specified for local model path
     else:
         raise RuntimeError(
             f"Model {name} not found; available models = {available_models()}"
         )
 
-    with (
-        io.BytesIO(checkpoint_file) if in_memory else open(checkpoint_file, "rb")
-    ) as fp:
-        checkpoint = torch.load(fp, map_location=device)
-    del checkpoint_file
+    # Load the main Whisper model checkpoint
+    try:
+        with (
+            io.BytesIO(checkpoint_file) if in_memory and isinstance(checkpoint_file, bytes) else open(checkpoint_file, "rb")
+        ) as fp:
+            checkpoint = torch.load(fp, map_location=device)
+    except Exception as e:
+        raise RuntimeError(f"Error loading main model checkpoint '{checkpoint_file}': {e}")
+    finally:
+        # Clean up memory if loaded in-memory
+        if in_memory and isinstance(checkpoint_file, bytes):
+            del checkpoint_file
 
-    with (
-        io.BytesIO(checkpoint_file_at) if in_memory else open(checkpoint_file_at, "rb")
-    ) as fp:
-        checkpoint_at = torch.load(fp, map_location=device)
-    del checkpoint_file_at
+    # Load the AT model checkpoint if available
+    checkpoint_at = {} # Initialize as empty dict
+    if checkpoint_file_at:
+        try:
+            with (
+                io.BytesIO(checkpoint_file_at) if in_memory and isinstance(checkpoint_file_at, bytes) else open(checkpoint_file_at, "rb")
+            ) as fp:
+                checkpoint_at_raw = torch.load(fp, map_location=device) # Load raw AT checkpoint
 
-    dims = ModelDimensions(**checkpoint["dims"])
-    model = Whisper(dims, at_low_compute=at_low_compute)
+            # --- Start of Key Prefix Correction ---
+            # Create a new dictionary for corrected keys
+            corrected_checkpoint_at = {}
+            for key, value in checkpoint_at_raw.items():
+                # Check if the key starts with "module." and remove it
+                if key.startswith("module."):
+                    new_key = key[len("module."):] # Remove the "module." prefix
+                else:
+                    new_key = key # Keep the key as is if no prefix
+                corrected_checkpoint_at[new_key] = value
 
+            checkpoint_at = corrected_checkpoint_at # Use the corrected dictionary
+            # --- End of Key Prefix Correction ---
+
+        except Exception as e:
+            raise RuntimeError(f"Error loading AT model checkpoint '{checkpoint_file_at}': {e}")
+        finally:
+            # Clean up memory if loaded in-memory
+            if in_memory and isinstance(checkpoint_file_at, bytes):
+                del checkpoint_file_at
+            # Optionally delete the raw dictionary to save memory
+            if 'checkpoint_at_raw' in locals():
+                del checkpoint_at_raw
+
+
+    # Prepare the model dimensions and instantiate the Whisper model
+    if "dims" not in checkpoint:
+        raise RuntimeError("Model dimensions not found in the main checkpoint.")
+    try:
+        dims = ModelDimensions(**checkpoint["dims"])
+    except TypeError as e:
+        raise RuntimeError(f"Error creating ModelDimensions from checkpoint['dims']: {e}. Checkpoint keys: {checkpoint.keys()}")
+
+    model = Whisper(dims, at_low_compute=at_low_compute) # Pass at_low_compute here
+
+    # Combine the state dictionaries
     combined_state_dict = {}
+    if "model_state_dict" not in checkpoint:
+         raise RuntimeError("'model_state_dict' key not found in the main checkpoint.")
     combined_state_dict.update(checkpoint["model_state_dict"])
-    combined_state_dict.update(checkpoint_at)
+    combined_state_dict.update(checkpoint_at) # Add the (potentially corrected) AT state dict
 
-    model.load_state_dict(combined_state_dict, strict=True)
+    # Load the combined state dictionary into the model
+    try:
+        model.load_state_dict(combined_state_dict, strict=True)
+    except RuntimeError as e:
+        # Provide more context in case of error
+        print("Error during model.load_state_dict:")
+        print(f"Model Keys (example): {list(model.state_dict().keys())[:5]}")
+        print(f"Loaded State Dict Keys (example): {list(combined_state_dict.keys())[:5]}")
+        # You can add more detailed key comparison here if needed
+        raise e # Re-raise the original error after printing info
 
+    # Set alignment heads if available
     if alignment_heads is not None:
         model.set_alignment_heads(alignment_heads)
 
