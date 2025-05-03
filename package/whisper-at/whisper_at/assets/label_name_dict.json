@@ -526,7 +526,13 @@
   "Vibration",
   "Television",
   "Radio",
-  "Field recording"
+  "Field recording",
+  "Amplified speech",
+  "Hoe ram",
+  "Large rotating saw",
+  "Non machinery impact",
+  "Pile driver",
+  "Small medium rotating saw"
  ],
  "zh": [
   "\u8bf4\u8bdd\u7684\u58f0\u97f3",
@@ -3171,7 +3177,13 @@
   "\uc9c4\ub3d9 \uc18c\ub9ac",
   "\ud154\ub808\ube44\uc804 \uc18c\ub9ac",
   "\ub77c\ub514\uc624\uc758 \uc18c\ub9ac",
-  "\ud604\uc7a5 \ub179\uc74c \uc18c\ub9ac"
+  "\ud604\uc7a5 \ub179\uc74c \uc18c\ub9ac",
+  "\uc99d\ud3ed\ub41c\u0020\uc74c\uc131",
+  "\uad2d\uc774\u0020\uac08\ud034",
+  "\ub300\ud615\u0020\ud68c\uc804\u0020\ud1b1",
+  "\ube44\uae30\uacc4\uc801\u0020\ucda9\uaca9\uc74c",
+  "\ub9d0\ub69d\ubc15\uae30",
+  "\uc18c\ud615\u0020\ud68c\uc804\u0020\ud1b1"
  ],
  "fr": [
   "Son de la parole",

@@ -320,7 +320,7 @@ class Whisper(nn.Module):
 
 # model related to audio tagging
 class ATModel(nn.Module):
-    def __init__(self, label_dim=527, n_layer=32, rep_dim=1280, mode='tl_down_tr_512_1_8'):
+    def __init__(self, label_dim=533, n_layer=32, rep_dim=1280, mode='tl_down_tr_512_1_8'):
         super().__init__()
         self.mode = mode
         self.n_layer = n_layer
