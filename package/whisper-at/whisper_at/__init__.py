@@ -220,19 +220,27 @@ def load_model(
             # --- Start of Key Prefix Correction ---
             # Create a new dictionary for corrected keys
             corrected_checkpoint_at = {}
+            print("Correcting AT checkpoint keys...") # 진행 상황 확인용 로그
             for key, value in checkpoint_at_raw.items():
-                # Check if the key starts with "module." and remove it
+                # 1. Remove "module." prefix if it exists
                 if key.startswith("module."):
-                    new_key = key[len("module."):] # Remove the "module." prefix
+                    key_without_module = key[len("module."):]
+                    # print(f"  Removed 'module.' from '{key}' -> '{key_without_module}'") # 상세 로그 (필요시 주석 해제)
                 else:
-                    new_key = key # Keep the key as is if no prefix
+                    key_without_module = key
+
+                # 2. Add "at_model." prefix
+                new_key = "at_model." + key_without_module # "at_model." 접두사 추가
+                # print(f"  Added 'at_model.' to '{key_without_module}' -> '{new_key}'") # 상세 로그 (필요시 주석 해제)
+
                 corrected_checkpoint_at[new_key] = value
 
             checkpoint_at = corrected_checkpoint_at # Use the corrected dictionary
+            print(f"Finished correcting keys. Example corrected key: {list(checkpoint_at.keys())[0] if checkpoint_at else 'N/A'}") # 수정 결과 확인
             # --- End of Key Prefix Correction ---
 
         except Exception as e:
-            raise RuntimeError(f"Error loading AT model checkpoint '{checkpoint_file_at}': {e}")
+            raise RuntimeError(f"Error loading or processing AT model checkpoint '{checkpoint_file_at}': {e}")
         finally:
             # Clean up memory if loaded in-memory
             if in_memory and isinstance(checkpoint_file_at, bytes):
@@ -243,6 +251,7 @@ def load_model(
 
 
     # Prepare the model dimensions and instantiate the Whisper model
+    # ... (이 부분은 이전과 동일) ...
     if "dims" not in checkpoint:
         raise RuntimeError("Model dimensions not found in the main checkpoint.")
     try:
@@ -252,6 +261,12 @@ def load_model(
 
     model = Whisper(dims, at_low_compute=at_low_compute) # Pass at_low_compute here
 
+    # --- Debug: Print model's expected keys for at_model ---
+    print("\nModel's expected keys starting with 'at_model.' (first 5):")
+    at_model_keys_expected = [k for k in model.state_dict().keys() if k.startswith("at_model.")]
+    print(at_model_keys_expected[:5])
+    # --- End Debug ---
+
     # Combine the state dictionaries
     combined_state_dict = {}
     if "model_state_dict" not in checkpoint:
@@ -259,18 +274,44 @@ def load_model(
     combined_state_dict.update(checkpoint["model_state_dict"])
     combined_state_dict.update(checkpoint_at) # Add the (potentially corrected) AT state dict
 
+    # --- Debug: Print loaded keys starting with 'at_model.' ---
+    print("\nLoaded combined_state_dict keys starting with 'at_model.' (first 5):")
+    at_model_keys_loaded = [k for k in combined_state_dict.keys() if k.startswith("at_model.")]
+    print(at_model_keys_loaded[:5])
+    # --- End Debug ---
+
     # Load the combined state dictionary into the model
     try:
+        print("\nAttempting to load state_dict...")
         model.load_state_dict(combined_state_dict, strict=True)
+        print("Successfully loaded state_dict!")
     except RuntimeError as e:
         # Provide more context in case of error
-        print("Error during model.load_state_dict:")
+        print("\nError during model.load_state_dict:")
         print(f"Model Keys (example): {list(model.state_dict().keys())[:5]}")
         print(f"Loaded State Dict Keys (example): {list(combined_state_dict.keys())[:5]}")
-        # You can add more detailed key comparison here if needed
+
+        # 추가 디버깅: 누락된 키와 예상치 못한 키 출력
+        missing_keys = [k for k in model.state_dict().keys() if k not in combined_state_dict]
+        unexpected_keys = [k for k in combined_state_dict.keys() if k not in model.state_dict()]
+        print(f"\nMissing Keys ({len(missing_keys)} total, first 5): {missing_keys[:5]}")
+        print(f"Unexpected Keys ({len(unexpected_keys)} total, first 5): {unexpected_keys[:5]}")
+
+        # 키 매핑 확인 (예: 첫 번째 누락/예상치 못한 키 비교)
+        if missing_keys and unexpected_keys:
+            print(f"\nExample Mismatch? Model expects: '{missing_keys[0]}', Loaded dict has: '{unexpected_keys[0]}'")
+
+        # at_model 관련 키만 필터링하여 비교
+        missing_at_keys = [k for k in missing_keys if k.startswith("at_model.")]
+        unexpected_at_keys = [k for k in unexpected_keys if not k.startswith("at_model.")] # unexpected는 at_model이 아닌 키일 수 있음
+
+        print(f"\nMissing 'at_model.' Keys (first 5): {missing_at_keys[:5]}")
+        # print(f"Unexpected Keys (excluding potential 'at_model.' keys, first 5): {unexpected_at_keys[:5]}") # 이 부분은 혼란을 줄 수 있어 주석 처리
+
         raise e # Re-raise the original error after printing info
 
     # Set alignment heads if available
+    # ... (이후 코드는 동일) ...
     if alignment_heads is not None:
         model.set_alignment_heads(alignment_heads)
 
