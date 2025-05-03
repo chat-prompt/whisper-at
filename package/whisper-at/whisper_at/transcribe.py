@@ -206,7 +206,7 @@ def transcribe(
     )  # time per output token: 0.02 (seconds)
     all_tokens = []
     all_segments = []
-    all_audio_tags = torch.zeros([math.ceil(content_frames/at_decision_window), 527])
+    all_audio_tags = torch.zeros([math.ceil(content_frames/at_decision_window), 533])
     prompt_reset_since = 0
 
     if initial_prompt is not None:
