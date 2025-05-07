@@ -60,13 +60,14 @@ def train(audio_model, train_loader, test_loader, args):
         print('The learning rate scheduler starts at {:d} epoch with decay rate of {:.3f} every {:d} epoches'.format(args.lrscheduler_start, args.lrscheduler_decay, args.lrscheduler_step))
     main_metrics = args.metrics
     if args.loss == 'BCE':
-        if hasattr(args, 'n_class') and args.n_class > 527:
-            # SONYC 클래스에 더 높은 가중치 부여
-            pos_weight = torch.ones(args.n_class, device=device)
-            pos_weight[527:args.n_class] = 3.0  # SONYC 클래스 가중치 증가
-            loss_fn = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
-        else:
-            loss_fn = nn.BCEWithLogitsLoss()
+        # if hasattr(args, 'n_class') and args.n_class > 527:
+        #     # SONYC 클래스에 더 높은 가중치 부여
+        #     pos_weight = torch.ones(args.n_class, device=device)
+        #     pos_weight[527:args.n_class] = 3.0  # SONYC 클래스 가중치 증가
+        #     loss_fn = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
+        # else:
+        #     loss_fn = nn.BCEWithLogitsLoss()
+        loss_fn = nn.BCEWithLogitsLoss()
     elif args.loss == 'CE':
         loss_fn = nn.CrossEntropyLoss()
     args.loss_fn = loss_fn
