@@ -44,7 +44,7 @@ parser.add_argument("--n-epochs", type=int, default=1, help="number of maximum t
 parser.add_argument("--lr_patience", type=int, default=1, help="how many epoch to wait to reduce lr if mAP doesn't improve")
 parser.add_argument("--lr_adapt", help='if use adaptive learning rate', type=ast.literal_eval)
 parser.add_argument("--metrics", type=str, default="mAP", help="the main evaluation metrics in finetuning", choices=["mAP", "acc"])
-parser.add_argument("--loss", type=str, default="BCE", help="the loss function for finetuning, depend on the task", choices=["BCE", "CE"])
+parser.add_argument("--loss", type=str, default="BCE", help="the loss function for finetuning, depend on the task", choices=["BCE", "CE", "SONY_BCE"])
 parser.add_argument('--warmup', help='if use warmup learning rate scheduler', type=ast.literal_eval, default='True')
 parser.add_argument("--lrscheduler_start", default=10, type=int, help="when to start decay in finetuning")
 parser.add_argument("--lrscheduler_step", default=5, type=int, help="the number of step to decrease the learning rate in finetuning")
@@ -68,6 +68,7 @@ parser.add_argument("--ftmode", type=str, default='last', help="pretrained model
 parser.add_argument("--pretrain_epoch", type=int, default=0, help="number of pretrained epochs")
 parser.add_argument("--head_lr", type=float, default=1.0, help="learning rate ratio between mlp/base")
 parser.add_argument("--pretrained_model", type=str, default=None, help="path to pretrained model")
+parser.add_argument("--freeze_original_classes", action="store_true", help="Freeze weights for original 527 AudioSet classes and only train new SONYC classes")
 args = parser.parse_args()
 
 if args.dataset == 'esc':
@@ -186,6 +187,17 @@ if args.pretrained_model is not None and os.path.exists(args.pretrained_model):
     # 필터링된 사전으로 모델 가중치 업데이트
     audio_model.load_state_dict(model_dict)
     print("Successfully loaded pretrained weights")
+
+    # 모델 가중치 로딩 후, 기존 클래스 가중치 고정 코드 추가
+    if args.pretrained_model is not None and args.freeze_original_classes:
+        print("Freezing original AudioSet class weights...")
+        for name, param in audio_model.named_parameters():
+            if 'mlp_layer.1.weight' in name:
+                # 기존 클래스(0-526)에 해당하는 가중치 행 고정
+                param.data[:527, :].requires_grad = False
+            elif 'mlp_layer.1.bias' in name:
+                # 기존 클래스에 해당하는 바이어스 고정
+                param.data[:527].requires_grad = False
 
 # use data parallel
 if not isinstance(audio_model, torch.nn.DataParallel):

@@ -17,6 +17,25 @@ import numpy as np
 import pickle
 from torch.cuda.amp import autocast,GradScaler
 
+
+class SonyNewClassBCELoss(nn.Module):
+    """신규 SONYC 클래스(527-532)에 대한 손실만 계산하는 손실 함수"""
+    def __init__(self):
+        super(SonyNewClassBCELoss, self).__init__()
+        self.bce_loss = nn.BCEWithLogitsLoss(reduction='none')
+        
+    def forward(self, predictions, targets):
+        # 모든 클래스에 대한 BCE 손실 계산
+        all_losses = self.bce_loss(predictions, targets)
+        
+        # 신규 SONYC 클래스에 대한 손실만 추출
+        sonyc_losses = all_losses[:, 527:533]
+        
+        # SONYC 클래스 손실의 평균 계산
+        reduced_loss = sonyc_losses.mean()
+        
+        return reduced_loss
+
 def train(audio_model, train_loader, test_loader, args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print('running on ' + str(device))
@@ -70,6 +89,8 @@ def train(audio_model, train_loader, test_loader, args):
         loss_fn = nn.BCEWithLogitsLoss()
     elif args.loss == 'CE':
         loss_fn = nn.CrossEntropyLoss()
+    elif args.loss == 'SONY_BCE':
+        loss_fn = SonyNewClassBCELoss()
     args.loss_fn = loss_fn
 
     print('now training with {:s}, main metrics: {:s}, loss function: {:s}, learning rate scheduler: {:s}'.format(str(args.dataset), str(main_metrics), str(loss_fn), str(scheduler)))

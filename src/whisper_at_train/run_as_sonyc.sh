@@ -13,7 +13,7 @@ set -x
 source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
 export TORCH_HOME=../../pretrained_models
 
-lr=1e-5
+lr=5e-4
 freqm=0
 timem=10
 mixup=0.5
@@ -31,9 +31,9 @@ wa=True
 wa_start=16
 wa_end=30
 lr_adapt=False
-tr_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_train.json
-val_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_val.json
-te_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_test.json
+tr_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_new_train.json
+val_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_new_val.json
+te_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_new_test.json
 label_csv=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/class_labels_indices_extended.csv
 label_smooth=0.1
 
@@ -67,7 +67,7 @@ python -W ignore ./run.py \
   --lrscheduler_start ${lrscheduler_start} \
   --lrscheduler_decay ${lrscheduler_decay} \
   --lrscheduler_step ${lrscheduler_step} \
-  --loss BCE \
+  --loss SONY_BCE \
   --metrics mAP \
   --warmup True \
   --wa ${wa} \
@@ -75,4 +75,5 @@ python -W ignore ./run.py \
   --wa_end ${wa_end} \
   --lr_adapt ${lr_adapt} \
   --num-workers 8 \
-  --pretrained_model ${pretrained_model}
+  --pretrained_model ${pretrained_model} \
+  --freeze_original_classes
