@@ -13,7 +13,7 @@ set -x
 source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
 export TORCH_HOME=../../pretrained_models
 
-lr=1e-6
+lr=5e-7
 freqm=0
 timem=10
 mixup=0.5
@@ -23,17 +23,17 @@ model_size=large-v1
 
 dataset=sonyc
 bal=none
-epoch=20
+epoch=50
 lrscheduler_start=15
 lrscheduler_decay=0.75
 lrscheduler_step=5
 wa=True
-wa_start=11
-wa_end=20
-lr_adapt=False
-tr_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_new_train.json
-val_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_new_val.json
-te_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_new_test.json
+wa_start=26
+wa_end=50
+lr_adapt=True
+tr_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_train.json
+val_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_val.json
+te_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_test.json
 label_csv=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/class_labels_indices_extended.csv
 label_smooth=0.1
 
@@ -76,4 +76,4 @@ python -W ignore ./run.py \
   --lr_adapt ${lr_adapt} \
   --num-workers 8 \
   --pretrained_model ${pretrained_model} \
-  --freeze_original_classes
+  #--freeze_original_classes
