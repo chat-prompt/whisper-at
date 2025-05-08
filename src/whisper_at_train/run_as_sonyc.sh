@@ -13,7 +13,7 @@ set -x
 source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
 export TORCH_HOME=../../pretrained_models
 
-lr=5e-4
+lr=1e-5
 freqm=0
 timem=10
 mixup=0.5
@@ -23,13 +23,13 @@ model_size=large-v1
 
 dataset=sonyc
 bal=none
-epoch=30
+epoch=20
 lrscheduler_start=15
 lrscheduler_decay=0.75
 lrscheduler_step=5
 wa=True
-wa_start=16
-wa_end=30
+wa_start=11
+wa_end=20
 lr_adapt=False
 tr_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_new_train.json
 val_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_new_val.json
@@ -67,7 +67,7 @@ python -W ignore ./run.py \
   --lrscheduler_start ${lrscheduler_start} \
   --lrscheduler_decay ${lrscheduler_decay} \
   --lrscheduler_step ${lrscheduler_step} \
-  --loss SONY_BCE \
+  --loss BCE \
   --metrics mAP \
   --warmup True \
   --wa ${wa} \
