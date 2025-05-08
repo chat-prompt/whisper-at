@@ -44,7 +44,7 @@ _MODELS_AT = {
     "medium_low": "https://www.dropbox.com/s/0mnfmcasram4n6o/medium_low.pth?dl=1",
     #"large-v1": "https://www.dropbox.com/s/b8x2en1fdzc8nhk/large-v1_ori.pth?dl=1",
     # "large-v1": "https://www.dropbox.com/scl/fi/m6qmgl1x6h9akmehichjq/large_v1.pth?rlkey=yx1fyyedf2xlx9j2z7fosfpzy&st=5r00ei0u&dl=1",
-    "large-v1": "https://www.dropbox.com/scl/fi/md9ysxj5gxrbdpy56tk2r/audio_model.10.pth?rlkey=nalmrf71ff5kscct873vjm5cg&st=u5icd4mo&dl=1",
+    "large-v1": "https://www.dropbox.com/scl/fi/xkbrl9yv6ihwvqsoxv0aa/audio_model.2.pth?rlkey=03az6831cm1nkeso9rfj0hm6n&st=9f9q1stn&dl=1",
     "large-v1_ori": "https://www.dropbox.com/s/5o79h70wyla8jlk/large-v1_low.pth?dl=1",
     "large-v1_low": "https://www.dropbox.com/s/5o79h70wyla8jlk/large-v1_low.pth?dl=1",
     "large-v2": "https://www.dropbox.com/s/3zxpyvdrxy22eq7/large-v2_ori.pth?dl=1",

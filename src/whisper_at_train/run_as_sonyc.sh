@@ -13,7 +13,7 @@ set -x
 source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
 export TORCH_HOME=../../pretrained_models
 
-lr=1e-5
+lr=1e-6
 freqm=0
 timem=10
 mixup=0.5
