@@ -1,1323 +1,1323 @@
 {
   "data": [
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_026919.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_026919.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027065.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027065.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027130.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027130.wav",
       "labels": "/m/03kmc9,/m/01h8n0,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027176.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027176.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027218.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027218.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/0912c9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027302.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027302.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027342.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027342.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027359.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027359.wav",
       "labels": "/t/dd00066,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027381.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027381.wav",
       "labels": "/m/01h8n0,/t/dd00135,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027530.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027530.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027708.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027708.wav",
       "labels": "/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_026984.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_026984.wav",
       "labels": "/m/07qz6j3,/m/03kmc9,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027018.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027018.wav",
       "labels": "/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027028.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027028.wav",
       "labels": "/m/0912c9,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027029.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027029.wav",
       "labels": "/t/dd00135,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027042.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027042.wav",
       "labels": "/m/04rlf,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027336.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027336.wav",
       "labels": "/m/07qz6j3,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027352.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027352.wav",
       "labels": "/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027568.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027568.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027635.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027635.wav",
       "labels": "/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_026904.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_026904.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027223.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027223.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027241.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027241.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027448.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027448.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027648.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027648.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027672.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027672.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027828.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027828.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_027229.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_027229.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_027382.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_027382.wav",
       "labels": "/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_027487.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_027487.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_027535.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_027535.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_026937.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_026937.wav",
       "labels": "/m/07qz6j3,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_026982.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_026982.wav",
       "labels": "/m/01h8n0,/m/03p19w,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027099.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027099.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/0912c9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027111.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027111.wav",
       "labels": "/t/dd00135,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027204.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027204.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027432.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027432.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027473.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027473.wav",
       "labels": "/m/07qz6j3,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027502.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027502.wav",
       "labels": "/m/03qtwd,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027657.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027657.wav",
       "labels": "/m/01d380,/m/03p19w"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027731.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027731.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027751.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027751.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027754.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027754.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027817.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027817.wav",
       "labels": "/m/07qz6j3,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_026893.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_026893.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_026912.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_026912.wav",
       "labels": "/m/03p19w,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_026915.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_026915.wav",
       "labels": "/t/dd00066,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027064.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027064.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/0912c9,/m/0fd3y,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027310.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027310.wav",
       "labels": "/m/04rlf,/t/dd00066,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027311.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027311.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027343.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027343.wav",
       "labels": "/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027485.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027485.wav",
       "labels": "/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027703.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027703.wav",
       "labels": "/m/01h8n0,/m/04rlf,/m/0912c9,/m/0fd3y,/t/dd00066,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027792.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027792.wav",
       "labels": "/m/04rlf,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027832.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027832.wav",
       "labels": "/m/01j4z9,/m/03p19w,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_026923.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_026923.wav",
       "labels": "/m/04rlf,/m/01h8n0,/t/dd00135,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027322.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027322.wav",
       "labels": "/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027404.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027404.wav",
       "labels": "/m/01h8n0,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027545.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027545.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027581.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027581.wav",
       "labels": "/m/03cl9h,/m/04rlf,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027653.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027653.wav",
       "labels": "/m/04rlf,/m/01h8n0,/m/03qtwd,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027676.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027676.wav",
       "labels": "/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_026897.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_026897.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_026948.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_026948.wav",
       "labels": "/m/04rlf,/m/0912c9,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027015.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027015.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027027.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027027.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027150.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027150.wav",
       "labels": "/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027242.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027242.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027365.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027365.wav",
       "labels": "/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027499.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027499.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027523.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027523.wav",
       "labels": "/m/03p19w,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027607.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027607.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027714.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027714.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027726.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027726.wav",
       "labels": "/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_026999.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_026999.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027035.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027035.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027075.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027075.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027244.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027244.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027529.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027529.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027605.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027605.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027729.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027729.wav",
       "labels": "/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_026952.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_026952.wav",
       "labels": "/m/03kmc9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_027038.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_027038.wav",
       "labels": "/m/01h8n0,/t/dd00135,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_027297.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_027297.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_027349.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_027349.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_027367.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_027367.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027073.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027073.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027086.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027086.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027097.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027097.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027177.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027177.wav",
       "labels": "/t/dd00066,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027403.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027403.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027719.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027719.wav",
       "labels": "/m/02mfyn,/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027821.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027821.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_026902.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_026902.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_027278.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_027278.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/0912c9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_027362.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_027362.wav",
       "labels": "/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_027389.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_027389.wav",
       "labels": "/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_027576.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_027576.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/13_027452.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/13_027452.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/13_027867.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/13_027867.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_026950.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_026950.wav",
       "labels": "/t/dd00066,/m/02mfyn"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027040.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027040.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027048.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027048.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027083.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027083.wav",
       "labels": "/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027108.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027108.wav",
       "labels": "/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027249.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027249.wav",
       "labels": "/m/03kmc9,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027330.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027330.wav",
       "labels": "/m/07qz6j3"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027464.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027464.wav",
       "labels": "/m/01h8n0,/m/03kmc9,/m/0912c9,/m/02mfyn,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027492.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027492.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027698.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027698.wav",
       "labels": "/m/01d380,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027709.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027709.wav",
       "labels": "/m/03kmc9,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_026960.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_026960.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_026990.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_026990.wav",
       "labels": "/m/01d380,/m/01j4z9,/m/03p19w"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027024.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027024.wav",
       "labels": "/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027046.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027046.wav",
       "labels": "/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027059.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027059.wav",
       "labels": "/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027124.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027124.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/03kmc9,/t/dd00135,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027284.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027284.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027415.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027415.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027465.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027465.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027558.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027558.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027584.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027584.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027629.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027629.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027811.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027811.wav",
       "labels": "/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027820.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027820.wav",
       "labels": "/m/03p19w"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027831.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027831.wav",
       "labels": "/m/03kmc9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027835.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027835.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_026901.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_026901.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027472.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027472.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027597.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027597.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027735.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027735.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027786.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027786.wav",
       "labels": "/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027788.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027788.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027789.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027789.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_026944.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_026944.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_026989.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_026989.wav",
       "labels": "/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027152.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027152.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027170.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027170.wav",
       "labels": "/m/01d380,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027178.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027178.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027337.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027337.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027376.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027376.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027725.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027725.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/20_026930.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/20_026930.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/20_027135.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/20_027135.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/20_027307.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/20_027307.wav",
       "labels": "/m/01h8n0,/m/0912c9,/m/01j4z9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/20_027655.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/20_027655.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027316.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027316.wav",
       "labels": "/t/dd00066,/m/02mfyn"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027440.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027440.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027504.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027504.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027684.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027684.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027842.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027842.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/23_026985.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/23_026985.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/23_027161.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/23_027161.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/23_027256.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/23_027256.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/23_027410.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/23_027410.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_026887.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_026887.wav",
       "labels": "/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_026921.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_026921.wav",
       "labels": "/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_026955.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_026955.wav",
       "labels": "/m/07qz6j3,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_026968.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_026968.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027078.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027078.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027171.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027171.wav",
       "labels": "/m/07qz6j3"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027182.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027182.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027292.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027292.wav",
       "labels": "/m/01d380,/m/03p19w,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027385.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027385.wav",
       "labels": "/m/03cl9h,/m/01h8n0,/m/03kmc9,/m/0912c9,/m/0fd3y,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027413.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027413.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027722.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027722.wav",
       "labels": "/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027787.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027787.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_026896.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_026896.wav",
       "labels": "/m/03p19w,/m/0912c9,/t/dd00066,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027079.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027079.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027245.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027245.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027289.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027289.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027461.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027461.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027490.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027490.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027503.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027503.wav",
       "labels": "/m/03kmc9,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027711.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027711.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027775.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027775.wav",
       "labels": "/m/01h8n0,/m/0912c9,/t/dd00066,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027824.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027824.wav",
       "labels": "/m/03kmc9,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027106.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027106.wav",
       "labels": "/t/dd00135,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027483.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027483.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027537.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027537.wav",
       "labels": "/m/03kmc9,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027582.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027582.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027646.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027646.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027848.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027848.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_026907.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_026907.wav",
       "labels": "/m/04rlf,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_026973.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_026973.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/07qz6j3,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_026981.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_026981.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027055.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027055.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027066.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027066.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027110.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027110.wav",
       "labels": "/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027115.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027115.wav",
       "labels": "/m/03cl9h,/m/01h8n0,/t/dd00135,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027116.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027116.wav",
       "labels": "/m/03kmc9,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027261.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027261.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027269.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027269.wav",
       "labels": "/m/03cl9h,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027306.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027306.wav",
       "labels": "/t/dd00066,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027361.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027361.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027423.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027423.wav",
       "labels": "/m/07qz6j3,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027446.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027446.wav",
       "labels": "/t/dd00066,/m/01h8n0,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027447.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027447.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/07qz6j3,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027527.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027527.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027557.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027557.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027766.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027766.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027784.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027784.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027841.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027841.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027859.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027859.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/30_027366.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/30_027366.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/0912c9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027211.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027211.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027312.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027312.wav",
       "labels": "/m/07qz6j3"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027567.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027567.wav",
       "labels": "/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027717.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027717.wav",
       "labels": "/m/07qz6j3,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027882.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027882.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/32_026966.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/32_026966.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/32_027044.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/32_027044.wav",
       "labels": "/m/03cl9h,/m/01h8n0,/m/03qtwd,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027105.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027105.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027118.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027118.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027441.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027441.wav",
       "labels": "/t/dd00135,/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027580.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027580.wav",
       "labels": "/m/03kmc9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027633.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027633.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027636.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027636.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027759.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027759.wav",
       "labels": "/m/01h8n0,/m/03kmc9,/m/0912c9,/m/02mfyn,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027799.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027799.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/35_027199.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/35_027199.wav",
       "labels": "/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/35_027384.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/35_027384.wav",
       "labels": "/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/35_027521.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/35_027521.wav",
       "labels": "/m/03qtwd,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/35_027692.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/35_027692.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027215.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027215.wav",
       "labels": "/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027238.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027238.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027252.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027252.wav",
       "labels": "/m/03cl9h,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027308.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027308.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027416.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027416.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027661.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027661.wav",
       "labels": "/m/03kmc9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027693.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027693.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_026953.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_026953.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027092.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027092.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027286.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027286.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027388.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027388.wav",
       "labels": "/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027395.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027395.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027467.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027467.wav",
       "labels": "/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027516.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027516.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027555.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027555.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027650.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027650.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/39_027468.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/39_027468.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/39_027631.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/39_027631.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027141.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027141.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027314.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027314.wav",
       "labels": "/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027360.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027360.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027512.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027512.wav",
       "labels": "/m/03kmc9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027783.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027783.wav",
       "labels": "/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027017.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027017.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027090.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027090.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027119.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027119.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027160.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027160.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027214.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027214.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027424.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027424.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027494.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027494.wav",
       "labels": "/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027544.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027544.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027645.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027645.wav",
       "labels": "/m/01h8n0,/m/02mfyn,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027659.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027659.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027813.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027813.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_026974.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_026974.wav",
       "labels": "/m/03kmc9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027039.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027039.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027159.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027159.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027325.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027325.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027640.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027640.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027724.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027724.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027771.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027771.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_026909.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_026909.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_026925.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_026925.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_027067.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_027067.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_027318.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_027318.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_027329.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_027329.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_026910.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_026910.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_026988.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_026988.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_026991.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_026991.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027265.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027265.wav",
       "labels": "/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027426.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027426.wav",
       "labels": "/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027429.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027429.wav",
       "labels": "/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027458.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027458.wav",
       "labels": "/m/01h8n0,/m/03kmc9,/t/dd00066,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027721.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027721.wav",
       "labels": "/m/0912c9,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027782.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027782.wav",
       "labels": "/m/01h8n0,/t/dd00135,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027833.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027833.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_026914.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_026914.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_026927.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_026927.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_026932.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_026932.wav",
       "labels": "/m/03qtwd,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_026941.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_026941.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027187.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027187.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/0912c9,/m/02mfyn,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027258.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027258.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027266.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027266.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027279.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027279.wav",
       "labels": "/m/07qz6j3,/m/04rlf,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027290.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027290.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027408.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027408.wav",
       "labels": "/m/01h8n0,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027534.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027534.wav",
       "labels": "/m/07qz6j3,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027690.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027690.wav",
       "labels": "/m/04rlf,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027701.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027701.wav",
       "labels": "/m/03kmc9,/t/dd00066,/m/0912c9,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027847.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027847.wav",
       "labels": "/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_026917.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_026917.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_026920.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_026920.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_027282.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_027282.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_027291.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_027291.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_027488.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_027488.wav",
       "labels": "/m/03kmc9,/m/03p19w,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_027518.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_027518.wav",
       "labels": "/m/03kmc9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/52_027217.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/52_027217.wav",
       "labels": "/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/52_027479.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/52_027479.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/52_027652.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/52_027652.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/52_027829.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/52_027829.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027162.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027162.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027189.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027189.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027519.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027519.wav",
       "labels": "/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027624.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027624.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027699.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027699.wav",
       "labels": "/t/dd00135,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027800.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027800.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027870.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027870.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/54_027254.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/54_027254.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/03kmc9,/m/0fd3y,/m/07qz6j3"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027123.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027123.wav",
       "labels": "/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027234.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027234.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027272.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027272.wav",
       "labels": "/m/03kmc9,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027480.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027480.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027559.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027559.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027618.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027618.wav",
       "labels": "/m/03kmc9,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027733.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027733.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027764.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027764.wav",
       "labels": "/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027773.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027773.wav",
       "labels": "/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027779.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027779.wav",
       "labels": "/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027809.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027809.wav",
       "labels": "/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027843.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027843.wav",
       "labels": "/m/07qz6j3,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027165.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027165.wav",
       "labels": "/m/0912c9,/t/dd00067,/m/02mfyn"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027260.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027260.wav",
       "labels": "/t/dd00135,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027443.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027443.wav",
       "labels": "/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027606.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027606.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027758.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027758.wav",
       "labels": "/m/03kmc9,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/61_027412.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/61_027412.wav",
       "labels": "/m/01d380,/m/01j4z9,/m/03p19w,/t/dd00067"
     }
   ]

@@ -13,31 +13,32 @@ set -x
 source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
 export TORCH_HOME=../../pretrained_models
 
-lr=5e-7
-freqm=0
-timem=10
-mixup=0.5
-batch_size=48
+lr=1e-6
+freqm=48
+timem=120
+mixup=0.3
+batch_size=32
 model=whisper-high-lw_tr_1_8 #whisper-high-lw_tr_1_8 (tl-tr, lr=5e-5) whisper-high-lw_down_tr_512_1_8 (tl-tr-512, w/ low-dim proj, lr=1e-4)
 model_size=large-v1
 
 dataset=sonyc
 bal=none
-epoch=50
+epoch=30
+weight_decay=1e-4
 lrscheduler_start=15
-lrscheduler_decay=0.75
+lrscheduler_decay=0.8
 lrscheduler_step=5
 wa=True
-wa_start=26
-wa_end=50
-lr_adapt=True
-tr_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_train.json
-val_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_val.json
-te_data=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/sonyc_test.json
-label_csv=/home/taemyung_heo/workspace/github/whisper-at/data/processed_data/class_labels_indices_extended.csv
+wa_start=15
+wa_end=30
+lr_adapt=False
+tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/sonyc_train.json
+te_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_val.json
+label_csv=/mnt/ssd_disk/github/whisper-at/data/processed_data/class_labels_indices_extended.csv
+n_class=533
 label_smooth=0.1
 
-pretrained_model=/home/taemyung_heo/workspace/github/whisper-at/pretrained_models/large-v1_ori.pth
+pretrained_model=/mnt/ssd_disk/github/whisper-at/pretrained_models/large-v1_ori.pth
 
 # Get current timestamp in YYMMDDHHMM format
 timestamp=$(date +%y%m%d%H%M)
@@ -49,11 +50,10 @@ python -W ignore ./run.py \
   --model ${model} \
   --dataset ${dataset} \
   --data-train ${tr_data} \
-  --data-val ${val_data} \
-  --data-eval ${te_data} \
+  --data-val ${te_data} \
   --exp-dir $exp_dir \
   --label-csv ${label_csv} \
-  --n_class 533 \
+  --n_class ${n_class} \
   --lr $lr \
   --n-epochs ${epoch} \
   --batch-size ${batch_size} \
@@ -76,4 +76,5 @@ python -W ignore ./run.py \
   --lr_adapt ${lr_adapt} \
   --num-workers 8 \
   --pretrained_model ${pretrained_model} \
+  --weight_decay ${weight_decay}
   #--freeze_original_classes

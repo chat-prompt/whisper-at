@@ -14,8 +14,103 @@ import time
 import torch
 from torch import nn
 import numpy as np
+import pandas as pd
+import json
 import pickle
 from torch.cuda.amp import autocast,GradScaler
+
+def load_mid_to_index_map(label_csv_path):
+    """class_labels_indices_extended.csv에서 MID -> 정수 인덱스 맵을 로드합니다."""
+    try:
+        df = pd.read_csv(label_csv_path)
+        if 'mid' not in df.columns or 'index' not in df.columns:
+            # 헤더가 없는 경우 시도 (index, mid, display_name 순서 가정)
+            df = pd.read_csv(label_csv_path, header=None, names=['index', 'mid', 'display_name'])
+            if not (isinstance(df['mid'].iloc[0], str) and df['mid'].iloc[0].startswith(('/m/', '/t/'))):
+                 raise ValueError("Label CSV must contain 'mid' and 'index' columns.")
+        mid_to_idx = pd.Series(df['index'].values, index=df['mid']).to_dict()
+        return mid_to_idx
+    except Exception as e:
+        print(f"Error loading MID-to-index map from {label_csv_path}: {e}")
+        raise
+
+def calculate_pos_weights(data_json_path, label_csv_path, num_classes, sonyc_class_indices=None, sonyc_boost_factor=1.0, clip_min=None, clip_max=None):
+    """
+    학습 데이터셋의 클래스 빈도를 기반으로 pos_weight를 계산합니다.
+    Args:
+        data_json_path (str): 학습 데이터 JSON 파일 경로 (예: combined_train.json).
+                               'labels' 필드는 쉼표로 구분된 MID 문자열을 포함해야 함.
+        label_csv_path (str): MID를 정수 인덱스로 매핑하는 CSV 파일 경로.
+        num_classes (int): 전체 클래스 수 (예: 533).
+        sonyc_class_indices (list, optional): 추가 가중치를 부여할 SONYC 클래스 인덱스 리스트.
+                                            예: list(range(527, 533))
+        sonyc_boost_factor (float, optional): SONYC 클래스에 적용할 추가 가중치 배율.
+    Returns:
+        torch.Tensor: 각 클래스에 대한 pos_weight 텐서.
+    """
+    print(f"Calculating pos_weights from {data_json_path} with {num_classes} classes.")
+    mid_to_idx = load_mid_to_index_map(label_csv_path)
+
+    class_counts = np.zeros(num_classes, dtype=np.float32)
+    total_valid_samples = 0 # 유효한 레이블을 가진 샘플 수
+
+    with open(data_json_path, 'r') as f:
+        dataset = json.load(f)
+
+    for entry in dataset.get('data', []):
+        labels_str = entry.get('labels', "")
+        if not labels_str:
+            continue
+
+        has_valid_label_in_entry = False
+        mids = [m.strip() for m in labels_str.split(',') if m.strip()]
+        for mid in mids:
+            if mid in mid_to_idx:
+                class_idx = mid_to_idx[mid]
+                if 0 <= class_idx < num_classes:
+                    class_counts[class_idx] += 1
+                    has_valid_label_in_entry = True
+        if has_valid_label_in_entry:
+            total_valid_samples +=1
+
+    if total_valid_samples == 0:
+        print("Warning: No valid samples found to calculate pos_weights. Returning default weights (all 1s).")
+        return torch.ones(num_classes)
+
+    # pos_weight 계산: (Negative 샘플 수) / (Positive 샘플 수)
+    # 또는 (전체 샘플 수 - Positive 샘플 수) / Positive 샘플 수
+    # 분모가 0이 되는 것을 방지하기 위해 작은 값(epsilon)을 더하거나, 최소 카운트를 설정할 수 있음.
+    epsilon = 1e-6 # 0으로 나누는 것을 방지
+    pos_weights = np.zeros(num_classes, dtype=np.float32)
+    for i in range(num_classes):
+        # 각 샘플은 여러 레이블을 가질 수 있으므로, total_valid_samples를 N으로 사용
+        # class_counts[i]는 해당 클래스가 positive로 나타난 샘플 수
+        # (total_valid_samples - class_counts[i])는 해당 클래스가 negative로 나타난 샘플 수 (근사치)
+        if class_counts[i] > 0:
+            pos_weights[i] = (total_valid_samples - class_counts[i]) / (class_counts[i] + epsilon)
+        else:
+            # 이 클래스가 학습 데이터에 전혀 등장하지 않은 경우, 가중치를 어떻게 설정할지 결정 필요.
+            # 매우 큰 값을 주거나, 1로 설정하거나, 또는 학습에서 제외하는 방법도 있음.
+            # 여기서는 일단 매우 큰 값 (모든 샘플이 negative라고 가정)
+            pos_weights[i] = total_valid_samples / epsilon # 또는 적절한 큰 값 (예: 1000)
+
+    # SONYC 클래스에 추가 가중치 적용
+    if sonyc_class_indices and sonyc_boost_factor > 1.0:
+        print(f"Boosting SONYC classes {sonyc_class_indices} by factor {sonyc_boost_factor}")
+        for idx in sonyc_class_indices:
+            if 0 <= idx < num_classes:
+                pos_weights[idx] *= sonyc_boost_factor
+
+    # 가중치가 너무 커지거나 작아지는 것을 방지하기 위해 클리핑 가능
+    if clip_min is not None and clip_max is not None:
+        pos_weights = np.clip(pos_weights, clip_min, clip_max)
+
+    print(f"Calculated class counts (first 10): {class_counts[:10]}")
+    print(f"Calculated pos_weights (first 10): {pos_weights[:10]}")
+    if sonyc_class_indices:
+         print(f"Calculated pos_weights for SONYC classes ({sonyc_class_indices}): {pos_weights[sonyc_class_indices[0]:sonyc_class_indices[-1]+1]}")
+
+    return torch.from_numpy(pos_weights)
 
 
 class SonyNewClassBCELoss(nn.Module):
@@ -79,14 +174,28 @@ def train(audio_model, train_loader, test_loader, args):
         print('The learning rate scheduler starts at {:d} epoch with decay rate of {:.3f} every {:d} epoches'.format(args.lrscheduler_start, args.lrscheduler_decay, args.lrscheduler_step))
     main_metrics = args.metrics
     if args.loss == 'BCE':
-        # if hasattr(args, 'n_class') and args.n_class > 527:
-        #     # SONYC 클래스에 더 높은 가중치 부여
-        #     pos_weight = torch.ones(args.n_class, device=device)
-        #     pos_weight[527:args.n_class] = 3.0  # SONYC 클래스 가중치 증가
-        #     loss_fn = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
-        # else:
-        #     loss_fn = nn.BCEWithLogitsLoss()
         loss_fn = nn.BCEWithLogitsLoss()
+    elif args.loss == 'BCE_WEIGHTED':
+# SONYC 클래스 인덱스 (0-based): 527부터 532까지
+        sonyc_indices = list(range(527, 533)) 
+        # SONYC 클래스에 부여할 추가 가중치 배율 (예: 2.0, 3.0 등 실험 필요)
+        sonyc_boost = 1.0 # 이 값을 셸 스크립트에서 인자로 받는 것도 좋음
+
+        try:
+            calculated_pos_weights = calculate_pos_weights(
+                args.data_train, 
+                args.label_csv, 
+                args.n_class,
+                sonyc_class_indices=sonyc_indices,
+                sonyc_boost_factor=sonyc_boost,
+                clip_min=0.1,
+                clip_max=50.0
+            ).to(device)
+            print("Using calculated pos_weights for BCEWithLogitsLoss.")
+            loss_fn = nn.BCEWithLogitsLoss(pos_weight=calculated_pos_weights)
+        except Exception as e:
+            print(f"Error calculating pos_weights: {e}. Using standard BCEWithLogitsLoss without pos_weight.")
+            loss_fn = nn.BCEWithLogitsLoss()
     elif args.loss == 'CE':
         loss_fn = nn.CrossEntropyLoss()
     elif args.loss == 'SONY_BCE':
@@ -270,20 +379,5 @@ def validate(audio_model, val_loader, args):
             print(f"All classes mAP: {all_mAP:.6f}")
             print(f"Original AudioSet classes mAP: {original_mAP:.6f}")
             print(f"SONYC classes mAP: {sonyc_mAP:.6f}")
-            
-            # SONYC 클래스별 성능 저장
-            sonyc_stats = {}
-            for i in range(527, args.n_class):
-                sonyc_stats[i] = {
-                    'AP': stats[i]['AP']
-                }
-                print(f"Class {i} (SONYC): AP = {stats[i]['AP']:.6f}")
-            
-            # 각 stats dict에 SONYC 통계 추가
-            for stat in stats:
-                stat['sonyc_stats'] = sonyc_stats
-                stat['sonyc_mAP'] = sonyc_mAP
-                stat['all_mAP'] = all_mAP
-                stat['original_mAP'] = original_mAP
-            
-            return stats, loss
+
+        return stats, loss

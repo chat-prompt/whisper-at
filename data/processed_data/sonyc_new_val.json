@@ -1,3383 +1,3383 @@
 {
   "data": [
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000066.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000066.wav",
       "labels": "/m/01h8n0,/m/sonyc_small-medium-rotating-saw,/m/04rlf,/m/03kmc9,/t/dd00135,/m/07qz6j3,/m/sonyc_non-machinery-impact,/m/sonyc_amplified-speech,/m/03p19w,/m/01d380,/m/0912c9,/m/02mfyn,/m/02rhddq,/m/03cl9h,/m/03qtwd,/m/sonyc_hoe-ram,/m/sonyc_pile-driver,/m/sonyc_large-rotating-saw,/m/01j4z9,/t/dd00066,/t/dd00067,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000179.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000179.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000275.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000275.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03qtwd,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000357.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000357.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000564.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000564.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000612.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000612.wav",
       "labels": "/m/01h8n0,/m/0912c9,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000643.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000643.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000765.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000765.wav",
       "labels": "/m/07qz6j3,/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000924.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000924.wav",
       "labels": "/m/01h8n0,/m/0912c9,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_000925.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_000925.wav",
       "labels": "/m/01d380,/m/sonyc_non-machinery-impact,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_001414.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_001414.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_001756.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_001756.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_002154.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_002154.wav",
       "labels": "/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_002185.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_002185.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_002451.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_002451.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_002472.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_002472.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_002749.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_002749.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw,/m/01j4z9,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_002775.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_002775.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_002851.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_002851.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_003407.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_003407.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_004139.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_004139.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_004186.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_004186.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/t/dd00067,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_004369.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_004369.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_004392.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_004392.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_004397.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_004397.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_004869.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_004869.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_005214.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_005214.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_005368.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_005368.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_005372.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_005372.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_005413.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_005413.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_005615.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_005615.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_005654.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_005654.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_005694.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_005694.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_006044.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_006044.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_006160.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_006160.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_006449.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_006449.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_006677.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_006677.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_006738.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_006738.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_006789.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_006789.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_007156.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_007156.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_007713.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_007713.wav",
       "labels": "/m/07qz6j3,/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_008072.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_008072.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw,/t/dd00066,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_008093.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_008093.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_008212.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_008212.wav",
       "labels": "/t/dd00066,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_008588.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_008588.wav",
       "labels": "/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_008925.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_008925.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_009066.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_009066.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_010147.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_010147.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00135,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_010233.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_010233.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_010285.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_010285.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_010426.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_010426.wav",
       "labels": "/m/01h8n0,/m/sonyc_small-medium-rotating-saw,/m/04rlf,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_010496.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_010496.wav",
       "labels": "/m/01d380,/m/03p19w,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_010854.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_010854.wav",
       "labels": "/m/sonyc_large-rotating-saw,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_010859.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_010859.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_011039.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_011039.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_011397.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_011397.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_011508.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_011508.wav",
       "labels": "/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_011844.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_011844.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_012372.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_012372.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_012406.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_012406.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_012435.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_012435.wav",
       "labels": "/m/0912c9,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_012716.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_012716.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_013013.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_013013.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/m/03p19w"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_013336.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_013336.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_013457.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_013457.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_013629.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_013629.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_017337.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_017337.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_017509.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_017509.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_017735.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_017735.wav",
       "labels": "/m/0912c9,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_017887.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_017887.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_017978.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_017978.wav",
       "labels": "/m/sonyc_pile-driver,/m/sonyc_hoe-ram,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_017996.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_017996.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_018195.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_018195.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_018477.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_018477.wav",
       "labels": "/m/0912c9,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_018783.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_018783.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_019083.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_019083.wav",
       "labels": "/m/01h8n0,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_019123.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_019123.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_019613.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_019613.wav",
       "labels": "/m/01d380,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_019656.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_019656.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_019834.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_019834.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_019872.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_019872.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_019949.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_019949.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_020007.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_020007.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_020015.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_020015.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_020254.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_020254.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_020348.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_020348.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_020355.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_020355.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_020888.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_020888.wav",
       "labels": "/t/dd00067,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_000119.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_000119.wav",
       "labels": "/m/03p19w,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_000377.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_000377.wav",
       "labels": "/m/01h8n0,/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_000503.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_000503.wav",
       "labels": "/m/03p19w,/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_000629.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_000629.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_001005.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_001005.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/0912c9,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_001127.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_001127.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_001405.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_001405.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_001573.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_001573.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_001582.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_001582.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_001616.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_001616.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_001711.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_001711.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_001804.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_001804.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_001815.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_001815.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_002074.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_002074.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_002326.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_002326.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_002809.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_002809.wav",
       "labels": "/m/0912c9,/m/02mfyn,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_003011.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_003011.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_003045.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_003045.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_003056.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_003056.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03p19w,/m/01h8n0,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_003113.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_003113.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_003135.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_003135.wav",
       "labels": "/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_003261.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_003261.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_003404.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_003404.wav",
       "labels": "/m/01d380,/m/01j4z9,/t/dd00067,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_003566.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_003566.wav",
       "labels": "/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_003954.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_003954.wav",
       "labels": "/m/sonyc_amplified-speech,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_004107.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_004107.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_004304.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_004304.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_004346.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_004346.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_004660.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_004660.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/04rlf,/m/0fd3y,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_005316.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_005316.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_005416.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_005416.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_005441.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_005441.wav",
       "labels": "/m/03kmc9,/m/0912c9,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_005678.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_005678.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_006053.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_006053.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_006231.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_006231.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_006301.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_006301.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_006308.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_006308.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_006435.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_006435.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_006526.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_006526.wav",
       "labels": "/m/01h8n0,/m/sonyc_pile-driver,/m/sonyc_hoe-ram,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_006839.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_006839.wav",
       "labels": "/m/sonyc_large-rotating-saw,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_006936.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_006936.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00135,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_007049.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_007049.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_007140.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_007140.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_007160.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_007160.wav",
       "labels": "/m/03kmc9,/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_007401.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_007401.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_007477.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_007477.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_007983.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_007983.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_008050.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_008050.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_008355.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_008355.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_008381.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_008381.wav",
       "labels": "/m/03qtwd,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_008430.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_008430.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_009069.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_009069.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_009214.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_009214.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_009353.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_009353.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_009730.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_009730.wav",
       "labels": "/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_009751.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_009751.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_009780.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_009780.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_010196.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_010196.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9,/t/dd00067,/m/02mfyn"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_010244.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_010244.wav",
       "labels": "/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_010252.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_010252.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_010284.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_010284.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_010336.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_010336.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_010924.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_010924.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_011020.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_011020.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_011267.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_011267.wav",
       "labels": "/m/01h8n0,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_011296.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_011296.wav",
       "labels": "/m/01d380,/m/01j4z9,/t/dd00067,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_011475.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_011475.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_011533.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_011533.wav",
       "labels": "/m/03p19w,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_011635.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_011635.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_011835.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_011835.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012043.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012043.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012079.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012079.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012141.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012141.wav",
       "labels": "/m/sonyc_amplified-speech"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012280.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012280.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012361.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012361.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012362.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012362.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012384.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012384.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012664.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012664.wav",
       "labels": "/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012879.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012879.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_012907.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_012907.wav",
       "labels": "/m/0912c9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_016391.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_016391.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_016473.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_016473.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_016792.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_016792.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_016941.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_016941.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_017131.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_017131.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_017768.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_017768.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/0912c9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_017781.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_017781.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_018143.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_018143.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_018883.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_018883.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019227.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019227.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019449.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019449.wav",
       "labels": "/m/01d380,/t/dd00067,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019481.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019481.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019496.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019496.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019546.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019546.wav",
       "labels": "/m/01h8n0,/m/02mfyn,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019606.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019606.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019624.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019624.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019729.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019729.wav",
       "labels": "/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019811.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019811.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019894.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019894.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/03kmc9,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_019991.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_019991.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_020173.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_020173.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_020190.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_020190.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00135,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_020366.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_020366.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_020545.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_020545.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_020593.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_020593.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000046.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000046.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000128.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000128.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000182.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000182.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/0912c9,/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000212.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000212.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000417.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000417.wav",
       "labels": "/m/01h8n0,/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000483.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000483.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000570.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000570.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000645.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000645.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000859.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000859.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000882.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000882.wav",
       "labels": "/m/03cl9h,/m/01d380,/m/sonyc_pile-driver,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000892.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000892.wav",
       "labels": "/m/01d380,/m/03p19w,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_000910.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_000910.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_001103.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_001103.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_001123.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_001123.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_001187.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_001187.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_001416.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_001416.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_001446.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_001446.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_001480.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_001480.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00135,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_001508.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_001508.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_001646.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_001646.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_001691.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_001691.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_002011.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_002011.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/sonyc_hoe-ram,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_002068.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_002068.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_002110.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_002110.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03p19w,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_002375.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_002375.wav",
       "labels": "/m/03p19w,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_002698.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_002698.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_003185.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_003185.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_003239.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_003239.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/07qz6j3,/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_003466.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_003466.wav",
       "labels": "/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_003508.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_003508.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_003546.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_003546.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_003628.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_003628.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_003953.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_003953.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_004119.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_004119.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_004169.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_004169.wav",
       "labels": "/m/01h8n0,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_004438.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_004438.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03qtwd,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_004469.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_004469.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/02rhddq,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_005132.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_005132.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_005395.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_005395.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_005513.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_005513.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/m/02rhddq,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_005608.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_005608.wav",
       "labels": "/m/01h8n0,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_005747.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_005747.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_005751.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_005751.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_005831.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_005831.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_005997.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_005997.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_006166.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_006166.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_006240.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_006240.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_006241.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_006241.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_006408.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_006408.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_006438.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_006438.wav",
       "labels": "/m/01j4z9,/m/02rhddq,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_006450.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_006450.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_006608.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_006608.wav",
       "labels": "/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_006697.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_006697.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_007029.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_007029.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_007245.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_007245.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/03qtwd,/m/01d380,/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_007440.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_007440.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_007482.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_007482.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_007586.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_007586.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_007626.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_007626.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_007633.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_007633.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_007646.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_007646.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_008236.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_008236.wav",
       "labels": "/m/01j4z9,/m/02rhddq,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_008786.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_008786.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_008883.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_008883.wav",
       "labels": "/m/01d380,/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_008936.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_008936.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009074.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009074.wav",
       "labels": "/m/01h8n0,/m/02rhddq,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009088.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009088.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/03kmc9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009125.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009125.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009172.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009172.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009300.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009300.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009315.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009315.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009402.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009402.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009539.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009539.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009619.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009619.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009692.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009692.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_009717.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_009717.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010022.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010022.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03p19w,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010023.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010023.wav",
       "labels": "/m/07qz6j3,/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010161.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010161.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010184.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010184.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010237.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010237.wav",
       "labels": "/t/dd00067,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010342.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010342.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010433.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010433.wav",
       "labels": "/m/03p19w,/m/01h8n0,/m/01d380,/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010448.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010448.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010540.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010540.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010552.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010552.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010769.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010769.wav",
       "labels": "/m/03qtwd,/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010828.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010828.wav",
       "labels": "/m/01h8n0,/m/04rlf,/m/sonyc_large-rotating-saw,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010831.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010831.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010839.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010839.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010883.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010883.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010901.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010901.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_010954.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_010954.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011006.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011006.wav",
       "labels": "/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011148.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011148.wav",
       "labels": "/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011288.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011288.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011372.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011372.wav",
       "labels": "/m/01j4z9,/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011376.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011376.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011436.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011436.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/03qtwd,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011634.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011634.wav",
       "labels": "/m/03p19w,/m/01h8n0,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011653.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011653.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011664.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011664.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011813.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011813.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011862.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011862.wav",
       "labels": "/t/dd00066,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011889.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011889.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_011962.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_011962.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_012311.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_012311.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_012327.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_012327.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_012347.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_012347.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_012747.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_012747.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_012827.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_012827.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_012938.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_012938.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_013040.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_013040.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_013055.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_013055.wav",
       "labels": "/m/01j4z9,/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_013109.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_013109.wav",
       "labels": "/m/01d380,/t/dd00066,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_013159.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_013159.wav",
       "labels": "/m/01d380,/t/dd00067,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_013329.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_013329.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_013376.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_013376.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_013647.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_013647.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_013663.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_013663.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/m/02mfyn"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_016408.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_016408.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_016655.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_016655.wav",
       "labels": "/m/01h8n0,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017052.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017052.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01h8n0,/t/dd00135,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017138.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017138.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017205.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017205.wav",
       "labels": "/m/03p19w,/m/01h8n0,/m/07qz6j3,/m/sonyc_non-machinery-impact,/m/01j4z9,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017316.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017316.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017350.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017350.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017533.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017533.wav",
       "labels": "/m/sonyc_amplified-speech,/m/03qtwd,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017633.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017633.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017662.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017662.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017924.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017924.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_017951.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_017951.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/sonyc_pile-driver,/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018010.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018010.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018058.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018058.wav",
       "labels": "/m/01d380,/m/01j4z9,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018231.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018231.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018278.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018278.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018300.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018300.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018411.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018411.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018440.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018440.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018488.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018488.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018579.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018579.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018654.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018654.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018778.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018778.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018831.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018831.wav",
       "labels": "/m/03cl9h,/m/07qz6j3,/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018900.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018900.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_018907.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_018907.wav",
       "labels": "/m/01h8n0,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019002.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019002.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019048.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019048.wav",
       "labels": "/m/02rhddq,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019423.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019423.wav",
       "labels": "/m/03p19w,/t/dd00067,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019594.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019594.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019653.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019653.wav",
       "labels": "/m/01d380,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019675.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019675.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019781.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019781.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019823.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019823.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019898.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019898.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019909.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019909.wav",
       "labels": "/m/01d380,/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019934.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019934.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_019977.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_019977.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020066.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020066.wav",
       "labels": "/m/01j4z9,/t/dd00066,/m/01h8n0,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020110.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020110.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020112.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020112.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020169.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020169.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020211.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020211.wav",
       "labels": "/t/dd00066,/m/0fd3y,/m/0912c9,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020276.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020276.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020316.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020316.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020337.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020337.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020354.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020354.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020374.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020374.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020400.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020400.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020469.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020469.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067,/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020617.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020617.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020785.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020785.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_020830.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_020830.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_000547.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_000547.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_000744.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_000744.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_000858.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_000858.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_001530.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_001530.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_001881.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_001881.wav",
       "labels": "/m/01h8n0,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_002495.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_002495.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_002653.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_002653.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_003115.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_003115.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_003660.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_003660.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_005222.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_005222.wav",
       "labels": "/m/04rlf,/t/dd00135,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_005618.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_005618.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_005874.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_005874.wav",
       "labels": "/m/07qz6j3,/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_006302.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_006302.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_007696.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_007696.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_008495.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_008495.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/0912c9,/t/dd00067,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_008709.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_008709.wav",
       "labels": "/m/04rlf,/m/0fd3y,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_008834.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_008834.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_009113.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_009113.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/03qtwd,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_010416.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_010416.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_010479.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_010479.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/0fd3y,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_010730.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_010730.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_010978.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_010978.wav",
       "labels": "/m/03p19w,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_011149.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_011149.wav",
       "labels": "/t/dd00067,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_011566.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_011566.wav",
       "labels": "/m/sonyc_amplified-speech,/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_011667.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_011667.wav",
       "labels": "/m/01h8n0,/t/dd00067,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_011926.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_011926.wav",
       "labels": "/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_011950.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_011950.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_012468.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_012468.wav",
       "labels": "/m/01d380,/m/03p19w,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_013085.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_013085.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/t/dd00066,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_013093.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_013093.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_013234.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_013234.wav",
       "labels": "/m/04rlf,/t/dd00066,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_013400.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_013400.wav",
       "labels": "/m/01h8n0,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_016585.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_016585.wav",
       "labels": "/m/sonyc_amplified-speech,/m/0912c9,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_016675.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_016675.wav",
       "labels": "/m/sonyc_amplified-speech,/m/07qz6j3,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_016786.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_016786.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_016936.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_016936.wav",
       "labels": "/m/0912c9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_016978.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_016978.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_017063.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_017063.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_017233.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_017233.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_017259.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_017259.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_017379.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_017379.wav",
       "labels": "/m/0912c9,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_017473.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_017473.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_017665.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_017665.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_017748.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_017748.wav",
       "labels": "/m/01h8n0,/m/0fd3y,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_017939.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_017939.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_017960.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_017960.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_018154.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_018154.wav",
       "labels": "/m/03p19w,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_018826.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_018826.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_018849.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_018849.wav",
       "labels": "/m/04rlf,/m/0fd3y,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_018850.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_018850.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/m/03p19w,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_018853.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_018853.wav",
       "labels": "/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_018884.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_018884.wav",
       "labels": "/m/07qz6j3,/m/sonyc_non-machinery-impact,/m/04rlf"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_019561.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_019561.wav",
       "labels": "/m/0912c9,/t/dd00067,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_019645.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_019645.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_019752.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_019752.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_020189.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_020189.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_020197.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_020197.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_020377.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_020377.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_020494.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_020494.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_020502.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_020502.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_020585.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_020585.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_020706.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_020706.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_020871.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_020871.wav",
       "labels": "/m/03p19w,/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_000413.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_000413.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_000535.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_000535.wav",
       "labels": "/m/01h8n0,/m/07qz6j3,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_000650.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_000650.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_000742.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_000742.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_000849.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_000849.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_000876.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_000876.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_000895.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_000895.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_001221.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_001221.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/sonyc_hoe-ram,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_001394.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_001394.wav",
       "labels": "/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_001522.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_001522.wav",
       "labels": "/t/dd00067,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_001631.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_001631.wav",
       "labels": "/t/dd00067,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_002063.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_002063.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_002403.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_002403.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_002549.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_002549.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_003042.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_003042.wav",
       "labels": "/m/03p19w,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_003103.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_003103.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_003224.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_003224.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_004090.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_004090.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_004975.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_004975.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_005593.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_005593.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_005736.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_005736.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_005945.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_005945.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_006004.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_006004.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_006137.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_006137.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00135,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_006250.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_006250.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_006322.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_006322.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_006496.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_006496.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/0912c9,/m/07qz6j3,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_006848.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_006848.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_006863.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_006863.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9,/m/01h8n0,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_006888.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_006888.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_006957.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_006957.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_007154.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_007154.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_007176.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_007176.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_007397.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_007397.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_007452.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_007452.wav",
       "labels": "/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_007843.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_007843.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_007846.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_007846.wav",
       "labels": "/m/03p19w,/m/01h8n0,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_007960.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_007960.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_008076.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_008076.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_008120.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_008120.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_008354.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_008354.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_008534.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_008534.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_008713.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_008713.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009397.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009397.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009423.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009423.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03qtwd,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009507.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009507.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009508.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009508.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009510.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009510.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009630.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009630.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009778.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009778.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009829.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009829.wav",
       "labels": "/m/07qz6j3,/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009834.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009834.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009863.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009863.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_009933.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_009933.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_010001.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_010001.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_010084.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_010084.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_010465.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_010465.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_010640.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_010640.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_010700.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_010700.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_010813.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_010813.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_010967.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_010967.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_011104.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_011104.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_011177.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_011177.wav",
       "labels": "/m/02rhddq,/m/0912c9,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_011470.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_011470.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_011513.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_011513.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_011562.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_011562.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_011568.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_011568.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_011725.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_011725.wav",
       "labels": "/m/sonyc_large-rotating-saw,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_011914.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_011914.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_011935.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_011935.wav",
       "labels": "/m/03p19w,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_012071.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_012071.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_012089.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_012089.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00135,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_012590.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_012590.wav",
       "labels": "/m/sonyc_amplified-speech,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_012743.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_012743.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_013228.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_013228.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_013379.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_013379.wav",
       "labels": "/m/01h8n0,/m/02rhddq,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_013425.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_013425.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_013511.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_013511.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016380.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016380.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016445.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016445.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016492.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016492.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016495.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016495.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016496.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016496.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016514.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016514.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016531.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016531.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016557.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016557.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03qtwd,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016582.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016582.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016652.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016652.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016664.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016664.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016746.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016746.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_016828.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_016828.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017014.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017014.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017066.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017066.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017139.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017139.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017324.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017324.wav",
       "labels": "/t/dd00066,/m/01h8n0,/m/0fd3y,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017477.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017477.wav",
       "labels": "/m/03qtwd,/t/dd00066,/t/dd00135,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017537.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017537.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017657.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017657.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017739.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017739.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017744.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017744.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017793.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017793.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_017870.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_017870.wav",
       "labels": "/m/sonyc_amplified-speech,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018062.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018062.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018092.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018092.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018136.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018136.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018147.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018147.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018164.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018164.wav",
       "labels": "/m/01h8n0,/m/03kmc9,/t/dd00135,/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018190.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018190.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018204.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018204.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018224.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018224.wav",
       "labels": "/m/01j4z9,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018339.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018339.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018351.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018351.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018377.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018377.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018394.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018394.wav",
       "labels": "/t/dd00066,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018471.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018471.wav",
       "labels": "/t/dd00066,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018617.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018617.wav",
       "labels": "/m/sonyc_amplified-speech,/t/dd00135,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018618.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018618.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018629.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018629.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018688.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018688.wav",
       "labels": "/m/01h8n0,/m/0912c9,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018742.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018742.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018761.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018761.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018771.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018771.wav",
       "labels": "/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018857.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018857.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018899.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018899.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018936.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018936.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018945.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018945.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018987.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018987.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/04rlf,/t/dd00135,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_018991.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_018991.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019028.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019028.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019082.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019082.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019091.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019091.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00135,/m/0fd3y,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019185.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019185.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/02rhddq,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019208.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019208.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019260.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019260.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019284.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019284.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019334.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019334.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019338.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019338.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019493.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019493.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019533.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019533.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01d380,/t/dd00135,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019539.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019539.wav",
       "labels": "/m/03p19w,/m/01h8n0,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019555.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019555.wav",
       "labels": "/m/sonyc_amplified-speech,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019564.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019564.wav",
       "labels": "/m/sonyc_amplified-speech,/t/dd00135,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019572.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019572.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019601.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019601.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019609.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019609.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019617.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019617.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019618.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019618.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019634.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019634.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019644.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019644.wav",
       "labels": "/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019751.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019751.wav",
       "labels": "/m/07qz6j3,/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019762.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019762.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019839.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019839.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019895.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019895.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019943.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019943.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019952.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019952.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_019997.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_019997.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020018.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020018.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020021.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020021.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020037.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020037.wav",
       "labels": "/m/sonyc_pile-driver,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020083.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020083.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/02mfyn"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020089.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020089.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020445.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020445.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020552.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020552.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020624.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020624.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020702.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020702.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020814.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020814.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03p19w,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_020881.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_020881.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_000293.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_000293.wav",
       "labels": "/m/01d380,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_000382.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_000382.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_000571.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_000571.wav",
       "labels": "/m/01d380,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_001016.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_001016.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_001232.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_001232.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_001459.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_001459.wav",
       "labels": "/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_001751.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_001751.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_001771.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_001771.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_001866.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_001866.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_001912.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_001912.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_002307.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_002307.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_002601.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_002601.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_002802.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_002802.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_003114.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_003114.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_003271.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_003271.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_003380.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_003380.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_003448.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_003448.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_003468.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_003468.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_004114.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_004114.wav",
       "labels": "/m/01d380,/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_004498.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_004498.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_004632.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_004632.wav",
       "labels": "/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_004966.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_004966.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_005074.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_005074.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_005389.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_005389.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_005589.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_005589.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_006067.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_006067.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_006364.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_006364.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_006721.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_006721.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_007031.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_007031.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/03p19w,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_007208.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_007208.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_007219.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_007219.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_007233.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_007233.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_007468.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_007468.wav",
       "labels": "/m/03p19w,/m/01d380,/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_007853.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_007853.wav",
       "labels": "/m/01j4z9,/m/03p19w,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_007867.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_007867.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_008122.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_008122.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_009426.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_009426.wav",
       "labels": "/m/07qz6j3,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_009673.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_009673.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_010037.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_010037.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_010238.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_010238.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_010475.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_010475.wav",
       "labels": "/m/01d380,/m/01h8n0,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_010684.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_010684.wav",
       "labels": "/m/01d380,/t/dd00066,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_010975.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_010975.wav",
       "labels": "/m/01d380,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_011190.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_011190.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_011574.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_011574.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_011869.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_011869.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_011894.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_011894.wav",
       "labels": "/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_012274.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_012274.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_012455.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_012455.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_012874.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_012874.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_013059.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_013059.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_013191.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_013191.wav",
       "labels": "/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_013305.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_013305.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_013326.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_013326.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_013358.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_013358.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_013564.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_013564.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_016440.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_016440.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_016571.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_016571.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_016606.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_016606.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_016691.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_016691.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/03p19w,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_016839.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_016839.wav",
       "labels": "/m/01d380,/t/dd00066,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_016906.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_016906.wav",
       "labels": "/m/02mfyn,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_016940.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_016940.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_016999.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_016999.wav",
       "labels": "/t/dd00066,/m/0912c9,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_017347.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_017347.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_017801.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_017801.wav",
       "labels": "/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_018054.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_018054.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_018307.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_018307.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_018715.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_018715.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_018782.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_018782.wav",
       "labels": "/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_019065.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_019065.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_019237.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_019237.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_019829.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_019829.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_019852.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_019852.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_019937.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_019937.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_020023.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_020023.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_020188.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_020188.wav",
       "labels": "/m/03kmc9,/t/dd00135,/m/sonyc_large-rotating-saw,/m/sonyc_pile-driver,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_020230.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_020230.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_020297.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_020297.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_020433.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_020433.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_020575.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_020575.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_020653.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_020653.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_000408.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_000408.wav",
       "labels": "/m/sonyc_large-rotating-saw,/m/01j4z9,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_000516.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_000516.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_000737.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_000737.wav",
       "labels": "/m/01h8n0,/m/01d380,/m/sonyc_small-medium-rotating-saw,/m/sonyc_large-rotating-saw,/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_002008.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_002008.wav",
       "labels": "/m/01h8n0,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_002040.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_002040.wav",
       "labels": "/m/03p19w,/m/01h8n0,/m/sonyc_pile-driver,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_002238.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_002238.wav",
       "labels": "/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_002348.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_002348.wav",
       "labels": "/m/01d380,/m/sonyc_non-machinery-impact,/m/03p19w"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_002715.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_002715.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_003060.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_003060.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_003571.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_003571.wav",
       "labels": "/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_004368.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_004368.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_004731.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_004731.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_005148.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_005148.wav",
       "labels": "/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_005567.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_005567.wav",
       "labels": "/m/01d380,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_005950.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_005950.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/03p19w,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_006016.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_006016.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_006147.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_006147.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_006906.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_006906.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_007151.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_007151.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_007716.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_007716.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_007726.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_007726.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_007902.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_007902.wav",
       "labels": "/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_008033.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_008033.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_008208.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_008208.wav",
       "labels": "/m/03p19w,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_008818.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_008818.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_008903.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_008903.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_008993.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_008993.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03p19w,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_009203.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_009203.wav",
       "labels": "/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_009232.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_009232.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_009575.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_009575.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_010469.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_010469.wav",
       "labels": "/m/01h8n0,/t/dd00135,/m/0fd3y,/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_010752.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_010752.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_011240.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_011240.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_011605.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_011605.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_011611.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_011611.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_011652.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_011652.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/0912c9,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_012896.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_012896.wav",
       "labels": "/m/03cl9h,/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_013261.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_013261.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_013531.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_013531.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_016608.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_016608.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_016934.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_016934.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_017137.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_017137.wav",
       "labels": "/t/dd00066,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_017516.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_017516.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_017958.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_017958.wav",
       "labels": "/m/01d380,/m/sonyc_non-machinery-impact,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_018013.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_018013.wav",
       "labels": "/m/03p19w,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_018293.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_018293.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_018523.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_018523.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_018556.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_018556.wav",
       "labels": "/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_018770.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_018770.wav",
       "labels": "/m/01j4z9,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_018944.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_018944.wav",
       "labels": "/m/02rhddq,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_019244.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_019244.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_019668.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_019668.wav",
       "labels": "/m/sonyc_amplified-speech,/m/sonyc_non-machinery-impact,/m/0fd3y,/m/07qz6j3"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_019907.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_019907.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_019988.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_019988.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_020034.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_020034.wav",
       "labels": "/m/01d380,/m/01h8n0,/t/dd00067,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_020239.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_020239.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_020478.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_020478.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_020523.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_020523.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_020674.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_020674.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_020820.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_020820.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_000208.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_000208.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_000247.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_000247.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_000620.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_000620.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_000637.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_000637.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_000680.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_000680.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_000741.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_000741.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_000802.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_000802.wav",
       "labels": "/m/01d380,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_000818.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_000818.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_001071.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_001071.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_001091.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_001091.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/03kmc9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_001116.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_001116.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_001457.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_001457.wav",
       "labels": "/m/01d380,/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_001687.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_001687.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_001718.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_001718.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_002163.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_002163.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_002189.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_002189.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_002295.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_002295.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_002364.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_002364.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/03kmc9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_002515.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_002515.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_002607.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_002607.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_002947.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_002947.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_003066.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_003066.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/04rlf,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_003302.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_003302.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_003869.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_003869.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_004390.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_004390.wav",
       "labels": "/m/01h8n0,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_006007.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_006007.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/t/dd00135,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_006224.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_006224.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_006431.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_006431.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_006813.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_006813.wav",
       "labels": "/m/07qz6j3,/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_007056.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_007056.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_007692.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_007692.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00135,/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_007869.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_007869.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_008513.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_008513.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_009005.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_009005.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_010369.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_010369.wav",
       "labels": "/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_010514.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_010514.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_010776.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_010776.wav",
       "labels": "/m/sonyc_amplified-speech,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_010826.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_010826.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_010921.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_010921.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_011331.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_011331.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_011570.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_011570.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_011694.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_011694.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_011841.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_011841.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_012332.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_012332.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_012642.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_012642.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00135,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_012659.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_012659.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01j4z9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_012737.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_012737.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_012847.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_012847.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_012862.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_012862.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_012869.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_012869.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_013077.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_013077.wav",
       "labels": "/m/01d380,/m/01h8n0,/t/dd00067,/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_013218.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_013218.wav",
       "labels": "/t/dd00066,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_013304.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_013304.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_013648.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_013648.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_016402.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_016402.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_016783.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_016783.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_016937.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_016937.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_017269.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_017269.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_017554.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_017554.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_017573.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_017573.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_017608.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_017608.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_017915.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_017915.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_017972.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_017972.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_018216.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_018216.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_018356.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_018356.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/m/03p19w,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_018502.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_018502.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_018796.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_018796.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019292.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019292.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019299.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019299.wav",
       "labels": "/m/01d380,/m/03p19w,/m/0912c9,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019323.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019323.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019349.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019349.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019382.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019382.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019405.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019405.wav",
       "labels": "/m/03cl9h,/t/dd00135,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019469.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019469.wav",
       "labels": "/m/01h8n0,/m/04rlf,/m/0912c9,/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019472.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019472.wav",
       "labels": "/m/03p19w,/m/01d380,/m/sonyc_small-medium-rotating-saw,/m/0912c9,/m/02rhddq"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019621.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019621.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019646.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019646.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019676.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019676.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019754.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019754.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw,/t/dd00066,/t/dd00067,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019801.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019801.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_019881.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_019881.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/02mfyn"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020143.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020143.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020165.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020165.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020174.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020174.wav",
       "labels": "/t/dd00066,/t/dd00067,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020323.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020323.wav",
       "labels": "/t/dd00066,/m/sonyc_hoe-ram"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020328.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020328.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020386.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020386.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020477.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020477.wav",
       "labels": "/m/02mfyn,/m/sonyc_non-machinery-impact,/t/dd00066,/m/0912c9"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020627.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020627.wav",
       "labels": "/m/sonyc_small-medium-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020638.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020638.wav",
       "labels": "/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020768.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020768.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_020812.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_020812.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/sonyc_large-rotating-saw"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_011216.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_011216.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_011416.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_011416.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_011511.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_011511.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/t/dd00135"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_011730.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_011730.wav",
       "labels": "/m/sonyc_non-machinery-impact"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_011908.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_011908.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_012934.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_012934.wav",
       "labels": "/m/01h8n0,/m/03qtwd,/m/0fd3y,/m/sonyc_non-machinery-impact,/t/dd00066,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_013692.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_013692.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00066,/m/01h8n0,/m/0fd3y"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_017284.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_017284.wav",
       "labels": "/m/sonyc_non-machinery-impact,/t/dd00067"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_017507.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_017507.wav",
       "labels": "/m/sonyc_amplified-speech,/m/01h8n0,/m/03qtwd,/t/dd00135,/m/0912c9,/t/dd00066"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_018880.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_018880.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_018973.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_018973.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/m/03qtwd"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_020163.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_020163.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_020303.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_020303.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_020426.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_020426.wav",
       "labels": "/m/sonyc_pile-driver"
     },
     {
-      "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/46_020853.wav",
+      "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/46_020853.wav",
       "labels": "/m/sonyc_non-machinery-impact,/m/01h8n0,/t/dd00067"
     }
   ]

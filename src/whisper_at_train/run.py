@@ -68,8 +68,12 @@ parser.add_argument("--ftmode", type=str, default='last', help="pretrained model
 parser.add_argument("--pretrain_epoch", type=int, default=0, help="number of pretrained epochs")
 parser.add_argument("--head_lr", type=float, default=1.0, help="learning rate ratio between mlp/base")
 parser.add_argument("--pretrained_model", type=str, default=None, help="path to pretrained model")
+parser.add_argument("--weight_decay", type=float, default=5e-7, help="weight decay")
 parser.add_argument("--freeze_original_classes", action="store_true", help="Freeze weights for original 527 AudioSet classes and only train new SONYC classes")
 args = parser.parse_args()
+
+val_tar_path = None
+eval_tar_path = None
 
 if args.dataset == 'esc':
     if args.model_size == 'hubert-xlarge-ls960-ft' or args.model_size == 'wav2vec2-large-robust-ft-swbd-300h':
@@ -88,14 +92,25 @@ elif args.dataset == 'as-bal' or args.dataset == 'as-full':
         eval_tar_path = '/data/sls/scratch/yuangong/whisper-a/feat_as_eval/whisper_' + args.model_size
     shuffle = True
 elif args.dataset == 'sonyc':
-    train_tar_path = '/home/taemyung_heo/workspace/dataset/sonyc-ust/features/train'
-    val_tar_path = '/home/taemyung_heo/workspace/dataset/sonyc-ust/features/val'
-    eval_tar_path = '/home/taemyung_heo/workspace/dataset/sonyc-ust/features/test'
+    train_tar_path = '/mnt/ssd_disk/datasets/sonyc-ust/features/train'
+    # val_tar_path = '/mnt/ssd_disk/datasets/sonyc-ust/features/val'
+    # eval_tar_path = '/mnt/ssd_disk/datasets/sonyc-ust/features/test'
+    eval_tar_path = '/mnt/ssd_disk/datasets/audioset_sonyc_combined/features/val'
+    shuffle = True
+elif args.dataset == 'audioset_sonyc':
+    train_tar_path = '/mnt/ssd_disk/datasets/audioset_sonyc_combined/features/train'
+    eval_tar_path = '/mnt/ssd_disk/datasets/audioset_sonyc_combined/features/val'
     shuffle = True
 
 audio_conf = {'freqm': args.freqm, 'timem': args.timem, 'mixup': args.mixup, 'dataset': args.dataset, 'label_smooth': args.label_smooth, 'tar_path': train_tar_path}
-val_audio_conf = {'freqm': 0, 'timem': 0, 'mixup': 0, 'dataset': args.dataset, 'tar_path': val_tar_path}
-eval_audio_conf = {'freqm': 0, 'timem': 0, 'mixup': 0, 'dataset': args.dataset, 'tar_path': eval_tar_path}
+val_audio_conf = None
+eval_audio_conf = None
+
+if val_tar_path is not None and eval_tar_path is not None:
+    val_audio_conf = {'freqm': 0, 'timem': 0, 'mixup': 0, 'dataset': args.dataset, 'tar_path': val_tar_path}
+    eval_audio_conf = {'freqm': 0, 'timem': 0, 'mixup': 0, 'dataset': args.dataset, 'tar_path': eval_tar_path}
+elif val_tar_path is None and eval_tar_path is not None:
+    val_audio_conf = {'freqm': 0, 'timem': 0, 'mixup': 0, 'dataset': args.dataset, 'tar_path': eval_tar_path}
 
 if args.bal == 'bal':
     print('balanced sampler is being used')
@@ -142,51 +157,96 @@ print(audio_model)
 
 if args.pretrained_model is not None and os.path.exists(args.pretrained_model):
     print(f"Loading pretrained model from {args.pretrained_model}")
-    pretrained_dict = torch.load(args.pretrained_model, map_location=device)
-    model_dict = audio_model.state_dict()
     
-    # 마지막 분류 레이어 이름 확인 (TL-TR 모델의 경우)
-    classifier_layer_names = ['module.mlp_layer.1.weight', 'module.mlp_layer.1.bias']
+    # 1. 사전 학습된 모델의 state_dict 로드
+    raw_pretrained_state = torch.load(args.pretrained_model, map_location=device)
     
-    # 1. 사이즈가 일치하는 레이어만 로드
-    pretrained_dict = {k: v for k, v in pretrained_dict.items() 
-                      if k in model_dict and v.size() == model_dict[k].size()}
+    # 2. 현재 모델의 state_dict 가져오기 (나중에 로드할 때 사용)
+    current_model_state_for_loading = audio_model.state_dict()
+    # 최종적으로 audio_model에 로드될 state_dict를 준비 (현재 모델 상태로 초기화)
+    final_state_to_load = current_model_state_for_loading.copy()
+
+    # 3. 키 정리를 위한 헬퍼 함수
+    def get_clean_key(key_str):
+        if key_str.startswith('module.'):
+            key_str = key_str[7:]
+        if key_str.startswith('at_model.'): # whisper-at 평가 스크립트에서 발견된 접두사
+            key_str = key_str[9:]
+        return key_str
+
+    # 4. 사전 학습된 state_dict의 키를 정리하여 조회용으로 만듦
+    pretrained_state_for_lookup = {get_clean_key(k): v for k, v in raw_pretrained_state.items()}
+
+    # 5. 분류 레이어의 기본 이름 정의 (접두사 없음)
+    classifier_base_names = ['mlp_layer.1.weight', 'mlp_layer.1.bias']
     
-    # 2. 마지막 분류 레이어는 특별 처리 (크기가 다름)
-    for layer_name in classifier_layer_names:
-        if layer_name in pretrained_dict and layer_name in model_dict:
-            if 'weight' in layer_name:
-                # 기존 가중치로 초기화 (527개 클래스까지)
-                old_weight = pretrained_dict[layer_name]
-                new_weight = model_dict[layer_name]
-                
-                if old_weight.size(0) < new_weight.size(0):
-                    # 기존 가중치 복사
-                    new_weight[:old_weight.size(0), :] = old_weight
+    print("Attempting to load weights...")
+    loaded_count = 0
+    adapted_count = 0
+
+    # 6. 현재 모델의 각 레이어에 대해 가중치 로드 시도
+    for model_key_original in final_state_to_load.keys():
+        # 현재 모델 키에서 접두사를 제거하여 기본 키 이름 획득
+        # (audio_model이 DataParallel로 래핑된 경우 'module.' 접두사가 있을 수 있음)
+        clean_model_key = get_clean_key(model_key_original) 
+
+        if clean_model_key in pretrained_state_for_lookup:
+            pretrained_tensor = pretrained_state_for_lookup[clean_model_key]
+            current_tensor_template = final_state_to_load[model_key_original]
+
+            # A. 분류 레이어 처리 (크기 조정 가능성 있음)
+            if clean_model_key in classifier_base_names:
+                if pretrained_tensor.size(0) < current_tensor_template.size(0): # 클래스 수 증가
+                    print(f"Adapting classifier layer: {model_key_original} (base: {clean_model_key}) "
+                          f"from {pretrained_tensor.size()} to {current_tensor_template.size()}")
                     
-                    # 새 클래스의 가중치는 평균과 표준편차를 기반으로 초기화
-                    mean = old_weight.mean().item()
-                    std = old_weight.std().item()
-                    nn.init.normal_(new_weight[old_weight.size(0):, :], mean=mean, std=std)
+                    # 기존 클래스 가중치 복사
+                    current_tensor_template[:pretrained_tensor.size(0)] = pretrained_tensor.narrow(0, 0, pretrained_tensor.size(0)) if 'weight' in clean_model_key else pretrained_tensor.narrow(0, 0, pretrained_tensor.size(0))
+
+
+                    # 새 클래스 가중치 초기화
+                    if 'weight' in clean_model_key:
+                         # weight의 경우 [out_features, in_features]
+                        new_part = current_tensor_template[pretrained_tensor.size(0):, :]
+                    else: # bias의 경우 [out_features]
+                        new_part = current_tensor_template[pretrained_tensor.size(0):]
+
+                    mean = pretrained_tensor.mean().item()
+                    std = pretrained_tensor.std().item()
+                    if std < 1e-6: # std가 너무 작으면 초기화 시 문제 발생 가능
+                        print(f"Warning: std of pretrained tensor for {clean_model_key} is very small ({std}). Using 0.01 for new part initialization.")
+                        std = 0.01 # 기본 std 값 사용
                     
-                    # 업데이트된 가중치 저장
-                    model_dict[layer_name] = new_weight
+                    torch.nn.init.normal_(new_part, mean=mean, std=std)
+                    # final_state_to_load[model_key_original]은 이미 current_tensor_template을 가리키므로,
+                    # current_tensor_template의 수정이 반영됨.
+                    adapted_count +=1
+                elif pretrained_tensor.size() == current_tensor_template.size():
+                    final_state_to_load[model_key_original] = pretrained_tensor
+                    loaded_count += 1
+                else: # 사전 학습 모델의 클래스 수가 더 많거나 다른 크기 불일치
+                    print(f"Warning: Size mismatch for classifier layer {model_key_original} (base: {clean_model_key}). "
+                          f"Pretrained: {pretrained_tensor.size()}, Model: {current_tensor_template.size()}. Skipping this layer.")
             
-            elif 'bias' in layer_name:
-                # 바이어스도 비슷하게 처리
-                old_bias = pretrained_dict[layer_name]
-                new_bias = model_dict[layer_name]
-                
-                if old_bias.size(0) < new_bias.size(0):
-                    new_bias[:old_bias.size(0)] = old_bias
-                    mean = old_bias.mean().item()
-                    std = old_bias.std().item()
-                    nn.init.normal_(new_bias[old_bias.size(0):], mean=mean, std=std)
-                    model_dict[layer_name] = new_bias
-    
-    # 필터링된 사전으로 모델 가중치 업데이트
-    audio_model.load_state_dict(model_dict)
-    print("Successfully loaded pretrained weights")
+            # B. 분류 레이어가 아닌 다른 레이어 처리
+            else:
+                if pretrained_tensor.size() == current_tensor_template.size():
+                    final_state_to_load[model_key_original] = pretrained_tensor
+                    loaded_count += 1
+                else:
+                    print(f"Warning: Size mismatch for non-classifier layer {model_key_original} (base: {clean_model_key}). "
+                          f"Pretrained: {pretrained_tensor.size()}, Model: {current_tensor_template.size()}. Skipping this layer.")
+        else:
+            print(f"Warning: Key {clean_model_key} (original: {model_key_original}) not found in cleaned pretrained_state. Skipping this layer.")
+
+    # 7. 최종적으로 준비된 state_dict를 현재 모델에 로드
+    #    strict=False는 final_state_to_load에 있지만 audio_model에 없는 키, 
+    #    또는 그 반대의 경우를 허용. 현재 로직상 final_state_to_load는 audio_model의 모든 키를 가지므로,
+    #    주로 크기가 다른 레이어가 얼마나 있었는지 등을 나타냄.
+    load_status = audio_model.load_state_dict(final_state_to_load, strict=False)
+    print(f"Weight loading status - Missing keys: {load_status.missing_keys}, Unexpected keys: {load_status.unexpected_keys}")
+    print(f"Successfully loaded {loaded_count} layers and adapted {adapted_count} classifier layers.")
+    print("Pretrained weights loading process finished.")
 
     # 모델 가중치 로딩 후, 기존 클래스 가중치 고정 코드 추가
     if args.pretrained_model is not None and args.freeze_original_classes:
@@ -250,8 +310,9 @@ if args.wa == True:
     print('val mAP of model with weights averaged from checkpoint {:d}-{:d} is {:.4f}, SONYC mAP: {:.4f}'.format(args.wa_start, args.wa_end, wa_res, wa_res_sonyc))
     np.savetxt(args.exp_dir + '/wa_res.csv', [args.wa_start, args.wa_end, wa_res, wa_res_sonyc], delimiter=',')
 
-    stats, _ = validate(audio_model, eval_loader, args)
-    wa_res = np.mean([stat['AP'] for stat in stats])
-    wa_res_sonyc = np.mean([stat['AP'] for stat in stats[527:]])
-    print('test mAP of model with weights averaged from checkpoint {:d}-{:d} is {:.4f}, SONYC mAP: {:.4f}'.format(args.wa_start, args.wa_end, wa_res, wa_res_sonyc))
-    np.savetxt(args.exp_dir + '/wa_res_test.csv', [args.wa_start, args.wa_end, wa_res, wa_res_sonyc], delimiter=',')
+    if args.data_eval != None:
+        stats, _ = validate(audio_model, eval_loader, args)
+        wa_res = np.mean([stat['AP'] for stat in stats])
+        wa_res_sonyc = np.mean([stat['AP'] for stat in stats[527:]])
+        print('test mAP of model with weights averaged from checkpoint {:d}-{:d} is {:.4f}, SONYC mAP: {:.4f}'.format(args.wa_start, args.wa_end, wa_res, wa_res_sonyc))
+        np.savetxt(args.exp_dir + '/wa_res_test.csv', [args.wa_start, args.wa_end, wa_res, wa_res_sonyc], delimiter=',')

@@ -83,7 +83,10 @@ class AudiosetDataset(Dataset):
     # change python list to numpy array to avoid memory leak.
     def pro_data(self, data_json):
         for i in range(len(data_json)):
-            data_json[i] = [data_json[i]['wav'], data_json[i]['labels']]
+            if 'wav' in data_json[i]:
+                data_json[i] = [data_json[i]['wav'], data_json[i]['labels']]
+            else:
+                data_json[i] = [data_json[i]['feature_path'], data_json[i]['labels']]
         data_np = np.array(data_json, dtype=str)
         return data_np
 
@@ -106,7 +109,7 @@ class AudiosetDataset(Dataset):
             return np.zeros((6, 25, 512)) # should only work for whisper-base model, which has missing file problem
 
     def _wav2fbank(self, filename, filename2=None, mix_lambda=-1):
-        if 'feat_as' in self.tar_path or 'feat_esc_pool' in self.tar_path or 'sonyc' in self.tar_path:
+        if 'feat_as' in self.tar_path or 'feat_esc_pool' in self.tar_path or 'sonyc' in self.tar_path or 'audioset' in self.tar_path:
             fmt = '.npz'
         else:
             fmt = '.npy'
