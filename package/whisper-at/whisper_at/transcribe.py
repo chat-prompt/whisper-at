@@ -411,7 +411,7 @@ def transcribe(
     # 페널티 값 (로짓을 얼마나 낮출지)
     suppression_penalty = 2.0 # 이 값은 실험을 통해 조정 필요 (예: 1.0, 1.5, 2.0, 3.0)
     # 음성으로 판단하는 no_speech_prob 임계값
-    speech_presence_threshold = 0.4 # no_speech_threshold (기본값 0.6) 보다 낮게 설정하여 음성 존재에 더 관대하게
+    speech_presence_threshold = 0.6 # no_speech_threshold (기본값 0.6) 보다 낮게 설정하여 음성 존재에 더 관대하게
 
     num_tagging_windows = all_audio_tags.shape[0]
     for i in range(num_tagging_windows):
