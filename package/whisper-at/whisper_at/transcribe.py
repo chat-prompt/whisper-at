@@ -394,6 +394,61 @@ def transcribe(
             # update progress bar
             pbar.update(min(content_frames, seek) - previous_seek)
 
+    # --- SONYC 클래스 억제 휴리스틱 추가 시작 ---
+    if verbose:
+        print("Applying heuristic to suppress SONYC classes in speech-heavy segments...")
+
+    sonyc_new_class_indices = list(range(527, 533))
+    # 347	0.028525	Chainsaw
+    # 348	0.820629	Medium engine (mid frequency)
+    # 349	0.793759	Heavy engine (low frequency)
+    # 396	0.573932	Siren
+    # 420	0.298314	Jackhammer
+    # 425	0.134592	Drill
+
+    sonyc_related_indices_to_suppress = sonyc_new_class_indices + [347, 348, 349, 396, 420, 425]
+
+    # 페널티 값 (로짓을 얼마나 낮출지)
+    suppression_penalty = 2.0 # 이 값은 실험을 통해 조정 필요 (예: 1.0, 1.5, 2.0, 3.0)
+    # 음성으로 판단하는 no_speech_prob 임계값
+    speech_presence_threshold = 0.4 # no_speech_threshold (기본값 0.6) 보다 낮게 설정하여 음성 존재에 더 관대하게
+
+    num_tagging_windows = all_audio_tags.shape[0]
+    for i in range(num_tagging_windows):
+        tag_window_start_time = i * at_time_res
+        tag_window_end_time = (i + 1) * at_time_res
+        
+        is_speech_heavy_segment = False
+        # 해당 태깅 윈도우와 겹치는 ASR 세그먼트 확인
+        for asr_segment in all_segments:
+            asr_start = asr_segment["start"]
+            asr_end = asr_segment["end"]
+            
+            # 시간 겹침 확인 (간단한 방식)
+            overlap = max(0, min(asr_end, tag_window_end_time) - max(asr_start, tag_window_start_time))
+            
+            if overlap > 0.1: # 0.1초 이상 겹치면 유의미하다고 가정
+                if asr_segment["no_speech_prob"] < speech_presence_threshold and asr_segment["text"].strip() != "":
+                    is_speech_heavy_segment = True
+                    break 
+        
+        if is_speech_heavy_segment:
+            if verbose:
+                suppressed_for_window = False
+            for class_idx in sonyc_related_indices_to_suppress:
+                if 0 <= class_idx < all_audio_tags.shape[1]: # 인덱스 범위 확인
+                    original_logit = all_audio_tags[i, class_idx].item()
+                    all_audio_tags[i, class_idx] -= suppression_penalty
+                    if verbose and not suppressed_for_window:
+                        # tqdm.write(f"Segment {i} ({tag_window_start_time:.2f}s-{tag_window_end_time:.2f}s) identified as speech. Suppressing SONYC classes.")
+                        suppressed_for_window = True # 해당 윈도우에 대한 메시지는 한 번만 출력
+                    # if verbose:
+                    #     tqdm.write(f"  SONYC class {class_idx} logit changed from {original_logit:.2f} to {all_audio_tags[i, class_idx].item():.2f}")
+    
+    if verbose:
+        print("SONYC class suppression heuristic applied.")
+    # --- SONYC 클래스 억제 휴리스틱 추가 끝 ---
+
     return dict(
         text=tokenizer.decode(all_tokens[len(initial_prompt_tokens) :]),
         segments=all_segments,
