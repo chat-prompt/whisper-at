@@ -126,7 +126,7 @@ Model training is done through shell scripts in `src/whisper_at_train/`:
 ## Project Memories
 
 ### Model Checkpoint Resources
-- `package/whisper-at/whisper_at/__init__.py`: Dropbox 경로에서 모델 체크포인트 위치 확인
+- `package/whisper-at/whisper_at/__init__.py`: Model checkpoint locations in Dropbox paths
 
 ### Training Scripts
 - `src/whisper_at_train/run_combined_training.sh`: Combined training script for Whisper-AT models
