@@ -42,7 +42,10 @@ _MODELS_AT = {
     "medium.en_low": "https://www.dropbox.com/s/2q5wprr8f9gti5t/medium.en_low.pth?dl=1",
     "medium": "https://www.dropbox.com/s/65aabayr7o819az/medium_ori.pth?dl=1",
     "medium_low": "https://www.dropbox.com/s/0mnfmcasram4n6o/medium_low.pth?dl=1",
-    "large-v1": "https://www.dropbox.com/s/b8x2en1fdzc8nhk/large-v1_ori.pth?dl=1",
+    #"large-v1": "https://www.dropbox.com/s/b8x2en1fdzc8nhk/large-v1_ori.pth?dl=1",
+    # "large-v1": "https://www.dropbox.com/scl/fi/m6qmgl1x6h9akmehichjq/large_v1.pth?rlkey=yx1fyyedf2xlx9j2z7fosfpzy&st=5r00ei0u&dl=1",
+    "large-v1": "https://www.dropbox.com/scl/fi/7s9ya0rb4tc495atlpuw0/audio_model_wa.pth?rlkey=qghoc2tj1d8r1y3pfu4buhznc&st=d43mnq5f&dl=1",
+    "large-v1_ori": "https://www.dropbox.com/s/5o79h70wyla8jlk/large-v1_low.pth?dl=1",
     "large-v1_low": "https://www.dropbox.com/s/5o79h70wyla8jlk/large-v1_low.pth?dl=1",
     "large-v2": "https://www.dropbox.com/s/3zxpyvdrxy22eq7/large-v2_ori.pth?dl=1",
     "large-v2_low": "https://www.dropbox.com/s/jw2rh4uylhqgn85/large-v2_low.pth?dl=1",
@@ -138,6 +141,8 @@ def load_model(
         path to download the model files; by default, it uses "~/.cache/whisper"
     in_memory: bool
         whether to preload the model weights into host memory
+    at_low_compute: bool
+        whether to use low-compute AT model (if available)
 
     Returns
     -------
@@ -151,45 +156,164 @@ def load_model(
         default = os.path.join(os.path.expanduser("~"), ".cache")
         download_root = os.path.join(os.getenv("XDG_CACHE_HOME", default), "whisper")
 
-    # if use low-dim proj, only applied for large, medium, and small model
-    if at_low_compute == True:
-        at_mdl_name = name + '_low'
-    else:
-        at_mdl_name = name
+    # Determine the correct AT model name based on at_low_compute flag
+    at_mdl_name = name
+    if at_low_compute:
+        # Check if a low-compute version exists for the given model name
+        low_compute_name = name + '_low'
+        if low_compute_name in _MODELS_AT:
+            at_mdl_name = low_compute_name
+        else:
+            # If low-compute version doesn't exist, issue a warning or fall back
+            warnings.warn(f"Low-compute version for model '{name}' not found. Using standard AT model.")
+            # Optionally, you could raise an error here if low-compute is strictly required.
 
     if name in _MODELS:
+        # Ensure the AT model name exists in _MODELS_AT before downloading
+        if at_mdl_name not in _MODELS_AT:
+             raise RuntimeError(f"AT model '{at_mdl_name}' corresponding to '{name}' not found in _MODELS_AT.")
+
         checkpoint_file = _download(_MODELS[name], download_root, in_memory)
-        checkpoint_file_at = _download(_MODELS_AT[at_mdl_name], download_root, in_memory)
+        checkpoint_file_at = _download(_MODELS_AT[at_mdl_name], download_root, in_memory) # Use determined at_mdl_name
+
+        # Ensure the alignment heads key exists
+        if name not in _ALIGNMENT_HEADS:
+            raise RuntimeError(f"Alignment heads for model '{name}' not found.")
         alignment_heads = _ALIGNMENT_HEADS[name]
+
     elif os.path.isfile(name):
+        # When loading from a local file, we don't have separate AT model or alignment heads info easily
+        # You might need a mechanism to load these separately or handle this case differently
         checkpoint_file = open(name, "rb").read() if in_memory else name
-        alignment_heads = None
+        # For local files, how do you get checkpoint_file_at and alignment_heads?
+        # This part needs clarification based on how local models are structured.
+        # Assuming for now that local files might not use the separate AT model structure
+        # or require specific handling. Let's raise an error or warning for clarity.
+        warnings.warn("Loading from a local file. Separate AT model loading and alignment heads might not be handled correctly.")
+        checkpoint_file_at = None # No separate AT file specified for local model path
+        alignment_heads = None    # No alignment heads specified for local model path
     else:
         raise RuntimeError(
             f"Model {name} not found; available models = {available_models()}"
         )
 
-    with (
-        io.BytesIO(checkpoint_file) if in_memory else open(checkpoint_file, "rb")
-    ) as fp:
-        checkpoint = torch.load(fp, map_location=device)
-    del checkpoint_file
+    # Load the main Whisper model checkpoint
+    try:
+        with (
+            io.BytesIO(checkpoint_file) if in_memory and isinstance(checkpoint_file, bytes) else open(checkpoint_file, "rb")
+        ) as fp:
+            checkpoint = torch.load(fp, map_location=device)
+    except Exception as e:
+        raise RuntimeError(f"Error loading main model checkpoint '{checkpoint_file}': {e}")
+    finally:
+        # Clean up memory if loaded in-memory
+        if in_memory and isinstance(checkpoint_file, bytes):
+            del checkpoint_file
 
-    with (
-        io.BytesIO(checkpoint_file_at) if in_memory else open(checkpoint_file_at, "rb")
-    ) as fp:
-        checkpoint_at = torch.load(fp, map_location=device)
-    del checkpoint_file_at
+    # Load the AT model checkpoint if available
+    checkpoint_at = {} # Initialize as empty dict
+    if checkpoint_file_at:
+        try:
+            with (
+                io.BytesIO(checkpoint_file_at) if in_memory and isinstance(checkpoint_file_at, bytes) else open(checkpoint_file_at, "rb")
+            ) as fp:
+                checkpoint_at_raw = torch.load(fp, map_location=device) # Load raw AT checkpoint
 
-    dims = ModelDimensions(**checkpoint["dims"])
-    model = Whisper(dims, at_low_compute=at_low_compute)
+            # --- Start of Key Prefix Correction ---
+            # Create a new dictionary for corrected keys
+            corrected_checkpoint_at = {}
+            print("Correcting AT checkpoint keys...") # 진행 상황 확인용 로그
+            for key, value in checkpoint_at_raw.items():
+                # 1. Remove "module." prefix if it exists
+                if key.startswith("module."):
+                    key_without_module = key[len("module."):]
+                    # print(f"  Removed 'module.' from '{key}' -> '{key_without_module}'") # 상세 로그 (필요시 주석 해제)
+                else:
+                    key_without_module = key
 
+                # 2. Add "at_model." prefix
+                new_key = "at_model." + key_without_module # "at_model." 접두사 추가
+                # print(f"  Added 'at_model.' to '{key_without_module}' -> '{new_key}'") # 상세 로그 (필요시 주석 해제)
+
+                corrected_checkpoint_at[new_key] = value
+
+            checkpoint_at = corrected_checkpoint_at # Use the corrected dictionary
+            print(f"Finished correcting keys. Example corrected key: {list(checkpoint_at.keys())[0] if checkpoint_at else 'N/A'}") # 수정 결과 확인
+            # --- End of Key Prefix Correction ---
+
+        except Exception as e:
+            raise RuntimeError(f"Error loading or processing AT model checkpoint '{checkpoint_file_at}': {e}")
+        finally:
+            # Clean up memory if loaded in-memory
+            if in_memory and isinstance(checkpoint_file_at, bytes):
+                del checkpoint_file_at
+            # Optionally delete the raw dictionary to save memory
+            if 'checkpoint_at_raw' in locals():
+                del checkpoint_at_raw
+
+
+    # Prepare the model dimensions and instantiate the Whisper model
+    # ... (이 부분은 이전과 동일) ...
+    if "dims" not in checkpoint:
+        raise RuntimeError("Model dimensions not found in the main checkpoint.")
+    try:
+        dims = ModelDimensions(**checkpoint["dims"])
+    except TypeError as e:
+        raise RuntimeError(f"Error creating ModelDimensions from checkpoint['dims']: {e}. Checkpoint keys: {checkpoint.keys()}")
+
+    model = Whisper(dims, at_low_compute=at_low_compute) # Pass at_low_compute here
+
+    # --- Debug: Print model's expected keys for at_model ---
+    print("\nModel's expected keys starting with 'at_model.' (first 5):")
+    at_model_keys_expected = [k for k in model.state_dict().keys() if k.startswith("at_model.")]
+    print(at_model_keys_expected[:5])
+    # --- End Debug ---
+
+    # Combine the state dictionaries
     combined_state_dict = {}
+    if "model_state_dict" not in checkpoint:
+         raise RuntimeError("'model_state_dict' key not found in the main checkpoint.")
     combined_state_dict.update(checkpoint["model_state_dict"])
-    combined_state_dict.update(checkpoint_at)
+    combined_state_dict.update(checkpoint_at) # Add the (potentially corrected) AT state dict
 
-    model.load_state_dict(combined_state_dict, strict=True)
+    # --- Debug: Print loaded keys starting with 'at_model.' ---
+    print("\nLoaded combined_state_dict keys starting with 'at_model.' (first 5):")
+    at_model_keys_loaded = [k for k in combined_state_dict.keys() if k.startswith("at_model.")]
+    print(at_model_keys_loaded[:5])
+    # --- End Debug ---
 
+    # Load the combined state dictionary into the model
+    try:
+        print("\nAttempting to load state_dict...")
+        model.load_state_dict(combined_state_dict, strict=True)
+        print("Successfully loaded state_dict!")
+    except RuntimeError as e:
+        # Provide more context in case of error
+        print("\nError during model.load_state_dict:")
+        print(f"Model Keys (example): {list(model.state_dict().keys())[:5]}")
+        print(f"Loaded State Dict Keys (example): {list(combined_state_dict.keys())[:5]}")
+
+        # 추가 디버깅: 누락된 키와 예상치 못한 키 출력
+        missing_keys = [k for k in model.state_dict().keys() if k not in combined_state_dict]
+        unexpected_keys = [k for k in combined_state_dict.keys() if k not in model.state_dict()]
+        print(f"\nMissing Keys ({len(missing_keys)} total, first 5): {missing_keys[:5]}")
+        print(f"Unexpected Keys ({len(unexpected_keys)} total, first 5): {unexpected_keys[:5]}")
+
+        # 키 매핑 확인 (예: 첫 번째 누락/예상치 못한 키 비교)
+        if missing_keys and unexpected_keys:
+            print(f"\nExample Mismatch? Model expects: '{missing_keys[0]}', Loaded dict has: '{unexpected_keys[0]}'")
+
+        # at_model 관련 키만 필터링하여 비교
+        missing_at_keys = [k for k in missing_keys if k.startswith("at_model.")]
+        unexpected_at_keys = [k for k in unexpected_keys if not k.startswith("at_model.")] # unexpected는 at_model이 아닌 키일 수 있음
+
+        print(f"\nMissing 'at_model.' Keys (first 5): {missing_at_keys[:5]}")
+        # print(f"Unexpected Keys (excluding potential 'at_model.' keys, first 5): {unexpected_at_keys[:5]}") # 이 부분은 혼란을 줄 수 있어 주석 처리
+
+        raise e # Re-raise the original error after printing info
+
+    # Set alignment heads if available
+    # ... (이후 코드는 동일) ...
     if alignment_heads is not None:
         model.set_alignment_heads(alignment_heads)
 

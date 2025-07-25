@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_026919.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_026919.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -533,7 +533,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027065.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027065.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -1065,7 +1065,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027130.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027130.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -1597,7 +1597,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027176.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027176.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -2129,7 +2129,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027218.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027218.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -2661,7 +2661,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027302.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027302.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -3193,7 +3193,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027342.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027342.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -3725,7 +3725,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027359.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027359.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -4257,7 +4257,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027381.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027381.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -4789,7 +4789,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027530.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027530.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -5321,7 +5321,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/00_027708.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/00_027708.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -5853,7 +5853,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_026984.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_026984.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -6385,7 +6385,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027018.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027018.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -6917,7 +6917,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027028.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027028.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -7449,7 +7449,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027029.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027029.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -7981,7 +7981,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027042.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027042.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -8513,7 +8513,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027336.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027336.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -9045,7 +9045,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027352.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027352.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -9577,7 +9577,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027568.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027568.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -10109,7 +10109,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/01_027635.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/01_027635.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -10641,7 +10641,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_026904.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_026904.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -11173,7 +11173,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027223.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027223.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -11705,7 +11705,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027241.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027241.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -12237,7 +12237,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027448.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027448.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -12769,7 +12769,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027648.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027648.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -13301,7 +13301,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027672.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027672.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -13833,7 +13833,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/02_027828.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/02_027828.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -14365,7 +14365,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_027229.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_027229.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -14897,7 +14897,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_027382.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_027382.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -15429,7 +15429,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_027487.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_027487.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -15961,7 +15961,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/03_027535.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/03_027535.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -16493,7 +16493,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_026937.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_026937.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -17025,7 +17025,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_026982.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_026982.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -17557,7 +17557,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027099.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027099.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -18089,7 +18089,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027111.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027111.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -18621,7 +18621,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027204.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027204.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -19153,7 +19153,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027432.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027432.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -19685,7 +19685,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027473.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027473.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -20217,7 +20217,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027502.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027502.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -20749,7 +20749,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027657.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027657.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -21281,7 +21281,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027731.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027731.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -21813,7 +21813,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027751.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027751.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -22345,7 +22345,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027754.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027754.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -22877,7 +22877,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/04_027817.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/04_027817.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -23409,7 +23409,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_026893.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_026893.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -23941,7 +23941,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_026912.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_026912.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -24473,7 +24473,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_026915.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_026915.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -25005,7 +25005,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027064.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027064.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -25537,7 +25537,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027310.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027310.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -26069,7 +26069,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027311.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027311.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -26601,7 +26601,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027343.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027343.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -27133,7 +27133,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027485.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027485.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -27665,7 +27665,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027703.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027703.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -28197,7 +28197,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027792.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027792.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -28729,7 +28729,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/05_027832.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/05_027832.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -29261,7 +29261,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_026923.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_026923.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -29793,7 +29793,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027322.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027322.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -30325,7 +30325,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027404.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027404.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -30857,7 +30857,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027545.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027545.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -31389,7 +31389,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027581.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027581.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -31921,7 +31921,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027653.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027653.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -32453,7 +32453,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/06_027676.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/06_027676.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -32985,7 +32985,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_026897.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_026897.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -33517,7 +33517,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_026948.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_026948.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -34049,7 +34049,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027015.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027015.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -34581,7 +34581,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027027.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027027.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -35113,7 +35113,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027150.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027150.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -35645,7 +35645,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027242.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027242.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -36177,7 +36177,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027365.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027365.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -36709,7 +36709,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027499.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027499.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -37241,7 +37241,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027523.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027523.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -37773,7 +37773,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027607.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027607.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -38305,7 +38305,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027714.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027714.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -38837,7 +38837,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/07_027726.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/07_027726.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -39369,7 +39369,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_026999.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_026999.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -39901,7 +39901,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027035.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027035.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -40433,7 +40433,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027075.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027075.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -40965,7 +40965,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027244.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027244.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -41497,7 +41497,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027529.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027529.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -42029,7 +42029,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027605.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027605.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -42561,7 +42561,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/09_027729.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/09_027729.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -43093,7 +43093,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_026952.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_026952.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -43625,7 +43625,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_027038.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_027038.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -44157,7 +44157,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_027297.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_027297.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -44689,7 +44689,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_027349.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_027349.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -45221,7 +45221,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/10_027367.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/10_027367.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -45753,7 +45753,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027073.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027073.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -46285,7 +46285,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027086.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027086.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -46817,7 +46817,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027097.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027097.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -47349,7 +47349,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027177.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027177.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -47881,7 +47881,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027403.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027403.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -48413,7 +48413,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027719.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027719.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -48945,7 +48945,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/11_027821.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/11_027821.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -49477,7 +49477,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_026902.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_026902.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -50009,7 +50009,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_027278.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_027278.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -50541,7 +50541,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_027362.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_027362.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -51073,7 +51073,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_027389.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_027389.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -51605,7 +51605,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/12_027576.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/12_027576.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -52137,7 +52137,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/13_027452.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/13_027452.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -52669,7 +52669,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/13_027867.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/13_027867.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -53201,7 +53201,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_026950.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_026950.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -53733,7 +53733,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027040.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027040.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -54265,7 +54265,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027048.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027048.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -54797,7 +54797,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027083.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027083.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -55329,7 +55329,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027108.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027108.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -55861,7 +55861,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027249.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027249.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -56393,7 +56393,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027330.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027330.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -56925,7 +56925,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027464.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027464.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -57457,7 +57457,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027492.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027492.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -57989,7 +57989,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027698.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027698.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -58521,7 +58521,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/14_027709.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/14_027709.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -59053,7 +59053,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_026960.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_026960.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -59585,7 +59585,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_026990.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_026990.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -60117,7 +60117,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027024.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027024.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -60649,7 +60649,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027046.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027046.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -61181,7 +61181,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027059.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027059.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -61713,7 +61713,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027124.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027124.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -62245,7 +62245,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027284.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027284.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -62777,7 +62777,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027415.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027415.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -63309,7 +63309,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027465.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027465.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -63841,7 +63841,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027558.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027558.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -64373,7 +64373,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027584.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027584.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -64905,7 +64905,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027629.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027629.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -65437,7 +65437,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027811.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027811.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -65969,7 +65969,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027820.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027820.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -66501,7 +66501,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027831.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027831.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -67033,7 +67033,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/16_027835.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/16_027835.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -67565,7 +67565,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_026901.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_026901.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -68097,7 +68097,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027472.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027472.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -68629,7 +68629,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027597.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027597.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -69161,7 +69161,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027735.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027735.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -69693,7 +69693,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027786.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027786.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -70225,7 +70225,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027788.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027788.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -70757,7 +70757,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/17_027789.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/17_027789.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -71289,7 +71289,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_026944.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_026944.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -71821,7 +71821,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_026989.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_026989.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -72353,7 +72353,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027152.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027152.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -72885,7 +72885,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027170.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027170.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -73417,7 +73417,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027178.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027178.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -73949,7 +73949,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027337.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027337.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -74481,7 +74481,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027376.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027376.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -75013,7 +75013,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/18_027725.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/18_027725.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -75545,7 +75545,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/20_026930.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/20_026930.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -76077,7 +76077,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/20_027135.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/20_027135.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -76609,7 +76609,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/20_027307.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/20_027307.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -77141,7 +77141,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/20_027655.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/20_027655.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -77673,7 +77673,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027316.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027316.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -78205,7 +78205,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027440.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027440.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -78737,7 +78737,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027504.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027504.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -79269,7 +79269,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027684.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027684.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -79801,7 +79801,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/22_027842.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/22_027842.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -80333,7 +80333,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/23_026985.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/23_026985.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -80865,7 +80865,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/23_027161.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/23_027161.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -81397,7 +81397,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/23_027256.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/23_027256.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -81929,7 +81929,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/23_027410.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/23_027410.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -82461,7 +82461,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_026887.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_026887.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -82993,7 +82993,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_026921.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_026921.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -83525,7 +83525,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_026955.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_026955.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -84057,7 +84057,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_026968.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_026968.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -84589,7 +84589,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027078.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027078.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -85121,7 +85121,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027171.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027171.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -85653,7 +85653,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027182.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027182.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -86185,7 +86185,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027292.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027292.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -86717,7 +86717,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027385.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027385.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -87249,7 +87249,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027413.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027413.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -87781,7 +87781,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027722.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027722.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -88313,7 +88313,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/24_027787.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/24_027787.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -88845,7 +88845,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_026896.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_026896.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -89377,7 +89377,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027079.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027079.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -89909,7 +89909,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027245.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027245.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -90441,7 +90441,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027289.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027289.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -90973,7 +90973,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027461.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027461.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -91505,7 +91505,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027490.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027490.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -92037,7 +92037,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027503.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027503.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -92569,7 +92569,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027711.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027711.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -93101,7 +93101,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027775.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027775.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -93633,7 +93633,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/25_027824.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/25_027824.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -94165,7 +94165,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027106.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027106.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -94697,7 +94697,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027483.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027483.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -95229,7 +95229,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027537.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027537.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -95761,7 +95761,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027582.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027582.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -96293,7 +96293,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027646.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027646.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -96825,7 +96825,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/27_027848.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/27_027848.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -97357,7 +97357,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_026907.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_026907.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -97889,7 +97889,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_026973.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_026973.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -98421,7 +98421,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_026981.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_026981.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -98953,7 +98953,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027055.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027055.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -99485,7 +99485,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027066.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027066.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -100017,7 +100017,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027110.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027110.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -100549,7 +100549,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027115.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027115.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -101081,7 +101081,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027116.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027116.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -101613,7 +101613,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027261.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027261.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -102145,7 +102145,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027269.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027269.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -102677,7 +102677,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027306.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027306.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -103209,7 +103209,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027361.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027361.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -103741,7 +103741,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027423.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027423.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -104273,7 +104273,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027446.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027446.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -104805,7 +104805,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027447.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027447.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -105337,7 +105337,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027527.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027527.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -105869,7 +105869,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027557.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027557.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -106401,7 +106401,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027766.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027766.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -106933,7 +106933,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027784.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027784.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -107465,7 +107465,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027841.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027841.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -107997,7 +107997,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/29_027859.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/29_027859.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -108529,7 +108529,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/30_027366.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/30_027366.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -109061,7 +109061,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027211.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027211.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -109593,7 +109593,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027312.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027312.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -110125,7 +110125,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027567.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027567.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -110657,7 +110657,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027717.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027717.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -111189,7 +111189,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/31_027882.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/31_027882.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -111721,7 +111721,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/32_026966.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/32_026966.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -112253,7 +112253,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/32_027044.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/32_027044.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -112785,7 +112785,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027105.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027105.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -113317,7 +113317,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027118.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027118.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -113849,7 +113849,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027441.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027441.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -114381,7 +114381,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027580.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027580.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -114913,7 +114913,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027633.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027633.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -115445,7 +115445,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027636.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027636.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -115977,7 +115977,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027759.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027759.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -116509,7 +116509,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/34_027799.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/34_027799.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -117041,7 +117041,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/35_027199.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/35_027199.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -117573,7 +117573,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/35_027384.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/35_027384.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -118105,7 +118105,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/35_027521.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/35_027521.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -118637,7 +118637,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/35_027692.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/35_027692.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -119169,7 +119169,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027215.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027215.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -119701,7 +119701,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027238.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027238.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -120233,7 +120233,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027252.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027252.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -120765,7 +120765,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027308.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027308.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -121297,7 +121297,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027416.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027416.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -121829,7 +121829,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027661.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027661.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -122361,7 +122361,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/37_027693.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/37_027693.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -122893,7 +122893,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_026953.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_026953.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -123425,7 +123425,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027092.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027092.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -123957,7 +123957,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027286.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027286.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -124489,7 +124489,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027388.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027388.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -125021,7 +125021,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027395.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027395.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -125553,7 +125553,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027467.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027467.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -126085,7 +126085,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027516.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027516.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -126617,7 +126617,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027555.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027555.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -127149,7 +127149,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/38_027650.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/38_027650.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -127681,7 +127681,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/39_027468.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/39_027468.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -128213,7 +128213,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/39_027631.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/39_027631.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -128745,7 +128745,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027141.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027141.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -129277,7 +129277,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027314.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027314.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -129809,7 +129809,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027360.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027360.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -130341,7 +130341,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027512.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027512.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -130873,7 +130873,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/40_027783.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/40_027783.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -131405,7 +131405,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027017.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027017.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -131937,7 +131937,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027090.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027090.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -132469,7 +132469,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027119.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027119.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -133001,7 +133001,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027160.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027160.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -133533,7 +133533,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027214.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027214.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -134065,7 +134065,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027424.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027424.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -134597,7 +134597,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027494.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027494.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -135129,7 +135129,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027544.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027544.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -135661,7 +135661,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027645.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027645.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -136193,7 +136193,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027659.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027659.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -136725,7 +136725,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/41_027813.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/41_027813.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -137257,7 +137257,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_026974.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_026974.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -137789,7 +137789,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027039.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027039.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -138321,7 +138321,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027159.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027159.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -138853,7 +138853,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027325.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027325.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -139385,7 +139385,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027640.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027640.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -139917,7 +139917,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027724.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027724.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -140449,7 +140449,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/45_027771.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/45_027771.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -140981,7 +140981,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_026909.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_026909.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -141513,7 +141513,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_026925.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_026925.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -142045,7 +142045,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_027067.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_027067.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -142577,7 +142577,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_027318.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_027318.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -143109,7 +143109,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/48_027329.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/48_027329.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -143641,7 +143641,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_026910.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_026910.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -144173,7 +144173,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_026988.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_026988.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -144705,7 +144705,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_026991.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_026991.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -145237,7 +145237,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027265.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027265.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -145769,7 +145769,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027426.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027426.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -146301,7 +146301,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027429.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027429.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -146833,7 +146833,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027458.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027458.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -147365,7 +147365,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027721.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027721.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -147897,7 +147897,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027782.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027782.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -148429,7 +148429,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/49_027833.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/49_027833.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -148961,7 +148961,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_026914.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_026914.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -149493,7 +149493,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_026927.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_026927.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -150025,7 +150025,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_026932.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_026932.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -150557,7 +150557,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_026941.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_026941.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -151089,7 +151089,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027187.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027187.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -151621,7 +151621,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027258.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027258.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -152153,7 +152153,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027266.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027266.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -152685,7 +152685,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027279.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027279.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -153217,7 +153217,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027290.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027290.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -153749,7 +153749,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027408.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027408.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -154281,7 +154281,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027534.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027534.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -154813,7 +154813,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027690.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027690.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -155345,7 +155345,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027701.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027701.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -155877,7 +155877,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/50_027847.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/50_027847.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -156409,7 +156409,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_026917.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_026917.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -156941,7 +156941,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_026920.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_026920.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -157473,7 +157473,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_027282.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_027282.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -158005,7 +158005,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_027291.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_027291.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -158537,7 +158537,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_027488.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_027488.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -159069,7 +159069,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/51_027518.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/51_027518.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -159601,7 +159601,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/52_027217.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/52_027217.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -160133,7 +160133,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/52_027479.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/52_027479.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -160665,7 +160665,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/52_027652.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/52_027652.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -161197,7 +161197,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/52_027829.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/52_027829.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -161729,7 +161729,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027162.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027162.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -162261,7 +162261,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027189.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027189.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -162793,7 +162793,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027519.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027519.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -163325,7 +163325,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027624.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027624.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -163857,7 +163857,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027699.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027699.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -164389,7 +164389,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027800.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027800.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -164921,7 +164921,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/53_027870.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/53_027870.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -165453,7 +165453,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/54_027254.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/54_027254.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -165985,7 +165985,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027123.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027123.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -166517,7 +166517,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027234.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027234.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -167049,7 +167049,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027272.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027272.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -167581,7 +167581,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027480.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027480.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -168113,7 +168113,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027559.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027559.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -168645,7 +168645,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027618.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027618.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -169177,7 +169177,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027733.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027733.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -169709,7 +169709,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027764.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027764.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -170241,7 +170241,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027773.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027773.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -170773,7 +170773,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027779.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027779.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -171305,7 +171305,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027809.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027809.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -171837,7 +171837,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/55_027843.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/55_027843.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -172369,7 +172369,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027165.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027165.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -172901,7 +172901,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027260.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027260.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -173433,7 +173433,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027443.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027443.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -173965,7 +173965,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027606.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027606.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -174497,7 +174497,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/56_027758.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/56_027758.wav",
             "one_hot_labels": [
                 0,
                 0,
@@ -175029,7 +175029,7 @@
             ]
         },
         {
-            "wav": "/home/taemyung_heo/workspace/dataset/sonyc-ust/audio/61_027412.wav",
+            "wav": "/mnt/ssd_disk/datasets/sonyc-ust/audio/61_027412.wav",
             "one_hot_labels": [
                 0,
                 0,
