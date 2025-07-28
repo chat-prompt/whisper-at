@@ -60,13 +60,40 @@ After addressing all items:
 
 The key is to use the right API endpoints that actually work. Here are the tested, working commands:
 
+### Prerequisites & Error Handling
+
+```bash
+# Check prerequisites and API rate limits
+if ! command -v gh &> /dev/null; then
+    echo "Error: GitHub CLI 'gh' is not installed"
+    exit 1
+fi
+
+if ! command -v jq &> /dev/null; then
+    echo "Error: 'jq' is not installed"
+    exit 1
+fi
+
+# Check GitHub authentication
+if ! gh auth status &> /dev/null; then
+    echo "Error: Not authenticated with GitHub. Run 'gh auth login'"
+    exit 1
+fi
+
+# Check API rate limit
+RATE_LIMIT=$(gh api rate_limit | jq -r '.resources.core.remaining')
+if [ "$RATE_LIMIT" -lt 10 ]; then
+    echo "Warning: GitHub API rate limit low ($RATE_LIMIT remaining)"
+fi
+```
+
 ### 1. Get Current PR Number and Basic Info
 ```bash
 # Get current PR details
 gh pr status
 
 # View PR with all comments (readable format)
-gh pr view --comments
+gh pr view $ARGUMENTS --comments
 ```
 
 ### 2. Get All Review Comments (Code-Level Comments)
@@ -74,8 +101,24 @@ gh pr view --comments
 # Get review comments (comments on specific lines of code)
 gh api repos/{owner}/{repo}/pulls/{pr_number}/comments | jq '.[] | {id: .id, author: .author.login, body: .body, created_at: .created_at, in_reply_to_id: .in_reply_to_id}'
 
-# For current repo, use variables:
-gh api repos/$(gh repo view --json owner,name | jq -r '.owner.login')/$(gh repo view --json owner,name | jq -r '.name')/pulls/$(gh pr view --json number | jq -r '.number')/comments
+# For current repo, use variables (reliable approach with error handling):
+if ! OWNER=$(gh repo view --json owner | jq -r '.owner.login' 2>/dev/null); then
+    echo "Error: Unable to get repository owner"
+    exit 1
+fi
+
+if ! REPO=$(gh repo view --json name | jq -r '.name' 2>/dev/null); then
+    echo "Error: Unable to get repository name"
+    exit 1
+fi
+
+if ! PR_NUM=$(gh pr view --json number | jq -r '.number' 2>/dev/null); then
+    echo "Error: Unable to get PR number. Are you on a PR branch?"
+    exit 1
+fi
+
+echo "Fetching comments for PR #$PR_NUM in $OWNER/$REPO"
+gh api repos/$OWNER/$REPO/pulls/$PR_NUM/comments
 ```
 
 ### 3. Get All Review Summaries
@@ -110,31 +153,95 @@ gh api repos/{owner}/{repo}/pulls/{pr_number}/comments | jq 'group_by(.in_reply_
 
 ### Step 1: Comprehensive Comment Discovery
 ```bash
+# Set up variables first with error handling
+if ! OWNER=$(gh repo view --json owner | jq -r '.owner.login' 2>/dev/null); then
+    echo "Error: Unable to get repository owner"
+    exit 1
+fi
+
+if ! REPO=$(gh repo view --json name | jq -r '.name' 2>/dev/null); then
+    echo "Error: Unable to get repository name"
+    exit 1
+fi
+
+if ! PR_NUM=$(gh pr view --json number | jq -r '.number' 2>/dev/null); then
+    echo "Error: Unable to get PR number. Are you on a PR branch?"
+    exit 1
+fi
+
+echo "Processing comments for PR #$PR_NUM in $OWNER/$REPO"
+
 # Run all these in parallel for complete picture:
 gh pr view --comments  # Human-readable overview
-gh api repos/$(gh repo view --json owner,name | jq -r '.owner.login')/$(gh repo view --json owner,name | jq -r '.name')/pulls/$(gh pr view --json number | jq -r '.number')/comments | jq '.[] | {id: .id, author: .author.login, body: .body, created_at: .created_at, in_reply_to_id: .in_reply_to_id}'
-gh api repos/$(gh repo view --json owner,name | jq -r '.owner.login')/$(gh repo view --json owner,name | jq -r '.name')/pulls/$(gh pr view --json number | jq -r '.number')/reviews | jq '.[] | select(.state == "COMMENTED") | {id: .id, author: .author.login, body: .body, submitted_at: .submitted_at}'
+gh api repos/$OWNER/$REPO/pulls/$PR_NUM/comments | jq '.[] | {id: .id, author: .author.login, body: .body, created_at: .created_at, in_reply_to_id: .in_reply_to_id}'
+gh api repos/$OWNER/$REPO/pulls/$PR_NUM/reviews | jq '.[] | select(.state == "COMMENTED") | {id: .id, author: .author.login, body: .body, submitted_at: .submitted_at}'
 ```
 
 ### Step 2: Intelligent Comment Classification
 ```bash
-# Classify comments by urgency and type
-gh api repos/$(gh repo view --json owner,name | jq -r '.owner.login')/$(gh repo view --json owner,name | jq -r '.name')/pulls/$(gh pr view --json number | jq -r '.number')/comments | jq '.[] | {
+# Set up variables first with error handling
+if ! OWNER=$(gh repo view --json owner | jq -r '.owner.login' 2>/dev/null); then
+    echo "Error: Unable to get repository owner"
+    exit 1
+fi
+
+if ! REPO=$(gh repo view --json name | jq -r '.name' 2>/dev/null); then
+    echo "Error: Unable to get repository name"
+    exit 1
+fi
+
+if ! PR_NUM=$(gh pr view --json number | jq -r '.number' 2>/dev/null); then
+    echo "Error: Unable to get PR number. Are you on a PR branch?"
+    exit 1
+fi
+
+# Create classification filters (more maintainable approach)
+cat > comment_classifier.jq << 'EOF'
+def classify_priority:
+  if test("(MUST|must|required|critical|blocking|error|fail)"; "i") then "HIGH_PRIORITY"
+  elif test("(should|suggest|recommend|consider|maybe|could)"; "i") then "MEDIUM_PRIORITY"
+  elif test("(nit|minor|style|typo|optional)"; "i") then "LOW_PRIORITY"
+  else "UNKNOWN" end;
+
+def is_actionable:
+  test("(fix|change|add|remove|update|modify|implement|create|delete)"; "i");
+
+.[] | {
   id: .id,
-  author: .author.login, 
+  author: .author.login,
   body: .body,
-  type: (if .body | test("(MUST|must|required|critical|blocking|error|fail)"; "i") then "HIGH_PRIORITY"
-        elif .body | test("(should|suggest|recommend|consider|maybe|could)"; "i") then "MEDIUM_PRIORITY"  
-        elif .body | test("(nit|minor|style|typo|optional)"; "i") then "LOW_PRIORITY"
-        else "UNKNOWN" end),
-  actionable: (.body | test("(fix|change|add|remove|update|modify|implement|create|delete)"; "i"))
-}'
+  type: (.body | classify_priority),
+  actionable: (.body | is_actionable)
+}
+EOF
+
+# Classify comments by urgency and type (using external jq file)
+gh api repos/$OWNER/$REPO/pulls/$PR_NUM/comments | jq -f comment_classifier.jq
+
+# Clean up temporary file
+rm comment_classifier.jq
 ```
 
 ### Step 3: Smart Resolution Tracking
 ```bash
+# Set up variables first with error handling
+if ! OWNER=$(gh repo view --json owner | jq -r '.owner.login' 2>/dev/null); then
+    echo "Error: Unable to get repository owner"
+    exit 1
+fi
+
+if ! REPO=$(gh repo view --json name | jq -r '.name' 2>/dev/null); then
+    echo "Error: Unable to get repository name"
+    exit 1
+fi
+
+if ! PR_NUM=$(gh pr view --json number | jq -r '.number' 2>/dev/null); then
+    echo "Error: Unable to get PR number. Are you on a PR branch?"
+    exit 1
+fi
+
 # Create a resolution checklist based on comment content
-gh api repos/$(gh repo view --json owner,name | jq -r '.owner.login')/$(gh repo view --json owner,name | jq -r '.name')/pulls/$(gh pr view --json number | jq -r '.number')/comments | jq -r '.[] | select(.body | test("(todo|TODO|FIXME|suggestion|issue|problem|fix|change|update|add|remove|modify)"; "i")) | "- [ ] Comment \(.id) by \(.author.login): \(.body | split("\n")[0] | .[0:100])..."'
+gh api repos/$OWNER/$REPO/pulls/$PR_NUM/comments | jq -r '.[] | select(.body | test("(todo|TODO|FIXME|suggestion|issue|problem|fix|change|update|add|remove|modify)"; "i")) | "- [ ] Comment \(.id) by \(.author.login): \(.body | split("\n")[0] | .[0:100])..."'
 ```
 
 ## Parallel Processing for Comment Resolution
@@ -208,9 +315,52 @@ Spawning 4 parallel sub-agents...
 
 ### Before Committing Changes
 ```bash
-# 1. Verify all tests pass
-bundle exec standardrb  # or your linter
-bin/rails test          # or your test command
+# 1. Verify all tests pass (check project-specific commands first)
+if [ -f "CLAUDE.md" ]; then
+    echo "Checking CLAUDE.md for project-specific test commands..."
+    # Look for common test patterns in CLAUDE.md
+    if grep -q "poetry run" CLAUDE.md; then
+        echo "Running Poetry-based tests..."
+        poetry run pytest || poetry run python -m pytest
+    elif grep -q "npm test\|yarn test" CLAUDE.md; then
+        echo "Running Node.js tests..."
+        npm test || yarn test
+    elif grep -q "bundle exec" CLAUDE.md; then
+        echo "Running Ruby tests..."
+        bundle exec standardrb && bundle exec rspec
+    elif grep -q "python -m pytest\|pytest" CLAUDE.md; then
+        echo "Running Python tests..."
+        python -m pytest || pytest
+    else
+        echo "No recognized test commands in CLAUDE.md. Running common defaults..."
+        # Try common test commands
+        if [ -f "package.json" ]; then
+            npm test || yarn test
+        elif [ -f "pyproject.toml" ]; then
+            poetry run pytest || python -m pytest
+        elif [ -f "Gemfile" ]; then
+            bundle exec rspec || bundle exec test
+        else
+            echo "Warning: Could not determine appropriate test command"
+        fi
+    fi
+else
+    echo "No CLAUDE.md found. Trying to detect project type..."
+    # Auto-detect project type and run appropriate tests
+    if [ -f "package.json" ]; then
+        npm test
+    elif [ -f "pyproject.toml" ]; then
+        poetry run pytest
+    elif [ -f "requirements.txt" ]; then
+        python -m pytest
+    elif [ -f "Gemfile" ]; then
+        bundle exec rspec
+    elif [ -f "go.mod" ]; then
+        go test ./...
+    else
+        echo "Warning: Could not determine project type for testing"
+    fi
+fi
 
 # 2. Check that all comments have been addressed
 echo "=== VERIFICATION: Checking comment resolution ==="
@@ -271,5 +421,77 @@ Analyze and resolve PR comments in parallel:
 
 Target: Resolve $ARGUMENTS comments in parallel
 ```
+
+## Troubleshooting Common Issues
+
+### Authentication Problems
+```bash
+# If you get authentication errors:
+gh auth login
+gh auth refresh
+
+# Check current authentication status:
+gh auth status
+```
+
+### API Rate Limiting
+```bash
+# Check current rate limit:
+gh api rate_limit
+
+# If rate limited, wait or use a different authentication token:
+export GITHUB_TOKEN="your_token_here"
+```
+
+### Missing Dependencies
+```bash
+# Install GitHub CLI (macOS):
+brew install gh
+
+# Install GitHub CLI (Linux):
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh
+
+# Install jq (macOS):
+brew install jq
+
+# Install jq (Linux):
+sudo apt install jq
+```
+
+### Branch Context Issues
+```bash
+# If "Unable to get PR number" error:
+# Make sure you're on a branch with an associated PR:
+gh pr list --author "@me"
+gh pr checkout <pr-number>
+
+# Or specify PR explicitly:
+gh pr view <pr-number> --comments
+```
+
+### Network Connectivity
+```bash
+# Test GitHub connectivity:
+curl -s https://api.github.com/user
+
+# If behind corporate firewall, configure proxy:
+gh config set http_proxy http://proxy.company.com:8080
+gh config set https_proxy https://proxy.company.com:8080
+```
+
+## Performance Tips
+
+### Batch Operations
+- Group multiple API calls together when possible
+- Use GitHub's GraphQL API for complex queries requiring multiple REST calls
+- Cache results locally for repeated operations
+
+### Large Repositories
+- Use pagination for repositories with many comments: `gh api --paginate`
+- Filter results early to reduce data processing
+- Consider using GitHub's search API for specific comment types
 
 This enhanced approach provides robust, tested methods for finding and resolving ALL types of PR comments efficiently.
