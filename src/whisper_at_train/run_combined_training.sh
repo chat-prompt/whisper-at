@@ -15,7 +15,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 # Create log directory if it doesn't exist
-mkdir -p "${SCRIPT_DIR}/log"
+mkdir -p "./log"
 
 # Environment setup
 if [[ -n "${SLURM_JOB_ID:-}" ]]; then
@@ -25,11 +25,13 @@ else
 fi
 
 # Activate virtual environment
-VENV_PATH="${HOME}/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate"
-if [[ -f "$VENV_PATH" ]]; then
-    source "$VENV_PATH"
+# shellcheck source=/dev/null
+VENV_PATH=$(poetry env info --path 2>/dev/null)
+if [[ -n "$VENV_PATH" && -f "$VENV_PATH/bin/activate" ]]; then
+    source "$VENV_PATH/bin/activate"
 else
-    echo "Error: Virtual environment not found at $VENV_PATH"
+    echo "Error: Poetry virtual environment not found or not activated"
+    echo "Please run 'poetry install' and 'poetry shell' first"
     exit 1
 fi
 
@@ -116,44 +118,47 @@ EOF
 echo "Starting training with configuration saved to: ${exp_dir}/config.txt"
 
 # Run training
+set +e  # Temporarily disable strict error handling
 python -W ignore "${SCRIPT_DIR}/run.py" \
-  --model ${model} \
-  --dataset ${dataset} \
-  --data-train ${tr_data} \
-  --data-val ${te_data} \
-  --exp-dir ${exp_dir} \
-  --label-csv ${label_csv} \
-  --n_class ${n_class} \
-  --lr ${lr} \
-  --n-epochs ${epoch} \
-  --batch-size ${batch_size} \
+  --model "${model}" \
+  --dataset "${dataset}" \
+  --data-train "${tr_data}" \
+  --data-val "${te_data}" \
+  --exp-dir "${exp_dir}" \
+  --label-csv "${label_csv}" \
+  --n_class "${n_class}" \
+  --lr "${lr}" \
+  --n-epochs "${epoch}" \
+  --batch-size "${batch_size}" \
   --save_model True \
-  --freqm ${freqm} \
-  --timem ${timem} \
-  --mixup ${mixup} \
-  --bal ${bal} \
-  --model_size ${model_size} \
-  --label_smooth ${label_smooth} \
-  --lrscheduler_start ${lrscheduler_start} \
-  --lrscheduler_decay ${lrscheduler_decay} \
-  --lrscheduler_step ${lrscheduler_step} \
+  --freqm "${freqm}" \
+  --timem "${timem}" \
+  --mixup "${mixup}" \
+  --bal "${bal}" \
+  --model_size "${model_size}" \
+  --label_smooth "${label_smooth}" \
+  --lrscheduler_start "${lrscheduler_start}" \
+  --lrscheduler_decay "${lrscheduler_decay}" \
+  --lrscheduler_step "${lrscheduler_step}" \
   --loss BCE \
   --metrics mAP \
   --warmup True \
-  --wa ${wa} \
-  --wa_start ${wa_start} \
-  --wa_end ${wa_end} \
-  --lr_adapt ${lr_adapt} \
-  --lr_patience ${lr_patience} \
+  --wa "${wa}" \
+  --wa_start "${wa_start}" \
+  --wa_end "${wa_end}" \
+  --lr_adapt "${lr_adapt}" \
+  --lr_patience "${lr_patience}" \
   --num-workers 8 \
-  --pretrained_model ${pretrained_model} \
-  --weight_decay ${weight_decay}
+  --pretrained_model "${pretrained_model}" \
+  --weight_decay "${weight_decay}"
+train_exit_code=$?
+set -e  # Re-enable strict error handling
 
 # Check if training completed successfully
-if [ $? -eq 0 ]; then
+if [ $train_exit_code -eq 0 ]; then
     echo "Training completed successfully!"
     echo "Results saved to: ${exp_dir}"
 else
-    echo "Training failed with exit code: $?"
-    exit 1
+    echo "Training failed with exit code: ${train_exit_code}"
+    exit $train_exit_code
 fi
