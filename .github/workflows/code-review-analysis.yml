@@ -33,71 +33,58 @@ jobs:
       issues: write
       
     steps:
-      - name: Analyze and fix with Claude
-        id: analyze-and-fix
-        uses: anthropics/claude-code-action@beta
-        with:
-          github_token: ${{ secrets.CLAUDE_PAT }}
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          direct_prompt: |
-            다음 PR 리뷰 코멘트를 분석하고 필요시 코드 수정을 수행해주세요:
-            
-            코멘트: "${{ github.event.inputs.comment_body }}"
-            
-            1단계: 코멘트 분석
-            이 코멘트가 코드 수정을 요청하는지 판단해주세요.
-            - 코드 수정 요청: 구체적인 코드 변경, 버그 수정, 리팩토링, 기능 추가/변경 요청
-            - 수정 불필요: 단순 질문, 긍정적 피드백, 코드와 무관한 코멘트, 문서 요청
-            
-            2단계: 코드 수정 (필요한 경우만)
-            만약 코드 수정이 필요하다면:
-            - 해당 파일과 코드 위치 찾기
-            - 요청된 수정 사항 적용
-            - 코드 스타일과 컨벤션 유지
-            - 기존 기능을 손상시키지 않도록 주의
-            
-            응답 형식 (JSON):
-            {
-              "needs_code_change": true/false,
-              "reason": "한 줄 설명",
-              "suggested_action": "구체적인 수정 내용 요약"
-            }
-            
-            [실제 코드 수정이 필요한 경우에만 파일 수정 수행]
+      - name: Analyze comment with Claude API
+        id: analyze-comment
+        run: |
+          COMMENT_BODY='${{ github.event.inputs.comment_body }}'
           
-          allowed_tools: "Read,Edit,MultiEdit,Grep,Glob"
+          # Claude API를 직접 호출하여 코멘트 분석
+          RESPONSE=$(curl -s -X POST https://api.anthropic.com/v1/messages \
+            -H "Content-Type: application/json" \
+            -H "x-api-key: ${{ secrets.CLAUDE_API_KEY }}" \
+            -H "anthropic-version: 2023-06-01" \
+            -d "{
+              \"model\": \"claude-3-sonnet-20240229\",
+              \"max_tokens\": 1000,
+              \"messages\": [{
+                \"role\": \"user\",
+                \"content\": \"다음 PR 리뷰 코멘트를 분석하고 코드 수정이 필요한지 판단해주세요. JSON 형식으로만 응답해주세요.\\n\\n코멘트: $COMMENT_BODY\\n\\n응답 형식:\\n{\\\"needs_code_change\\\": true/false, \\\"reason\\\": \\\"한 줄 설명\\\", \\\"suggested_action\\\": \\\"구체적인 수정 내용\\\"}\"
+              }]
+            }")
           
-      - name: Parse analysis result
-        id: parse-analysis
+          echo "Claude API Response: $RESPONSE"
+          
+          # JSON 응답에서 값 추출
+          NEEDS_CHANGE=$(echo "$RESPONSE" | jq -r '.content[0].text' | jq -r '.needs_code_change // false')
+          REASON=$(echo "$RESPONSE" | jq -r '.content[0].text' | jq -r '.reason // "분석 실패"')
+          ACTION=$(echo "$RESPONSE" | jq -r '.content[0].text' | jq -r '.suggested_action // "없음"')
+          
+          echo "needs-code-change=$NEEDS_CHANGE" >> $GITHUB_OUTPUT
+          echo "reason=$REASON" >> $GITHUB_OUTPUT
+          echo "suggested-action=$ACTION" >> $GITHUB_OUTPUT
+          
+          echo "Analysis result: $NEEDS_CHANGE"
+          echo "Reason: $REASON"
+            
+      - name: Apply code changes with Claude
+        if: steps.analyze-comment.outputs.needs-code-change == 'true'
         uses: actions/github-script@v7
         with:
           script: |
-            try {
-              const analysisOutput = `${{ steps.analyze-and-fix.outputs.response }}`;
-              const jsonMatch = analysisOutput.match(/\{[\s\S]*\}/);
-              
-              let needsCodeChange = false;
-              let reason = '';
-              let suggestedAction = '';
-              
-              if (jsonMatch) {
-                const jsonResult = JSON.parse(jsonMatch[0]);
-                needsCodeChange = jsonResult.needs_code_change === true;
-                reason = jsonResult.reason || '';
-                suggestedAction = jsonResult.suggested_action || '';
-              }
-              
-              core.setOutput('needs-code-change', needsCodeChange);
-              core.setOutput('reason', reason);
-              core.setOutput('suggested-action', suggestedAction);
-              
-              console.log(`Analysis result - Needs code change: ${needsCodeChange}`);
-              console.log(`Reason: ${reason}`);
-              
-            } catch (error) {
-              console.error('Failed to parse Claude response:', error);
-              core.setOutput('needs-code-change', false);
-            }
+            // 여기서는 단순히 코드 변경이 필요하다고 표시만 함
+            // 실제 Claude 기반 코드 수정은 향후 구현
+            console.log('Code changes needed based on review comment');
+            console.log('Comment: ${{ github.event.inputs.comment_body }}');
+            
+            // TODO: Claude API를 직접 호출하여 코드 수정 구현
+            // 현재는 수동 수정이 필요한 상태로 표시
+          
+      - name: Set analysis result
+        id: parse-analysis
+        run: |
+          echo "needs-code-change=${{ steps.analyze-comment.outputs.needs-code-change }}" >> $GITHUB_OUTPUT
+          echo "reason=${{ steps.analyze-comment.outputs.reason }}" >> $GITHUB_OUTPUT
+          echo "suggested-action=${{ steps.analyze-comment.outputs.suggested-action }}" >> $GITHUB_OUTPUT
             
       - name: Checkout PR branch
         if: steps.parse-analysis.outputs.needs-code-change == 'true'
