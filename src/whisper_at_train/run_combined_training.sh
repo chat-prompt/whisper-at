@@ -7,58 +7,124 @@
 #SBATCH --job-name="w-as-high"
 #SBATCH --output=./log/%j_as.txt
 
+set -euo pipefail  # Exit on error, undefined variables, pipe failures
 set -x
-# comment this line if not running on sls cluster
-#. /data/sls/scratch/share-201907/slstoolchainrc
-source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
-export TORCH_HOME=../../pretrained_models
 
+# Script configuration
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
+
+# Create log directory if it doesn't exist
+mkdir -p "${SCRIPT_DIR}/log"
+
+# Environment setup
+if [[ -n "${SLURM_JOB_ID:-}" ]]; then
+    echo "Running in SLURM environment (Job ID: ${SLURM_JOB_ID})"
+else
+    echo "Running in local environment"
+fi
+
+# Activate virtual environment
+VENV_PATH="${HOME}/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate"
+if [[ -f "$VENV_PATH" ]]; then
+    source "$VENV_PATH"
+else
+    echo "Error: Virtual environment not found at $VENV_PATH"
+    exit 1
+fi
+
+# Set TORCH_HOME relative to project root
+export TORCH_HOME="${PROJECT_ROOT}/pretrained_models"
+
+# Training hyperparameters
 lr=1e-6
 freqm=0
 timem=10
 mixup=0.5
 batch_size=48
-model=whisper-high-lw_tr_1_8 #whisper-high-lw_tr_1_8 (tl-tr, lr=5e-5) whisper-high-lw_down_tr_512_1_8 (tl-tr-512, w/ low-dim proj, lr=1e-4)
+model=whisper-high-lw_tr_1_8  # Options: whisper-high-lw_tr_1_8 (tl-tr), whisper-high-lw_down_tr_512_1_8 (tl-tr-512)
 model_size=large-v1
 
+# Dataset configuration
 dataset=audioset_sonyc
 bal=none
 epoch=50
 weight_decay=1e-5
+
+# Learning rate scheduler
 lrscheduler_start=15
 lrscheduler_decay=0.75
 lrscheduler_step=5
+
+# Weight averaging
 wa=True
 wa_start=36
 wa_end=50
+
+# Learning rate adaptation
 lr_adapt=True
 lr_patience=2
-tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_train.json
-#tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/audioset_train.json
-te_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_val.json
-label_csv=/mnt/ssd_disk/github/whisper-at/data/processed_data/class_labels_indices_extended.csv
-#label_csv=/mnt/ssd_disk/github/whisper-at/audioset_label.csv
+
+# Data paths - use absolute paths for SLURM compatibility
+DATA_DIR="/mnt/ssd_disk/github/whisper-at/data/processed_data"
+tr_data="${DATA_DIR}/combined_train.json"
+te_data="${DATA_DIR}/combined_val.json"
+label_csv="${DATA_DIR}/class_labels_indices_extended.csv"
 n_class=533
-# n_class=527
 label_smooth=0.1
 
-pretrained_model=/mnt/ssd_disk/github/whisper-at/pretrained_models/large-v1_ori.pth
+# Pretrained model path
+pretrained_model="/mnt/ssd_disk/github/whisper-at/pretrained_models/large-v1_ori.pth"
+
+# Verify required files exist
+for file in "$tr_data" "$te_data" "$label_csv" "$pretrained_model"; do
+    if [[ ! -f "$file" ]]; then
+        echo "Error: Required file not found: $file"
+        exit 1
+    fi
+done
 
 # Get current timestamp in YYMMDDHHMM format
 timestamp=$(date +%y%m%d%H%M)
 
-exp_dir=./exp/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}
-mkdir -p $exp_dir
+# Create experiment directory
+exp_dir="${SCRIPT_DIR}/exp/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}"
+mkdir -p "$exp_dir"
 
-python -W ignore ./run.py \
+# Log experiment configuration
+cat > "${exp_dir}/config.txt" <<EOF
+Experiment Configuration
+========================
+Model: ${model}
+Model Size: ${model_size}
+Dataset: ${dataset}
+Learning Rate: ${lr}
+Batch Size: ${batch_size}
+Epochs: ${epoch}
+Number of Classes: ${n_class}
+Label Smoothing: ${label_smooth}
+Mixup: ${mixup}
+Weight Decay: ${weight_decay}
+LR Scheduler Start: ${lrscheduler_start}
+LR Scheduler Decay: ${lrscheduler_decay}
+LR Scheduler Step: ${lrscheduler_step}
+Weight Averaging: ${wa} (${wa_start}-${wa_end})
+LR Adaptation: ${lr_adapt} (patience: ${lr_patience})
+Timestamp: ${timestamp}
+EOF
+
+echo "Starting training with configuration saved to: ${exp_dir}/config.txt"
+
+# Run training
+python -W ignore "${SCRIPT_DIR}/run.py" \
   --model ${model} \
   --dataset ${dataset} \
   --data-train ${tr_data} \
   --data-val ${te_data} \
-  --exp-dir $exp_dir \
+  --exp-dir ${exp_dir} \
   --label-csv ${label_csv} \
   --n_class ${n_class} \
-  --lr $lr \
+  --lr ${lr} \
   --n-epochs ${epoch} \
   --batch-size ${batch_size} \
   --save_model True \
@@ -82,4 +148,12 @@ python -W ignore ./run.py \
   --num-workers 8 \
   --pretrained_model ${pretrained_model} \
   --weight_decay ${weight_decay}
-  #--freeze_original_classes
+
+# Check if training completed successfully
+if [ $? -eq 0 ]; then
+    echo "Training completed successfully!"
+    echo "Results saved to: ${exp_dir}"
+else
+    echo "Training failed with exit code: $?"
+    exit 1
+fi
