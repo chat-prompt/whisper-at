@@ -29,11 +29,14 @@ jobs:
           script: |
             const comment = context.payload.comment;
             const author = comment.user.login;
+            const isBot = comment.user.type === 'Bot';
             
             // CodeRabbit, Claude, 또는 리뷰어 코멘트인지 확인
             const isReviewComment = 
               author === 'coderabbitai' ||
+              author.includes('coderabbit') ||  // coderabbitai[bot] 등도 포함
               author.includes('claude') ||
+              (isBot && author.includes('coderabbit')) || // Bot 타입이면서 coderabbit 포함
               comment.author_association === 'COLLABORATOR' ||
               comment.author_association === 'MEMBER' ||
               comment.author_association === 'OWNER';
@@ -45,7 +48,19 @@ jobs:
             // PR 번호 가져오기 (pull_request_review_comment 이벤트)
             const prNumber = context.payload.pull_request.number;
             core.setOutput('pr-number', prNumber);
+            
+            console.log(`Review comment from: ${author}`);
+            console.log(`User type: ${comment.user.type}`);
+            console.log(`Is bot: ${isBot}`);
+            console.log(`Is review comment: ${isReviewComment}`);
+            console.log(`PR number: ${prNumber}`);
 
+      - name: Debug comment check
+        run: |
+          echo "Is review comment: ${{ steps.check-comment.outputs.is-review-comment }}"
+          echo "Comment author: ${{ github.event.comment.user.login }}"
+          echo "Author association: ${{ github.event.comment.author_association }}"
+          echo "Comment body: ${{ steps.check-comment.outputs.comment-body }}"
 
       - name: Analyze and fix with Claude
         if: steps.check-comment.outputs.is-review-comment == 'true'
