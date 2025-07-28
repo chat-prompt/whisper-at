@@ -67,7 +67,7 @@ jobs:
         id: analyze-and-fix
         uses: anthropics/claude-code-action@beta
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.CLAUDE_PAT }}
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           direct_prompt: |
             다음 PR 리뷰 코멘트를 분석하고 필요시 코드 수정을 수행해주세요:
@@ -160,7 +160,7 @@ jobs:
         if: steps.check-comment.outputs.is-review-comment == 'true' && steps.parse-analysis.outputs.needs-code-change == 'true'
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CLAUDE_PAT }}
           ref: ${{ steps.get-pr.outputs.pr-head-ref }}
           fetch-depth: 0
 
