@@ -7,11 +7,21 @@
 #SBATCH --job-name="w-as-high"
 #SBATCH --output=./log/%j_as.txt
 
-set -x
-# comment this line if not running on sls cluster
-#. /data/sls/scratch/share-201907/slstoolchainrc
-source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
-export TORCH_HOME=../../pretrained_models
+set -euo pipefail
+
+# Poetry 가상환경 활성화 (동적 감지)
+if command -v poetry >/dev/null 2>&1; then
+    echo "Poetry 가상환경 활성화 중..."
+    eval "$(poetry env info --path)/bin/activate" 2>/dev/null || {
+        echo "Poetry 환경을 찾을 수 없습니다. poetry shell을 먼저 실행하세요."
+        exit 1
+    }
+fi
+
+# 프로젝트 루트 디렉토리 기준으로 경로 설정
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+export TORCH_HOME="$PROJECT_ROOT/pretrained_models"
 
 lr=1e-6
 freqm=0
@@ -33,53 +43,89 @@ wa_start=36
 wa_end=50
 lr_adapt=True
 lr_patience=2
-tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_train.json
-#tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/audioset_train.json
-te_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_val.json
-label_csv=/mnt/ssd_disk/github/whisper-at/data/processed_data/class_labels_indices_extended.csv
-#label_csv=/mnt/ssd_disk/github/whisper-at/audioset_label.csv
+# 데이터 경로 설정 (프로젝트 루트 기준)
+tr_data="$PROJECT_ROOT/data/processed_data/combined_train.json"
+te_data="$PROJECT_ROOT/data/processed_data/combined_val.json"
+label_csv="$PROJECT_ROOT/data/processed_data/class_labels_indices_extended.csv"
 n_class=533
-# n_class=527
 label_smooth=0.1
 
-pretrained_model=/mnt/ssd_disk/github/whisper-at/pretrained_models/large-v1_ori.pth
+pretrained_model="$PROJECT_ROOT/pretrained_models/large-v1_ori.pth"
 
-# Get current timestamp in YYMMDDHHMM format
+# 필수 파일들 존재 확인
+for file in "$tr_data" "$te_data" "$label_csv" "$pretrained_model"; do
+    if [[ ! -f "$file" ]]; then
+        echo "오류: 필수 파일을 찾을 수 없습니다: $file"
+        exit 1
+    fi
+done
+
+# 실험 디렉토리 설정
 timestamp=$(date +%y%m%d%H%M)
+exp_dir="./exp/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}"
 
-exp_dir=./exp/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}
-mkdir -p $exp_dir
+echo "실험 디렉토리 생성: $exp_dir"
+mkdir -p "$exp_dir" || {
+    echo "오류: 실험 디렉토리 생성 실패: $exp_dir"
+    exit 1
+}
+
+# 로그 디렉토리 생성
+mkdir -p "./log"
+
+# 훈련 실행
+echo "=========================================="
+echo "Whisper-AT 결합 훈련 시작"
+echo "모델: ${model} (${model_size})"
+echo "데이터셋: ${dataset}"
+echo "배치 크기: ${batch_size}, 에포크: ${epoch}"
+echo "학습률: ${lr}, 가중치 감쇠: ${weight_decay}"
+echo "실험 디렉토리: $exp_dir"
+echo "=========================================="
 
 python -W ignore ./run.py \
-  --model ${model} \
-  --dataset ${dataset} \
-  --data-train ${tr_data} \
-  --data-val ${te_data} \
-  --exp-dir $exp_dir \
-  --label-csv ${label_csv} \
-  --n_class ${n_class} \
-  --lr $lr \
-  --n-epochs ${epoch} \
-  --batch-size ${batch_size} \
+  --model "${model}" \
+  --dataset "${dataset}" \
+  --data-train "${tr_data}" \
+  --data-val "${te_data}" \
+  --exp-dir "$exp_dir" \
+  --label-csv "${label_csv}" \
+  --n_class "${n_class}" \
+  --lr "$lr" \
+  --n-epochs "${epoch}" \
+  --batch-size "${batch_size}" \
   --save_model True \
-  --freqm ${freqm} \
-  --timem ${timem} \
-  --mixup ${mixup} \
-  --bal ${bal} \
-  --model_size ${model_size} \
-  --label_smooth ${label_smooth} \
-  --lrscheduler_start ${lrscheduler_start} \
-  --lrscheduler_decay ${lrscheduler_decay} \
-  --lrscheduler_step ${lrscheduler_step} \
+  --freqm "${freqm}" \
+  --timem "${timem}" \
+  --mixup "${mixup}" \
+  --bal "${bal}" \
+  --model_size "${model_size}" \
+  --label_smooth "${label_smooth}" \
+  --lrscheduler_start "${lrscheduler_start}" \
+  --lrscheduler_decay "${lrscheduler_decay}" \
+  --lrscheduler_step "${lrscheduler_step}" \
   --loss BCE \
   --metrics mAP \
   --warmup True \
-  --wa ${wa} \
-  --wa_start ${wa_start} \
-  --wa_end ${wa_end} \
-  --lr_adapt ${lr_adapt} \
-  --lr_patience ${lr_patience} \
+  --wa "${wa}" \
+  --wa_start "${wa_start}" \
+  --wa_end "${wa_end}" \
+  --lr_adapt "${lr_adapt}" \
+  --lr_patience "${lr_patience}" \
   --num-workers 8 \
-  --pretrained_model ${pretrained_model} \
-  --weight_decay ${weight_decay}
-  #--freeze_original_classes
+  --pretrained_model "${pretrained_model}" \
+  --weight_decay "${weight_decay}"
+
+# 훈련 완료 상태 확인
+if [[ $? -eq 0 ]]; then
+    echo "=========================================="
+    echo "훈련이 성공적으로 완료되었습니다!"
+    echo "결과는 다음 디렉토리에 저장됩니다: $exp_dir"
+    echo "=========================================="
+else
+    echo "=========================================="
+    echo "오류: 훈련 중 문제가 발생했습니다."
+    echo "로그를 확인하세요: ./log/"
+    echo "=========================================="
+    exit 1
+fi
