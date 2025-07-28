@@ -14,13 +14,18 @@
 set -e  # Exit on any error
 set -x  # Print commands
 
-# Activate poetry environment (modify path as needed)
-VENV_PATH="/home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate"
-if [[ -f "$VENV_PATH" ]]; then
-    source "$VENV_PATH"
-    echo "Poetry environment activated"
+# 가상환경 자동 탐색
+if command -v poetry >/dev/null 2>&1; then
+    VENV_PATH="$(poetry env info --path 2>/dev/null)/bin/activate"
+    if [[ -f "$VENV_PATH" ]]; then
+        # shellcheck disable=SC1090   # 동적 경로
+        source "$VENV_PATH"
+        echo "Poetry environment activated: $VENV_PATH"
+    else
+        echo "Poetry environment not found, using system Python"
+    fi
 else
-    echo "Poetry environment not found at $VENV_PATH, using system Python"
+    echo "Poetry not installed, using system Python"
 fi
 
 # Set TORCH_HOME relative to script location
@@ -75,7 +80,7 @@ label_smooth=0.1
 timestamp=$(date +%y%m%d%H%M)
 
 exp_dir=./exp/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}
-mkdir -p $exp_dir
+mkdir -p "$exp_dir"
 
 echo "Starting training with the following configuration:"
 echo "Model: $model ($model_size)"
