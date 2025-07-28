@@ -6,50 +6,98 @@
 #SBATCH --mem=48000
 #SBATCH --job-name="w-as-high"
 #SBATCH --output=./log/%j_as.txt
+#SBATCH --error=./log/%j_as_err.txt
 
 set -x
+set -e  # Exit on error
+
 # comment this line if not running on sls cluster
 #. /data/sls/scratch/share-201907/slstoolchainrc
-source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
+
+# Activate virtual environment
+if [ -f "/home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate" ]; then
+    source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
+else
+    echo "Virtual environment not found. Please check the path."
+    exit 1
+fi
+
 export TORCH_HOME=../../pretrained_models
 
+# Training hyperparameters
 lr=1e-6
 freqm=0
 timem=10
 mixup=0.5
 batch_size=48
-model=whisper-high-lw_tr_1_8 #whisper-high-lw_tr_1_8 (tl-tr, lr=5e-5) whisper-high-lw_down_tr_512_1_8 (tl-tr-512, w/ low-dim proj, lr=1e-4)
+
+# Model configuration
+# Options: whisper-high-lw_tr_1_8 (tl-tr, lr=5e-5) or whisper-high-lw_down_tr_512_1_8 (tl-tr-512, w/ low-dim proj, lr=1e-4)
+model=whisper-high-lw_tr_1_8
 model_size=large-v1
 
+# Dataset and training settings
 dataset=audioset_sonyc
 bal=none
 epoch=50
 weight_decay=1e-5
+
+# Learning rate scheduler
 lrscheduler_start=15
 lrscheduler_decay=0.75
 lrscheduler_step=5
+
+# Weight averaging settings
 wa=True
 wa_start=36
 wa_end=50
+
+# Adaptive learning rate
 lr_adapt=True
 lr_patience=2
+# Data paths
 tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_train.json
 #tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/audioset_train.json
 te_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_val.json
+
+# Label configuration
 label_csv=/mnt/ssd_disk/github/whisper-at/data/processed_data/class_labels_indices_extended.csv
 #label_csv=/mnt/ssd_disk/github/whisper-at/audioset_label.csv
-n_class=533
-# n_class=527
+n_class=533  # 527 AudioSet + 6 SONYC-UST classes
+#n_class=527  # AudioSet only
 label_smooth=0.1
 
+# Pretrained model path
 pretrained_model=/mnt/ssd_disk/github/whisper-at/pretrained_models/large-v1_ori.pth
+
+# Validate pretrained model exists
+if [ ! -f "${pretrained_model}" ]; then
+    echo "Pretrained model not found: ${pretrained_model}"
+    exit 1
+fi
 
 # Get current timestamp in YYMMDDHHMM format
 timestamp=$(date +%y%m%d%H%M)
 
+# Create experiment directory
 exp_dir=./exp/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}
 mkdir -p $exp_dir
 
+# Create log directory if it doesn't exist
+mkdir -p ./log
+
+# Save configuration
+echo "Training configuration:" > ${exp_dir}/config.txt
+echo "Model: ${model}" >> ${exp_dir}/config.txt
+echo "Model size: ${model_size}" >> ${exp_dir}/config.txt
+echo "Dataset: ${dataset}" >> ${exp_dir}/config.txt
+echo "Learning rate: ${lr}" >> ${exp_dir}/config.txt
+echo "Batch size: ${batch_size}" >> ${exp_dir}/config.txt
+echo "Epochs: ${epoch}" >> ${exp_dir}/config.txt
+echo "Timestamp: ${timestamp}" >> ${exp_dir}/config.txt
+
+# Run training
+echo "Starting training at $(date)"
 python -W ignore ./run.py \
   --model ${model} \
   --dataset ${dataset} \
@@ -83,3 +131,11 @@ python -W ignore ./run.py \
   --pretrained_model ${pretrained_model} \
   --weight_decay ${weight_decay}
   #--freeze_original_classes
+
+# Check exit status
+if [ $? -eq 0 ]; then
+    echo "Training completed successfully at $(date)"
+else
+    echo "Training failed with exit code $? at $(date)"
+    exit 1
+fi
