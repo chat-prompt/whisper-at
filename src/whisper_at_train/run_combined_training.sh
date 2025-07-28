@@ -1,4 +1,8 @@
 #!/bin/bash
+# Combined training script for Whisper-AT models
+# Trains on AudioSet + SONYC-UST combined dataset with TL-TR architecture
+#
+# SLURM configuration:
 #SBATCH -p a5
 #SBATCH --gres=gpu:1
 #SBATCH -c 16
@@ -7,48 +11,82 @@
 #SBATCH --job-name="w-as-high"
 #SBATCH --output=./log/%j_as.txt
 
-set -x
-# comment this line if not running on sls cluster
-#. /data/sls/scratch/share-201907/slstoolchainrc
-source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
-export TORCH_HOME=../../pretrained_models
+set -e  # Exit on any error
+set -x  # Print commands
 
-lr=1e-6
-freqm=0
-timem=10
-mixup=0.5
-batch_size=48
-model=whisper-high-lw_tr_1_8 #whisper-high-lw_tr_1_8 (tl-tr, lr=5e-5) whisper-high-lw_down_tr_512_1_8 (tl-tr-512, w/ low-dim proj, lr=1e-4)
-model_size=large-v1
+# Activate poetry environment (modify path as needed)
+VENV_PATH="/home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate"
+if [[ -f "$VENV_PATH" ]]; then
+    source "$VENV_PATH"
+    echo "Poetry environment activated"
+else
+    echo "Poetry environment not found at $VENV_PATH, using system Python"
+fi
 
-dataset=audioset_sonyc
-bal=none
-epoch=50
-weight_decay=1e-5
-lrscheduler_start=15
-lrscheduler_decay=0.75
-lrscheduler_step=5
-wa=True
-wa_start=36
-wa_end=50
-lr_adapt=True
-lr_patience=2
-tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_train.json
-#tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/audioset_train.json
-te_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_val.json
-label_csv=/mnt/ssd_disk/github/whisper-at/data/processed_data/class_labels_indices_extended.csv
-#label_csv=/mnt/ssd_disk/github/whisper-at/audioset_label.csv
+# Set TORCH_HOME relative to script location
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export TORCH_HOME="$SCRIPT_DIR/../../pretrained_models"
+echo "TORCH_HOME set to: $TORCH_HOME"
+
+# Training hyperparameters
+lr=1e-6                    # Learning rate
+freqm=0                    # Frequency masking
+timem=10                   # Time masking  
+mixup=0.5                  # Mixup augmentation
+batch_size=48              # Training batch size
+model=whisper-high-lw_tr_1_8  # Model architecture (TL-TR)
+model_size=large-v1        # Whisper base model size
+
+# Dataset and training configuration
+dataset=audioset_sonyc     # Combined AudioSet + SONYC-UST dataset
+bal=none                   # Class balancing strategy
+epoch=50                   # Number of training epochs
+weight_decay=1e-5          # L2 regularization
+lrscheduler_start=15       # When to start learning rate decay
+lrscheduler_decay=0.75     # Learning rate decay factor
+lrscheduler_step=5         # Learning rate decay step
+wa=True                    # Weight averaging
+wa_start=36                # Weight averaging start epoch
+wa_end=50                  # Weight averaging end epoch
+lr_adapt=True              # Adaptive learning rate
+lr_patience=2              # Learning rate adaptation patience
+# Data paths - convert to relative paths from script directory
+DATA_DIR="$SCRIPT_DIR/../../data/processed_data"
+PRETRAINED_DIR="$SCRIPT_DIR/../../pretrained_models"
+
+tr_data="$DATA_DIR/combined_train.json"
+te_data="$DATA_DIR/combined_val.json"
+label_csv="$DATA_DIR/class_labels_indices_extended.csv"
+pretrained_model="$PRETRAINED_DIR/large-v1_ori.pth"
+
+# Verify data files exist
+for file in "$tr_data" "$te_data" "$label_csv" "$pretrained_model"; do
+    if [[ ! -f "$file" ]]; then
+        echo "Error: Required file not found: $file"
+        exit 1
+    fi
+done
+echo "All required data files verified"
+
 n_class=533
-# n_class=527
 label_smooth=0.1
-
-pretrained_model=/mnt/ssd_disk/github/whisper-at/pretrained_models/large-v1_ori.pth
 
 # Get current timestamp in YYMMDDHHMM format
 timestamp=$(date +%y%m%d%H%M)
 
 exp_dir=./exp/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}
 mkdir -p $exp_dir
+
+echo "Starting training with the following configuration:"
+echo "Model: $model ($model_size)"
+echo "Dataset: $dataset"
+echo "Learning rate: $lr"
+echo "Epochs: $epoch"
+echo "Batch size: $batch_size"
+echo "Experiment directory: $exp_dir"
+echo "Training data: $tr_data"
+echo "Validation data: $te_data"
+echo
 
 python -W ignore ./run.py \
   --model ${model} \
@@ -82,4 +120,3 @@ python -W ignore ./run.py \
   --num-workers 8 \
   --pretrained_model ${pretrained_model} \
   --weight_decay ${weight_decay}
-  #--freeze_original_classes
