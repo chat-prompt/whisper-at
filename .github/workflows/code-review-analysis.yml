@@ -33,51 +33,111 @@ jobs:
       issues: write
       
     steps:
-      - name: Analyze comment with Claude API
+      - name: Analyze comment intelligently
         id: analyze-comment
-        run: |
-          COMMENT_BODY='${{ github.event.inputs.comment_body }}'
-          
-          # Claude API를 직접 호출하여 코멘트 분석
-          RESPONSE=$(curl -s -X POST https://api.anthropic.com/v1/messages \
-            -H "Content-Type: application/json" \
-            -H "x-api-key: ${{ secrets.CLAUDE_API_KEY }}" \
-            -H "anthropic-version: 2023-06-01" \
-            -d "{
-              \"model\": \"claude-3-sonnet-20240229\",
-              \"max_tokens\": 1000,
-              \"messages\": [{
-                \"role\": \"user\",
-                \"content\": \"다음 PR 리뷰 코멘트를 분석하고 코드 수정이 필요한지 판단해주세요. JSON 형식으로만 응답해주세요.\\n\\n코멘트: $COMMENT_BODY\\n\\n응답 형식:\\n{\\\"needs_code_change\\\": true/false, \\\"reason\\\": \\\"한 줄 설명\\\", \\\"suggested_action\\\": \\\"구체적인 수정 내용\\\"}\"
-              }]
-            }")
-          
-          echo "Claude API Response: $RESPONSE"
-          
-          # JSON 응답에서 값 추출
-          NEEDS_CHANGE=$(echo "$RESPONSE" | jq -r '.content[0].text' | jq -r '.needs_code_change // false')
-          REASON=$(echo "$RESPONSE" | jq -r '.content[0].text' | jq -r '.reason // "분석 실패"')
-          ACTION=$(echo "$RESPONSE" | jq -r '.content[0].text' | jq -r '.suggested_action // "없음"')
-          
-          echo "needs-code-change=$NEEDS_CHANGE" >> $GITHUB_OUTPUT
-          echo "reason=$REASON" >> $GITHUB_OUTPUT
-          echo "suggested-action=$ACTION" >> $GITHUB_OUTPUT
-          
-          echo "Analysis result: $NEEDS_CHANGE"
-          echo "Reason: $REASON"
-            
-      - name: Apply code changes with Claude
-        if: steps.analyze-comment.outputs.needs-code-change == 'true'
         uses: actions/github-script@v7
         with:
           script: |
-            // 여기서는 단순히 코드 변경이 필요하다고 표시만 함
-            // 실제 Claude 기반 코드 수정은 향후 구현
-            console.log('Code changes needed based on review comment');
-            console.log('Comment: ${{ github.event.inputs.comment_body }}');
+            const commentBody = `${{ github.event.inputs.comment_body }}`;
             
-            // TODO: Claude API를 직접 호출하여 코드 수정 구현
-            // 현재는 수동 수정이 필요한 상태로 표시
+            // 스마트한 분석 - 코멘트의 의도와 톤 분석
+            const analysisRules = [
+              // 명확한 수정 요청 패턴
+              { pattern: /suggestion|recommend|should|must|need to|fix|refactor|improve/i, weight: 3 },
+              { pattern: /잘못|오류|문제|수정|변경|개선|권장|제안/g, weight: 3 },
+              
+              // 코드 관련 키워드
+              { pattern: /\bcode\b|function|method|class|variable|파일|스크립트/gi, weight: 2 },
+              
+              // 부정적 톤 (문제 지적)
+              { pattern: /wrong|incorrect|bad|issue|problem|error|fail/i, weight: 2 },
+              
+              // 구체적 행동 동사
+              { pattern: /add|remove|change|update|replace|move|delete|create/i, weight: 2 },
+              
+              // 단순 질문이나 긍정적 피드백 (점수 감소)
+              { pattern: /\?|question|why|how|good|great|nice|looks good/i, weight: -1 },
+              { pattern: /\?|질문|왜|어떻게|좋|훌륭|멋진/g, weight: -1 }
+            ];
+            
+            let score = 0;
+            let matchedPatterns = [];
+            
+            // 각 규칙 적용
+            analysisRules.forEach(rule => {
+              const matches = commentBody.match(rule.pattern);
+              if (matches) {
+                const matchCount = matches.length;
+                score += rule.weight * matchCount;
+                matchedPatterns.push(`${rule.pattern.toString()}: ${matchCount}회 (점수: ${rule.weight * matchCount})`);
+              }
+            });
+            
+            // 코드 블록이나 diff가 있으면 수정 제안 가능성 높음
+            if (commentBody.includes('```') || commentBody.includes('diff')) {
+              score += 3;
+              matchedPatterns.push('코드 블록/diff 발견: +3점');
+            }
+            
+            // 최종 판단 (임계값: 2점)
+            const needsCodeChange = score >= 2;
+            
+            let reason, suggestedAction;
+            if (needsCodeChange) {
+              reason = `코드 수정 제안 (분석 점수: ${score}점)`;
+              suggestedAction = '리뷰 코멘트에 따른 코드 개선';
+            } else {
+              reason = `단순 질문 또는 정보성 코멘트 (분석 점수: ${score}점)`;
+              suggestedAction = '수정 불필요';
+            }
+            
+            console.log('=== 코멘트 분석 결과 ===');
+            console.log(`원문: ${commentBody.substring(0, 100)}...`);
+            console.log(`매칭된 패턴들:`);
+            matchedPatterns.forEach(pattern => console.log(`  - ${pattern}`));
+            console.log(`최종 점수: ${score}점`);
+            console.log(`수정 필요: ${needsCodeChange}`);
+            console.log(`이유: ${reason}`);
+            
+            core.setOutput('needs-code-change', needsCodeChange);
+            core.setOutput('reason', reason);
+            core.setOutput('suggested-action', suggestedAction);
+            
+      - name: Apply code changes with Claude Code
+        if: steps.analyze-comment.outputs.needs-code-change == 'true'
+        uses: anthropics/claude-code-action@beta
+        id: claude-fix
+        with:
+          github_token: ${{ secrets.CLAUDE_PAT }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          direct_prompt: |
+            다음 PR 리뷰 코멘트에 따라 코드를 수정해주세요:
+            
+            리뷰 코멘트: "${{ github.event.inputs.comment_body }}"
+            
+            위 코멘트를 분석하여:
+            1. 해당하는 파일을 찾아주세요
+            2. 코멘트에서 지적한 문제점을 파악해주세요  
+            3. 적절한 수정을 적용해주세요
+            4. 기존 코드 스타일과 컨벤션을 유지해주세요
+            
+            수정이 완료되면 변경 사항을 요약해주세요.
+          allowed_tools: "Read,Edit,MultiEdit,Grep,Glob"
+          mode: "direct"
+        continue-on-error: true
+        
+      - name: Check if changes were made
+        id: check-changes
+        run: |
+          # Claude가 실제로 파일을 수정했는지 확인
+          if git diff --quiet; then
+            echo "code-modified=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "code-modified=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+            git diff --name-only
+          fi
           
       - name: Set analysis result
         id: parse-analysis
@@ -104,29 +164,24 @@ jobs:
           echo "fix-branch=$FIX_BRANCH" >> $GITHUB_OUTPUT
           
       - name: Commit changes
-        if: steps.parse-analysis.outputs.needs-code-change == 'true'
+        if: steps.check-changes.outputs.code-modified == 'true'
         id: commit-changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          if ! git diff --quiet; then
-            git add -A
-            git commit -m "Auto-fix: Apply review comment suggestions
-            
-            Addressing comment: ${{ github.event.inputs.comment_id }}
-            From PR #${{ github.event.inputs.pr_number }}
-            
-            🤖 Generated with Claude Code Review Automation
-            
-            Co-authored-by: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
-            
-            git push origin ${{ steps.create-branch.outputs.fix-branch }}
-            echo "changes-committed=true" >> $GITHUB_OUTPUT
-          else
-            echo "No changes detected"
-            echo "changes-committed=false" >> $GITHUB_OUTPUT
-          fi
+          git add -A
+          git commit -m "Auto-fix: Apply review comment suggestions
+          
+          Addressing comment: ${{ github.event.inputs.comment_id }}
+          From PR #${{ github.event.inputs.pr_number }}
+          
+          🤖 Generated with Claude Code Review Automation
+          
+          Co-authored-by: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
+          
+          git push origin ${{ steps.create-branch.outputs.fix-branch }}
+          echo "changes-committed=true" >> $GITHUB_OUTPUT
           
       - name: Create approval PR
         if: steps.commit-changes.outputs.changes-committed == 'true'
