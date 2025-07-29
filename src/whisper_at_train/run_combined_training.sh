@@ -9,6 +9,7 @@
 
 set -e  # Exit on any error
 set -x  # Print commands
+set -o pipefail  # Detect errors in pipelines
 
 # Get the script directory for relative path resolution
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -21,15 +22,21 @@ cd "$SCRIPT_DIR"
 if command -v poetry &> /dev/null && poetry env info --path &> /dev/null; then
     echo "Using Poetry environment"
     # Use source instead of poetry shell for non-interactive environments
+    # shellcheck source=/dev/null
     source "$(poetry env info --path)/bin/activate"
 else
-    # Fallback to virtual environment activation
-    VENV_PATH="${VENV_PATH:-/home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate}"
+    # Fallback: require user-provided VENV_PATH
+    if [[ -z "${VENV_PATH}" ]]; then
+        echo "Error: Poetry env not found and VENV_PATH is not set."
+        echo "Please set VENV_PATH environment variable to your virtual environment activate script."
+        exit 1
+    fi
     if [[ -f "$VENV_PATH" ]]; then
         # shellcheck source=/dev/null
         source "$VENV_PATH"
     else
-        echo "Warning: Virtual environment not found at $VENV_PATH"
+        echo "Error: Virtual environment not found at $VENV_PATH"
+        exit 1
     fi
 fi
 
@@ -80,8 +87,11 @@ done
 timestamp=$(date +%y%m%d%H%M)
 
 # Create experiment directory
-exp_dir="${EXP_DIR:-./exp}/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}"
-mkdir -p "$exp_dir"
+exp_dir="${EXP_DIR:-${PROJECT_ROOT}/exp}/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}"
+if ! mkdir -p "$exp_dir"; then
+    echo "Error: Cannot create experiment directory $exp_dir"
+    exit 1
+fi
 
 echo "Starting training with experiment directory: $exp_dir"
 echo "Training data: $tr_data"
