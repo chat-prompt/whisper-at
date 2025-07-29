@@ -7,11 +7,28 @@
 #SBATCH --job-name="w-as-high"
 #SBATCH --output=./log/%j_as.txt
 
-set -x
-# comment this line if not running on sls cluster
-#. /data/sls/scratch/share-201907/slstoolchainrc
-source /home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate
-export TORCH_HOME=../../pretrained_models
+set -e  # Exit on any error
+set -x  # Print commands
+
+# Get the script directory for relative path resolution
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
+
+# Environment setup - check if running in Poetry environment
+if command -v poetry &> /dev/null && poetry env info --path &> /dev/null; then
+    echo "Using Poetry environment"
+    poetry shell
+else
+    # Fallback to virtual environment activation
+    VENV_PATH="${VENV_PATH:-/home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate}"
+    if [[ -f "$VENV_PATH" ]]; then
+        source "$VENV_PATH"
+    else
+        echo "Warning: Virtual environment not found at $VENV_PATH"
+    fi
+fi
+
+export TORCH_HOME="${PROJECT_ROOT}/pretrained_models"
 
 lr=1e-6
 freqm=0
@@ -33,40 +50,57 @@ wa_start=36
 wa_end=50
 lr_adapt=True
 lr_patience=2
-tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_train.json
-#tr_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/audioset_train.json
-te_data=/mnt/ssd_disk/github/whisper-at/data/processed_data/combined_val.json
-label_csv=/mnt/ssd_disk/github/whisper-at/data/processed_data/class_labels_indices_extended.csv
-#label_csv=/mnt/ssd_disk/github/whisper-at/audioset_label.csv
+
+# Data paths - use environment variables with fallbacks
+DATA_DIR="${DATA_DIR:-${PROJECT_ROOT}/data/processed_data}"
+tr_data="${TRAIN_DATA:-${DATA_DIR}/combined_train.json}"
+te_data="${VAL_DATA:-${DATA_DIR}/combined_val.json}"
+label_csv="${LABEL_CSV:-${DATA_DIR}/class_labels_indices_extended.csv}"
 n_class=533
-# n_class=527
 label_smooth=0.1
 
-pretrained_model=/mnt/ssd_disk/github/whisper-at/pretrained_models/large-v1_ori.pth
+# Model paths
+PRETRAINED_DIR="${PRETRAINED_DIR:-${PROJECT_ROOT}/pretrained_models}"
+pretrained_model="${PRETRAINED_MODEL:-${PRETRAINED_DIR}/large-v1_ori.pth}"
+
+# Validate required files exist
+for file in "$tr_data" "$te_data" "$label_csv" "$pretrained_model"; do
+    if [[ ! -f "$file" ]]; then
+        echo "Error: Required file not found: $file"
+        exit 1
+    fi
+done
 
 # Get current timestamp in YYMMDDHHMM format
 timestamp=$(date +%y%m%d%H%M)
 
-exp_dir=./exp/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}
-mkdir -p $exp_dir
+# Create experiment directory
+exp_dir="${EXP_DIR:-./exp}/combined-ft-${dataset}-${model}-${model_size}-${lr}-${lrscheduler_start}-${lrscheduler_decay}-ep${epoch}-bs${batch_size}-lda${lr_adapt}-ls${label_smooth}-mix${mixup}-${freqm}-${timem}-${timestamp}"
+mkdir -p "$exp_dir"
 
-python -W ignore ./run.py \
-  --model ${model} \
-  --dataset ${dataset} \
-  --data-train ${tr_data} \
-  --data-val ${te_data} \
-  --exp-dir $exp_dir \
-  --label-csv ${label_csv} \
+echo "Starting training with experiment directory: $exp_dir"
+echo "Training data: $tr_data"
+echo "Validation data: $te_data"
+echo "Pretrained model: $pretrained_model"
+
+# Run training with error handling
+if ! python -W ignore ./run.py \
+  --model "${model}" \
+  --dataset "${dataset}" \
+  --data-train "${tr_data}" \
+  --data-val "${te_data}" \
+  --exp-dir "$exp_dir" \
+  --label-csv "${label_csv}" \
   --n_class ${n_class} \
-  --lr $lr \
+  --lr ${lr} \
   --n-epochs ${epoch} \
   --batch-size ${batch_size} \
   --save_model True \
   --freqm ${freqm} \
   --timem ${timem} \
   --mixup ${mixup} \
-  --bal ${bal} \
-  --model_size ${model_size} \
+  --bal "${bal}" \
+  --model_size "${model_size}" \
   --label_smooth ${label_smooth} \
   --lrscheduler_start ${lrscheduler_start} \
   --lrscheduler_decay ${lrscheduler_decay} \
@@ -80,6 +114,10 @@ python -W ignore ./run.py \
   --lr_adapt ${lr_adapt} \
   --lr_patience ${lr_patience} \
   --num-workers 8 \
-  --pretrained_model ${pretrained_model} \
-  --weight_decay ${weight_decay}
-  #--freeze_original_classes
+  --pretrained_model "${pretrained_model}" \
+  --weight_decay ${weight_decay}; then
+    echo "Training failed! Check logs in $exp_dir"
+    exit 1
+fi
+
+echo "Training completed successfully! Results saved in: $exp_dir"
