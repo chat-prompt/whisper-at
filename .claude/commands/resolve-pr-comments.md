@@ -226,21 +226,109 @@ EOF
 setup_repo_variables && setup_pr_number
 
 # 1. 현재 PR 상세 정보 및 코멘트 보기
-gh pr view $PR_NUM --comments
+gh api graphql -f query="
+{
+  repository(owner: \"$OWNER\", name: \"$REPO\") {
+    pullRequest(number: $PR_NUM) {
+      title
+      body
+      state
+      author { login }
+      createdAt
+      updatedAt
+      mergeable
+      url
+      headRefName
+      baseRefName
+      comments(first: 100) {
+        nodes {
+          id
+          body
+          author { login }
+          createdAt
+        }
+      }
+      reviewThreads(first: 100) {
+        nodes {
+          id
+          isResolved
+          comments(first: 10) {
+            nodes {
+              id
+              body
+              author { login }
+              createdAt
+              path
+              line
+            }
+          }
+        }
+      }
+    }
+  }
+}" 2>/dev/null | jq '.data.repository.pullRequest' 2>/dev/null || \
+    echo "❌ PR 상세 정보 가져오기 실패"
 
 # 2. 모든 리뷰 코멘트 가져오기 (코드 라인별 코멘트)
-gh api repos/$OWNER/$REPO/pulls/$PR_NUM/comments 2>/dev/null | \
-    jq '.[] | {id: .id, author: .author.login, body: .body, created_at: .created_at, in_reply_to_id: .in_reply_to_id}' 2>/dev/null || \
-    echo "❌ 코멘트 가져오기 실패"
+gh api graphql -f query="
+{
+  repository(owner: \"$OWNER\", name: \"$REPO\") {
+    pullRequest(number: $PR_NUM) {
+      reviewThreads(first: 100) {
+        nodes {
+          comments(first: 20) {
+            nodes {
+              id
+              body
+              author { login }
+              createdAt
+              path
+              line
+              inReplyToId
+            }
+          }
+        }
+      }
+    }
+  }
+}" 2>/dev/null | jq '.data.repository.pullRequest.reviewThreads.nodes | map(.comments.nodes[]) | flatten | .[] | {id: .id, author: .author.login, body: .body, created_at: .createdAt, in_reply_to_id: .inReplyToId}' 2>/dev/null || \
+    echo "❌ 리뷰 코멘트 가져오기 실패"
 
 # 3. 모든 리뷰 요약 가져오기 (승인/변경요청/코멘트)
-gh api repos/$OWNER/$REPO/pulls/$PR_NUM/reviews | \
-    jq '.[] | select(.state == "COMMENTED") | {id: .id, author: .author.login, body: .body, submitted_at: .submitted_at}' 2>/dev/null || \
+gh api graphql -f query="
+{
+  repository(owner: \"$OWNER\", name: \"$REPO\") {
+    pullRequest(number: $PR_NUM) {
+      reviews(first: 100) {
+        nodes {
+          id
+          body
+          state
+          author { login }
+          submittedAt
+        }
+      }
+    }
+  }
+}" 2>/dev/null | jq '.data.repository.pullRequest.reviews.nodes | .[] | select(.state == "COMMENTED") | {id: .id, author: .author.login, body: .body, submitted_at: .submittedAt}' 2>/dev/null || \
     echo "❌ 리뷰 요약 가져오기 실패"
 
 # 4. 일반 PR 코멘트 가져오기 (전체 PR 토론 코멘트)
-gh pr view --json comments 2>/dev/null | \
-    jq '.comments[] | {id: .id, author: .author.login, body: .body, created_at: .created_at}' 2>/dev/null || \
+gh api graphql -f query="
+{
+  repository(owner: \"$OWNER\", name: \"$REPO\") {
+    pullRequest(number: $PR_NUM) {
+      comments(first: 100) {
+        nodes {
+          id
+          body
+          author { login }
+          createdAt
+        }
+      }
+    }
+  }
+}" 2>/dev/null | jq '.data.repository.pullRequest.comments.nodes | .[] | {id: .id, author: .author.login, body: .body, created_at: .createdAt}' 2>/dev/null || \
     echo "❌ PR 코멘트 가져오기 실패"
 ```
 
