@@ -14,14 +14,19 @@ set -x  # Print commands
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
 
+# Change to script directory to ensure relative paths work correctly
+cd "$SCRIPT_DIR"
+
 # Environment setup - check if running in Poetry environment
 if command -v poetry &> /dev/null && poetry env info --path &> /dev/null; then
     echo "Using Poetry environment"
-    poetry shell
+    # Use source instead of poetry shell for non-interactive environments
+    source "$(poetry env info --path)/bin/activate"
 else
     # Fallback to virtual environment activation
     VENV_PATH="${VENV_PATH:-/home/taemyung_heo/.cache/pypoetry/virtualenvs/whisper-at-z6hdRBdT-py3.10/bin/activate}"
     if [[ -f "$VENV_PATH" ]]; then
+        # shellcheck source=/dev/null
         source "$VENV_PATH"
     else
         echo "Warning: Virtual environment not found at $VENV_PATH"
