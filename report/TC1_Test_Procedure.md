@@ -56,7 +56,7 @@
       - numpy 2.2.5, pandas 2.0.3, scikit-learn 1.6.1  
       - Git 2.30.2, ffmpeg, yt-dlp  
       - 기타: tqdm, jiwer, soundfile (스크립트 의존 모듈)
-3. **Baseline WER 측정**  
+2. **Baseline WER 측정**  
    ```bash
    python run_whisper.py \
        --model large-v1 \
@@ -64,7 +64,7 @@
        --output_dir ./baseline_transcript
    python calc_wer.py --ref ./refs.txt --hyp ./baseline_transcript.txt --out wer_base.txt
    ```
-4. **시험 모델 실행 (Whisper-AT)**  
+3. **시험 모델 실행 (Whisper-AT)**  
    ```bash
    python run_whisper_at.py \
        --checkpoint whisper_at_large_finetuned.pth \
@@ -73,7 +73,7 @@
        --output_tags ./test_tags.json
    python calc_wer.py --ref ./refs.txt --hyp ./test_transcript.txt --out wer_test.txt
    ```
-5. **음향 Accuracy 계산**  
+4. **음향 Accuracy 계산**  
    ```bash
    python eval_audio_tags.py \
        --ref_tags ./gt_tags.json \
@@ -81,11 +81,11 @@
        --window_sec 1.0 \
        --out accuracy.json
    ```
-6. **결과 집계**  
+5. **결과 집계**  
    - `accuracy.json` 에서 5개 목표 음향 Precision·Recall·F1 확인  
    - `wer_base.txt`, `wer_test.txt`에서 ΔWER 계산  
    - 합격 여부 판정 (Accuracy = 100 %, ΔWER ≤ 0.5 %p)
-7. **보고서 작성**  
+6. **보고서 작성**  
    - 시험 로그, 스크립트, 결과 파일을 `/results/tc1_yyyymmdd` 폴더에 보관  
    - `TC1_Test_Result.md` 양식에 데이터 입력 후 담당자 검토
 
