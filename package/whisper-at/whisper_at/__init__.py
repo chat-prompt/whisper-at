@@ -42,7 +42,7 @@ _MODELS_AT = {
     "medium.en_low": "https://www.dropbox.com/s/2q5wprr8f9gti5t/medium.en_low.pth?dl=1",
     "medium": "https://www.dropbox.com/s/65aabayr7o819az/medium_ori.pth?dl=1",
     "medium_low": "https://www.dropbox.com/s/0mnfmcasram4n6o/medium_low.pth?dl=1",
-    #"large-v1": "https://www.dropbox.com/s/b8x2en1fdzc8nhk/large-v1_ori.pth?dl=1",
+    #"large-v1": "https://www.dropbox.com/s/b8x2en1fdzc8nhk/large-v1_ori.pth?dl=1", # 원본 모델
     # "large-v1": "https://www.dropbox.com/scl/fi/m6qmgl1x6h9akmehichjq/large_v1.pth?rlkey=yx1fyyedf2xlx9j2z7fosfpzy&st=5r00ei0u&dl=1",
     "large-v1": "https://www.dropbox.com/scl/fi/7s9ya0rb4tc495atlpuw0/audio_model_wa.pth?rlkey=qghoc2tj1d8r1y3pfu4buhznc&st=d43mnq5f&dl=1",
     "large-v1_ori": "https://www.dropbox.com/s/5o79h70wyla8jlk/large-v1_low.pth?dl=1",
