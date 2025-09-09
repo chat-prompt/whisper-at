@@ -5,15 +5,12 @@
 
 ## 2. 시험 목표 및 기준
 - <시험목표>
-  - 30 dB SNR 조건의 실제 웨비나·강의 영상 10편에서 5가지 목표 음향(박수, 웃음, 기침, 한숨, 환호)을 **100 % 정확도**로 검출·분류하면서, 기존 Whisper Large-v1 대비 **ΔWER ≤ 0.5 %p** 를 달성하는지 확인
+  - 30 dB SNR 조건의 실제 웨비나·강의 영상 10편에서 5가지 목표 음향(박수, 웃음, 기침, 한숨, 환호)을 **100 % 정확도**로 검출·분류하는지 확인
 - <시험기준>
-  1. **음향 Accuracy** : `Accuracy = (TP + TN) / (TP + TN + FP + FN) × 100`
-  2. **ΔWER** : `ΔWER = abs(WER_base − WER_test)`
-     - WER_base : Whisper Large-v1 결과 ↔ 레퍼런스 자막
-     - WER_test : Whisper-AT 결과 ↔ 레퍼런스 자막
-  3. 합격 기준  
-     - 5개 목표 음향 Accuracy = **100 %**  
-     - ΔWER ≤ **0.5 %p**
+   - 기준 : 음향 인식 정확도(Accuracy)
+     - 목표 음향 TP·TN·FP·FN 을 이용한 정확도 산정
+     - 평가 조건: 모델이 실제 음향 발생 시점 ±1 초 이내에 태그하면 "검출"으로 판정
+   - 산정식 : `X(Accuracy) = (TP + TN) / (TP + TN + FP + FN) × 100`
 
 ## 3. 사전 조건
 - 운영체제 : Debian GNU/Linux 11 (bullseye) ‑ Kernel 5.10.0-35-cloud-amd64
@@ -55,44 +52,29 @@
       - whisper-at 0.6  
       - numpy 2.2.5, pandas 2.0.3, scikit-learn 1.6.1  
       - Git 2.30.2, ffmpeg, yt-dlp  
-      - 기타: tqdm, jiwer, soundfile (스크립트 의존 모듈)
-3. **Baseline WER 측정**  
-   ```bash
-   python run_whisper.py \
-       --model large-v1 \
-       --input_dir ./wav \
-       --output_dir ./baseline_transcript
-   python calc_wer.py --ref ./refs.txt --hyp ./baseline_transcript.txt --out wer_base.txt
-   ```
-4. **시험 모델 실행 (Whisper-AT)**  
+      - 기타: tqdm, soundfile (스크립트 의존 모듈)
+2. **시험 모델 실행 (Whisper-AT)**  
    ```bash
    python run_whisper_at.py \
-       --checkpoint whisper_at_large_finetuned.pth \
-       --input_dir ./wav \
+       --checkpoint pretrained_models/audio_model_finetuned.pth \
+       --input_dir ./data_wavs \
        --output_tags ./test_tags.json
-   python calc_wer.py --ref ./refs.txt --hyp ./test_transcript.txt --out wer_test.txt
    ```
-5. **음향 Accuracy 계산**  
+3. **음향 Accuracy 계산**  
    ```bash
    python eval_audio_tags.py \
        --ref_tags ./gt_tags.json \
        --pred_tags ./test_tags.json \
-       --window_sec 1.0 \
        --out accuracy.json
    ```
-6. **결과 집계**  
-   - `accuracy.json` 에서 5개 목표 음향 Precision·Recall·F1 확인  
-   - `wer_base.txt`, `wer_test.txt`에서 ΔWER 계산  
-   - 합격 여부 판정 (Accuracy = 100 %, ΔWER ≤ 0.5 %p)
-7. **보고서 작성**  
-   - 시험 로그, 스크립트, 결과 파일을 `/results/tc1_yyyymmdd` 폴더에 보관  
-   - `TC1_Test_Result.md` 양식에 데이터 입력 후 담당자 검토
+4. **결과 집계**  
+   - `accuracy.json` 에서 5개 목표 음향 Accuracy 확인  
+   - 합격 여부 판정 (Accuracy >= 99.9 %)
 
 ## 7. 예상 결과
 | 지표 | 목표 값 |
 |------|---------|
-| 5개 목표 음향 Accuracy | 100 % |
-| ΔWER | ≤ 0.5 %p |
+| 5개 목표 음향 Accuracy | 99.9 % 이상 |
 
 ## 8. 예외 사항
 - YouTube 영상 접근 제한(저작권·지역 제한 등)

@@ -12,7 +12,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| **하드웨어 사양** | **CPU**: Intel(R) Xeon(R) CPU @ 2.00GHz, 8 vCPUs (4코어, 하이퍼스레딩)<br/>**RAM**: 30GB DDR4<br/>**스토리지**: 296GB (루트 파티션) + 2TB NVMe SSD (/mnt/ssd_disk)<br/>**GPU**: NVIDIA Tesla T4 (15GB VRAM) |
+| **하드웨어 사양** | **CPU**: Intel(R) Xeon(R) CPU @ 2.00GHz, 8 vCPUs (4코어, 하이퍼스레딩)<br/>**RAM**: 30GB DDR4<br/>**스토리지**: 300GB (루트 파티션) + 2TB SSD (GCP Persistent Disk, SCSI 인터페이스, /mnt/ssd_disk)<br/>**GPU**: NVIDIA Tesla T4 (15GB VRAM) |
 | **네트워크 환경** | TCP/IP (고속 인터넷 연결) |
 | **기타 환경** | Google Cloud Platform (GCP) GPU VM Instance |
 
