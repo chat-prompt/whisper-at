@@ -69,7 +69,6 @@
    python run_whisper_at.py \
        --checkpoint whisper_at_large_finetuned.pth \
        --input_dir ./wav \
-       --output_dir ./test_transcript \
        --output_tags ./test_tags.json
    python calc_wer.py --ref ./refs.txt --hyp ./test_transcript.txt --out wer_test.txt
    ```
